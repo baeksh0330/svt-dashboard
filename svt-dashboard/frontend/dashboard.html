@@ -148,7 +148,7 @@
   /* ── 요약 카드 그리드 ── */
   .stat-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 12px;
     margin-bottom: 28px;
   }
@@ -177,10 +177,10 @@
   .stat-sub   { font-size: 11px; color: var(--muted); margin-top: 4px; }
   .stat-accent { color: var(--accent); }
 
-  /* ── 차트 그리드 ── */
+  /* ── 차트 그리드 ── 월별 조회수 추이/카테고리별 비율 / 카테고리별 평균 조회수 */
   .chart-grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(80px,4fr));
     gap: 16px;
     margin-bottom: 28px;
   }

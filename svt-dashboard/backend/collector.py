@@ -15,13 +15,15 @@ from pathlib import Path
 from googleapiclient.discovery import build
 
 # ─── API 키: 환경변수 우선, 없으면 직접 입력 ────────
-API_KEY = os.environ.get("YOUTUBE_API_KEY") or "여기에_API_KEY_입력"
+from dotenv import load_dotenv
+load_dotenv()
+API_KEY = os.environ.get("YOUTUBE_API_KEY") or "API_key_없음" # 제대로 받고 있음
 
-if not API_KEY or API_KEY == "여기에_API_KEY_입력":
+if not API_KEY or API_KEY == "API_key_없음":
     print("[오류] YOUTUBE_API_KEY 환경변수가 설정되지 않았습니다.")
     sys.exit(1)
 
-CHANNEL_ID = "UC-dkYN_rjr48s0xNg8a6EXg"  # 세븐틴 공식
+CHANNEL_ID = "UCfkXDY7vwkcJ8ddFGz8KusA"  # 세븐틴 공식채널 ID
 BASE_DIR   = Path(__file__).parent
 
 youtube = build("youtube", "v3", developerKey=API_KEY)
@@ -29,15 +31,24 @@ youtube = build("youtube", "v3", developerKey=API_KEY)
 
 def classify_video_type(title: str) -> str:
     t = title.lower()
-    if any(k in t for k in ["mv", "m/v", "music video"]):           return "MV"
-    if any(k in t for k in ["performance", "choreography", "dance"]): return "퍼포먼스"
-    if any(k in t for k in ["going seventeen", "going svt"]):         return "고잉세븐틴"
-    if any(k in t for k in ["behind", "making", "비하인드"]):          return "비하인드"
-    if any(k in t for k in ["teaser", "highlight"]):                  return "티저"
-    if any(k in t for k in ["live", "concert", "tour"]):              return "라이브"
-    if any(k in t for k in ["interview", "인터뷰"]):                   return "인터뷰"
-    if any(k in t for k in ["cover", "reaction"]):                    return "커버"
-    return "기타"
+    if any(k in t for k in ["mv", "m/v", "music video"]):                return "MV"
+    if any(k in t for k in ["live", "concert", "tour", "inside"]):       return "INSIDE SEVENTEEN"
+    if any(k in t for k in ["performance", "choreography", "dance"]):    return "퍼포먼스"
+    if any(k in t for k in ["going"]):                                   return "고잉세븐틴"
+    if any(k in t for k in ["teaser", "highlight"]):                     return "티저"
+    if any(k in t for k in ["record"]):                                  return "SVT Record"
+    if any(k in t for k in ["브이로그", "하니왔쫑",
+                            "위클리 호시", "every wonwoo"]):               return "브이로그"
+    if any(k in t for k in ["snapshoot"]):                               return "SNAPSHOOT"
+    if any(k in t for k in ["interview", "인터뷰"]):                      return "인터뷰"
+    if any(k in t for k in ["cover", "원곡"]):                            return "커버"
+    if any(k in t for k in ["s.coups", "jeonghan", "joshua",
+                            "jun", "hoshi", "wonwoo", "woozi",
+                            "the 8", "mingyu", 'dk',
+                            'seungkwan', 'vernon', 'dino']):             return "솔로"
+    if any(k in t for k in ["응원법"]):                                   return "응원법"
+    if any(k in t for k in ["챌린지"]):                                   return "챌린지"
+    return "기타(릴스)"
 
 
 def parse_duration(s: str) -> float:
@@ -52,6 +63,10 @@ def get_channel_info():
         part="snippet,statistics,contentDetails",
         id=CHANNEL_ID
     ).execute()
+    
+    # debugging 
+    # print("\n\nres : ", res)
+    
     ch = res["items"][0]
     return {
         "title":            ch["snippet"]["title"],
@@ -63,7 +78,7 @@ def get_channel_info():
     }
 
 
-def get_all_video_ids(playlist_id: str, max_videos: int = 500):
+def get_all_video_ids(playlist_id: str, max_videos: int = 2500): #수집 개수 
     ids, token = [], None
     while len(ids) < max_videos:
         res = youtube.playlistItems().list(
@@ -77,7 +92,7 @@ def get_all_video_ids(playlist_id: str, max_videos: int = 500):
     return ids
 
 
-def get_video_details(video_ids: list):
+def get_video_details(video_ids: list): # 썸네일
     records = []
     for batch in [video_ids[i:i+50] for i in range(0, len(video_ids), 50)]:
         res = youtube.videos().list(

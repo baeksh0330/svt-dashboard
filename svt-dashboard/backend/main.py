@@ -11,6 +11,8 @@ from contextlib import asynccontextmanager
 
 from database import init_db, load_csv_to_db
 from routers import videos_router, stats_router
+from routers_new import rewatch_router, sentiment_router
+
 
 
 # ─── 앱 시작 시 DB 초기화 ────────────────────────────
@@ -44,6 +46,8 @@ app.add_middleware(
 # ─── 라우터 등록 ─────────────────────────────────────
 app.include_router(videos_router)
 app.include_router(stats_router)
+app.include_router(rewatch_router)
+app.include_router(sentiment_router)
 
 
 # ─── 헬스체크 ────────────────────────────────────────
