@@ -4,876 +4,608 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SVT Analytics</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
-  :root {
-    --bg:       #0b0c10;
-    --surface:  #13141a;
-    --card:     #1a1c25;
-    --border:   rgba(255,255,255,0.07);
-    --accent:   #c8a96e;
-    --accent2:  #6e9dc8;
-    --text:     #e8e4da;
-    --muted:    #7a7770;
-    --danger:   #e8705a;
-    --success:  #6ec88a;
-    --font-display: 'DM Serif Display', serif;
-    --font-body:    'DM Sans', sans-serif;
-    --radius:   12px;
-    --radius-sm: 8px;
-  }
-
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--font-body);
-    font-size: 15px;
-    line-height: 1.6;
-    min-height: 100vh;
-  }
-
-  /* ── 헤더 ── */
-  header {
-    border-bottom: 1px solid var(--border);
-    padding: 0 clamp(16px, 5vw, 48px);
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background: rgba(11,12,16,0.92);
-    backdrop-filter: blur(12px);
-    z-index: 100;
-  }
-
-  .logo {
-    font-family: var(--font-display);
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    color: var(--accent);
-  }
-
-  .logo span { color: var(--text); font-size: 13px; font-family: var(--font-body); margin-left: 8px; opacity: 0.5; }
-
-  .header-right {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .live-badge {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    color: var(--success);
-    background: rgba(110,200,138,0.1);
-    border: 1px solid rgba(110,200,138,0.2);
-    border-radius: 20px;
-    padding: 4px 10px;
-  }
-
-  .live-dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--success);
-    animation: pulse 2s ease-in-out infinite;
-  }
-
-  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-
-  .last-updated { font-size: 12px; color: var(--muted); }
-
-  /* ── 레이아웃 ── */
-  main {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: clamp(20px, 4vw, 40px) clamp(16px, 5vw, 48px);
-  }
-
-  /* ── 필터 바 ── */
-  .filter-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 28px;
-    align-items: center;
-  }
-
-  .filter-label { font-size: 12px; color: var(--muted); margin-right: 4px; white-space: nowrap; }
-
-  select, input[type="date"] {
-    background: var(--card);
-    border: 1px solid var(--border);
-    color: var(--text);
-    border-radius: var(--radius-sm);
-    padding: 8px 12px;
-    font-family: var(--font-body);
-    font-size: 13px;
-    cursor: pointer;
-    outline: none;
-    transition: border-color 0.2s;
-  }
-
-  select:focus, input[type="date"]:focus { border-color: var(--accent); }
-
-  .btn {
-    background: var(--accent);
-    color: #0b0c10;
-    border: none;
-    border-radius: var(--radius-sm);
-    padding: 8px 18px;
-    font-family: var(--font-body);
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: opacity 0.2s;
-  }
-
-  .btn:hover { opacity: 0.85; }
-
-  .btn-outline {
-    background: transparent;
-    color: var(--text);
-    border: 1px solid var(--border);
-  }
-
-  .btn-outline:hover { border-color: var(--accent); color: var(--accent); opacity: 1; }
-
-  /* ── 요약 카드 그리드 ── */
-  .stat-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 12px;
-    margin-bottom: 28px;
-  }
-
-  .stat-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 18px 20px;
-    animation: fadeUp 0.4s ease both;
-  }
-
-  .stat-card:nth-child(1){animation-delay:0.05s}
-  .stat-card:nth-child(2){animation-delay:0.1s}
-  .stat-card:nth-child(3){animation-delay:0.15s}
-  .stat-card:nth-child(4){animation-delay:0.2s}
-  .stat-card:nth-child(5){animation-delay:0.25s}
-
-  @keyframes fadeUp {
-    from { opacity:0; transform:translateY(12px); }
-    to   { opacity:1; transform:translateY(0); }
-  }
-
-  .stat-label { font-size: 11px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
-  .stat-value { font-family: var(--font-display); font-size: 26px; color: var(--text); line-height: 1; }
-  .stat-sub   { font-size: 11px; color: var(--muted); margin-top: 4px; }
-  .stat-accent { color: var(--accent); }
-
-  /* ── 차트 그리드 ── 월별 조회수 추이/카테고리별 비율 / 카테고리별 평균 조회수 */
-  .chart-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px,4fr));
-    gap: 16px;
-    margin-bottom: 28px;
-  }
-
-  .chart-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 20px;
-    animation: fadeUp 0.4s ease both;
-  }
-
-  .chart-card.col-8 { grid-column: span 8; }
-  .chart-card.col-4 { grid-column: span 4; }
-  .chart-card.col-6 { grid-column: span 6; }
-  .chart-card.col-12{ grid-column: span 12; }
-
-  @media (max-width: 900px) {
-    .chart-card.col-8, .chart-card.col-4,
-    .chart-card.col-6, .chart-card.col-12 { grid-column: span 12; }
-  }
-
-  .card-title {
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--muted);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .chart-wrap { position: relative; }
-
-  /* ── 영상 테이블 ── */
-  .video-section { margin-bottom: 28px; }
-
-  .section-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 14px;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .section-title { font-family: var(--font-display); font-size: 18px; }
-
-  .sort-row {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .sort-btn {
-    font-size: 12px;
-    padding: 5px 12px;
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.18s;
-  }
-
-  .sort-btn.active, .sort-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: rgba(200,169,110,0.08);
-  }
-
-  /* 영상 카드 그리드 */
-  .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 14px;
-  }
-
-  .video-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.18s, border-color 0.18s;
-    animation: fadeUp 0.35s ease both;
-  }
-
-  .video-card:hover { transform: translateY(-3px); border-color: rgba(200,169,110,0.3); }
-
-  .video-thumb {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    background: #222;
-    display: block;
-  }
-
-  .video-info { padding: 12px; }
-
-  .video-title {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.4;
-    margin-bottom: 6px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .video-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .video-views { font-size: 12px; color: var(--muted); }
-
-  .video-badge {
-    font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 10px;
-    background: rgba(200,169,110,0.12);
-    color: var(--accent);
-    border: 1px solid rgba(200,169,110,0.2);
-    white-space: nowrap;
-  }
-
-  /* 급상승 배지 */
-  .spike-badge {
-    font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 10px;
-    background: rgba(232,112,90,0.12);
-    color: var(--danger);
-    border: 1px solid rgba(232,112,90,0.25);
-  }
-
-  /* 페이지네이션 */
-  .pagination {
-    display: flex;
-    gap: 6px;
-    justify-content: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-  }
-
-  .page-btn {
-    width: 34px; height: 34px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    color: var(--text);
-    border-radius: var(--radius-sm);
-    font-size: 13px;
-    cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    transition: all 0.15s;
-  }
-
-  .page-btn.active { background: var(--accent); color: #0b0c10; border-color: var(--accent); }
-  .page-btn:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
-
-  /* 로딩 스켈레톤 */
-  .skeleton {
-    background: linear-gradient(90deg, var(--card) 25%, #22242f 50%, var(--card) 75%);
-    background-size: 200% 100%;
-    animation: shimmer 1.4s infinite;
-    border-radius: 6px;
-  }
-
-  @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
-
-  /* 빈 상태 */
-  .empty {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--muted);
-    font-size: 14px;
-  }
-
-  /* 영상 상세 모달 */
-  .modal-backdrop {
-    display: none;
-    position: fixed; inset: 0;
-    background: rgba(0,0,0,0.7);
-    z-index: 200;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .modal-backdrop.open { display: flex; }
-
-  .modal {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    width: 100%;
-    max-width: 560px;
-    max-height: 85vh;
-    overflow-y: auto;
-    animation: modalIn 0.22s ease;
-  }
-
-  @keyframes modalIn { from{opacity:0;transform:scale(0.95)} to{opacity:1;transform:scale(1)} }
-
-  .modal-header {
-    padding: 20px 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .modal-title { font-family: var(--font-display); font-size: 16px; line-height: 1.4; }
-  .modal-close { background:none; border:none; color:var(--muted); font-size:20px; cursor:pointer; padding:0; line-height:1; flex-shrink:0; }
-  .modal-close:hover { color: var(--text); }
-
-  .modal-body { padding: 16px 20px 24px; }
-
-  .modal-thumb { width:100%; border-radius:var(--radius-sm); margin-bottom:14px; }
-
-  .modal-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 14px;
-  }
-
-  .modal-stat { text-align: center; padding: 10px; background: var(--surface); border-radius: var(--radius-sm); }
-  .modal-stat-val { font-family: var(--font-display); font-size: 16px; }
-  .modal-stat-lbl { font-size: 10px; color: var(--muted); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.06em; }
-
-  .modal-meta { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 10px; }
-
-  /* 반응형 */
-  @media (max-width: 600px) {
-    .filter-bar { gap: 8px; }
-    select, input[type="date"] { font-size: 12px; padding: 7px 10px; }
-    .stat-grid { grid-template-columns: repeat(2, 1fr); }
-    .stat-value { font-size: 22px; }
-  }
+:root{
+  --bg:#0c0d12;--surface:#13141c;--card:#1a1c27;--card2:#202330;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --accent:#c8a96e;--accent2:#6e9dc8;
+  --text:#e4e0d8;--muted:#6a6870;
+  --danger:#e8705a;--success:#6ec88a;
+  --jp:#e87ca0;
+  --r:10px;--rsm:7px;
+  --fd:'DM Serif Display',serif;--fb:'DM Sans',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--fb);font-size:15px;line-height:1.6;min-height:100vh}
+.sidenav{position:fixed;left:0;top:0;bottom:0;width:54px;background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;align-items:center;padding:14px 0;gap:4px;z-index:200}
+.nav-logo{font-family:var(--fd);font-size:12px;color:var(--accent);writing-mode:vertical-rl;margin-bottom:14px;letter-spacing:0.12em}
+.nav-btn{width:38px;height:38px;border-radius:var(--rsm);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:15px;color:var(--muted);transition:background 0.13s,color 0.13s;border:none;background:transparent;position:relative}
+.nav-btn:hover,.nav-btn.active{background:rgba(200,169,110,0.12);color:var(--accent)}
+.nav-tip{position:absolute;left:50px;top:50%;transform:translateY(-50%);background:var(--card2);border:1px solid var(--border2);color:var(--text);font-size:11px;padding:3px 9px;border-radius:5px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity 0.13s}
+.nav-btn:hover .nav-tip{opacity:1}
+.wrap{margin-left:54px}
+header{border-bottom:1px solid var(--border);padding:0 30px;height:54px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:rgba(12,13,18,0.93);backdrop-filter:blur(14px);z-index:100}
+.h-title{font-family:var(--fd);font-size:17px;color:var(--accent)}
+.h-title span{color:var(--muted);font-family:var(--fb);font-size:11px;margin-left:8px;font-weight:300}
+.live-badge{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--success);background:rgba(110,200,138,0.08);border:1px solid rgba(110,200,138,0.18);border-radius:20px;padding:3px 9px}
+.live-dot{width:5px;height:5px;border-radius:50%;background:var(--success);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.sec{padding:34px 30px}
+.sec+.sec{border-top:1px solid var(--border)}
+.sec-lbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.sec-title{font-family:var(--fd);font-size:21px;margin-bottom:18px}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:24px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:15px 17px;animation:up .4s ease both}
+.stat-lbl{font-size:10px;color:var(--muted);letter-spacing:.07em;text-transform:uppercase;margin-bottom:5px}
+.stat-val{font-family:var(--fd);font-size:23px;line-height:1}
+@keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.hscroll{overflow-x:auto;padding-bottom:14px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--border2) transparent}
+.hscroll::-webkit-scrollbar{height:4px}
+.hscroll::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+.hscroll::-webkit-scrollbar-track{background:transparent}
+.unit-row{display:flex;gap:14px;padding:3px 2px;min-width:max-content}
+.unit-card{width:295px;flex-shrink:0;background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:transform .18s,border-color .18s;cursor:default;animation:up .35s ease both}
+.unit-card:hover{transform:translateY(-4px);border-color:var(--border2)}
+.uc-head{padding:16px 16px 13px;border-bottom:1px solid var(--border)}
+.uc-badge{font-size:10px;padding:2px 7px;border-radius:9px;display:inline-block;font-weight:500;margin-bottom:7px}
+.uc-badge-off{background:rgba(200,169,110,.1);color:var(--accent);border:1px solid rgba(200,169,110,.2)}
+.uc-badge-sub{background:rgba(110,157,200,.1);color:var(--accent2);border:1px solid rgba(110,157,200,.2)}
+.uc-name{font-family:var(--fd);font-size:17px;margin-bottom:2px}
+.uc-name-en{font-size:11px;color:var(--muted);margin-bottom:9px}
+.uc-members{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:9px}
+.member-chip{font-size:10px;padding:2px 7px;border-radius:9px;background:var(--card2);color:var(--text);border:1px solid var(--border)}
+.uc-desc{font-size:11px;color:var(--muted);line-height:1.5}
+.uc-body{padding:13px 16px}
+.uc-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:12px}
+.uc-stat{text-align:center;padding:8px 4px;background:var(--surface);border-radius:var(--rsm)}
+.uc-stat-val{font-size:14px;font-weight:500}
+.uc-stat-lbl{font-size:9px;color:var(--muted);margin-top:2px}
+.uc-vids{display:flex;flex-direction:column;gap:5px}
+.uc-vid{display:flex;gap:7px;align-items:center;padding:5px 7px;border-radius:var(--rsm);background:var(--surface);cursor:pointer;transition:background .13s}
+.uc-vid:hover{background:var(--card2)}
+.uc-thumb{width:46px;height:27px;object-fit:cover;border-radius:3px;background:#1e2030;flex-shrink:0}
+.uc-vid-title{font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:1px}
+.uc-vid-views{font-size:9px;color:var(--muted)}
+.uc-debut{font-size:10px;color:var(--muted);margin-top:9px}
+.tl-btns{display:flex;gap:7px;margin-bottom:14px;flex-wrap:wrap;align-items:center}
+.tl-btn{font-size:11px;padding:4px 13px;background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:18px;cursor:pointer;transition:all .13s}
+.tl-btn:hover,.tl-btn.active{border-color:var(--accent);color:var(--accent);background:rgba(200,169,110,.08)}
+.tl-scroll{overflow-x:auto;padding-bottom:10px;scrollbar-width:thin;scrollbar-color:var(--border2) transparent}
+.tl-scroll::-webkit-scrollbar{height:4px}
+.tl-scroll::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+
+/* 타임라인 범례 */
+.tl-legend{display:flex;gap:14px;margin-top:10px;flex-wrap:wrap}
+.tl-legend-item{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--muted)}
+.tl-legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.tl-legend-line{width:16px;height:2px;border-top:2px dashed;flex-shrink:0}
+
+.going-grid{display:flex;flex-direction:column;gap:18px}
+.filter-bar{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px;align-items:center}
+.flbl{font-size:11px;color:var(--muted);white-space:nowrap}
+select,input[type="date"]{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:var(--rsm);padding:6px 10px;font-family:var(--fb);font-size:12px;cursor:pointer;outline:none;transition:border-color .18s}
+select:focus,input[type="date"]:focus{border-color:var(--accent)}
+.btn{background:var(--accent);color:#0c0d12;border:none;border-radius:var(--rsm);padding:6px 14px;font-family:var(--fb);font-size:12px;font-weight:500;cursor:pointer;transition:opacity .13s}
+.btn:hover{opacity:.85}
+.btn-g{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn-g:hover{border-color:var(--accent);color:var(--accent);opacity:1}
+.sort-row{display:flex;gap:5px;margin-bottom:12px;flex-wrap:wrap}
+.going-top{width:100%}
+.going-bottom{width:100%}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:10px}
+.vcard{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .14s,border-color .14s;animation:up .3s ease both}
+.vcard:hover{transform:translateY(-3px);border-color:var(--border2)}
+.vthumb{width:100%;aspect-ratio:16/9;object-fit:cover;background:#1a1c27;display:block}
+.vinfo{padding:9px 11px}
+.vtitle{font-size:11px;font-weight:500;line-height:1.4;margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vmeta{display:flex;justify-content:space-between;align-items:center}
+.vviews{font-size:10px;color:var(--muted)}
+.vbadge{font-size:9px;padding:2px 6px;border-radius:7px;background:rgba(200,169,110,.1);color:var(--accent);border:1px solid rgba(200,169,110,.18);white-space:nowrap}
+.pgn{display:flex;gap:4px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+.pgbtn{width:30px;height:30px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:var(--rsm);font-size:11px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .12s}
+.pgbtn.active{background:var(--accent);color:#0c0d12;border-color:var(--accent)}
+.pgbtn:hover:not(.active){border-color:var(--accent);color:var(--accent)}
+.wc-box{position:relative;height:195px;overflow:hidden;background:var(--surface);border-radius:var(--r);border:1px solid var(--border)}
+.wc-cvs{width:100%;height:100%;position:relative}
+.wc-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+.mbk{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:300;align-items:center;justify-content:center;padding:18px}
+.mbk.open{display:flex}
+.mdl{background:var(--card);border:1px solid var(--border2);border-radius:var(--r);width:100%;max-width:500px;max-height:85vh;overflow-y:auto;animation:mdi .2s ease}
+@keyframes mdi{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+.mhd{padding:16px 18px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.mtitle{font-family:var(--fd);font-size:15px;line-height:1.4}
+.mclose{background:none;border:none;color:var(--muted);font-size:18px;cursor:pointer;padding:0;line-height:1}
+.mclose:hover{color:var(--text)}
+.mbody{padding:12px 18px 20px}
+.mthumb{width:100%;border-radius:var(--rsm);margin-bottom:11px}
+.mstats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:11px}
+.mstat{text-align:center;padding:9px;background:var(--surface);border-radius:var(--rsm)}
+.mstat-val{font-family:var(--fd);font-size:15px}
+.mstat-lbl{font-size:9px;color:var(--muted);margin-top:2px;text-transform:uppercase;letter-spacing:.06em}
+.mmeta{font-size:11px;color:var(--muted);display:flex;flex-wrap:wrap;gap:7px}
+.sk{background:linear-gradient(90deg,var(--card) 25%,#22242f 50%,var(--card) 75%);background-size:200% 100%;animation:sh 1.4s infinite;border-radius:5px}
+@keyframes sh{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.empty{text-align:center;padding:44px 18px;color:var(--muted);font-size:12px}
+@media(max-width:680px){
+  .sidenav{display:none}.wrap{margin-left:0}
+  .sec{padding:22px 16px}
+  .stat-row{grid-template-columns:repeat(2,1fr)}
+  .stat-val{font-size:20px}
+}
 </style>
 </head>
 <body>
 
-<!-- ── 헤더 ── -->
+<nav class="sidenav">
+  <div class="nav-logo">SVT</div>
+  <button class="nav-btn active" onclick="navTo('sec-overview',this)">&#9632;<span class="nav-tip">개요</span></button>
+  <button class="nav-btn" onclick="navTo('sec-units',this)">&#9670;<span class="nav-tip">유닛</span></button>
+  <button class="nav-btn" onclick="navTo('sec-timeline',this)">&#9711;<span class="nav-tip">타임라인</span></button>
+  <button class="nav-btn" onclick="navTo('sec-going',this)">&#9651;<span class="nav-tip">고잉세븐틴</span></button>
+</nav>
+
+<div class="wrap">
 <header>
-  <div class="logo">SVT Analytics <span>SEVENTEEN YouTube</span></div>
-  <div class="header-right">
+  <div class="h-title">SVT Analytics <span>SEVENTEEN YouTube Dashboard</span></div>
+  <div style="display:flex;align-items:center;gap:10px">
     <div class="live-badge"><div class="live-dot"></div>Live</div>
-    <div class="last-updated" id="last-updated">불러오는 중...</div>
+    <div id="updated" style="font-size:10px;color:var(--muted)">로딩 중...</div>
   </div>
 </header>
 
-<main>
-
-  <!-- ── 필터 바 ── -->
-  <div class="filter-bar">
-    <span class="filter-label">카테고리</span>
-    <select id="filter-category">
-      <option value="">전체</option>
-    </select>
-    <span class="filter-label">기간</span>
-    <input type="date" id="filter-from" placeholder="시작일">
-    <span style="color:var(--muted);font-size:13px">~</span>
-    <input type="date" id="filter-to" placeholder="종료일">
-    <button class="btn" onclick="applyFilter()">적용</button>
-    <button class="btn btn-outline" onclick="resetFilter()">초기화</button>
+<!-- 개요 -->
+<section class="sec" id="sec-overview">
+  <div class="sec-lbl">Overview</div>
+  <div class="sec-title">채널 현황</div>
+  <div class="stat-row" id="stat-row">
+    <div class="stat-card"><div class="stat-lbl">구독자</div><div class="stat-val sk" style="height:24px;width:85px">&nbsp;</div></div>
+    <div class="stat-card"><div class="stat-lbl">총 영상</div><div class="stat-val sk" style="height:24px;width:65px">&nbsp;</div></div>
+    <div class="stat-card"><div class="stat-lbl">총 조회수</div><div class="stat-val sk" style="height:24px;width:85px">&nbsp;</div></div>
+    <div class="stat-card"><div class="stat-lbl">평균 조회수</div><div class="stat-val sk" style="height:24px;width:75px">&nbsp;</div></div>
+    <div class="stat-card"><div class="stat-lbl">최근 업로드</div><div class="stat-val sk" style="height:24px;width:95px">&nbsp;</div></div>
   </div>
+</section>
 
-  <!-- ── 요약 카드 ── -->
-  <div class="stat-grid" id="stat-grid">
-    <div class="stat-card"><div class="stat-label">총 영상</div><div class="stat-value skeleton" style="height:28px;width:80px">&nbsp;</div></div>
-    <div class="stat-card"><div class="stat-label">총 조회수</div><div class="stat-value skeleton" style="height:28px;width:80px">&nbsp;</div></div>
-    <div class="stat-card"><div class="stat-label">평균 조회수</div><div class="stat-value skeleton" style="height:28px;width:80px">&nbsp;</div></div>
-    <div class="stat-card"><div class="stat-label">평균 좋아요율</div><div class="stat-value skeleton" style="height:28px;width:80px">&nbsp;</div></div>
-    <div class="stat-card"><div class="stat-label">구독자</div><div class="stat-value skeleton" style="height:28px;width:80px">&nbsp;</div></div>
-  </div>
-
-  <!-- ── 차트 섹션 ── -->
-  <div class="chart-grid">
-    <div class="chart-card col-8" style="animation-delay:0.1s">
-      <div class="card-title">월별 조회수 추이</div>
-      <div class="chart-wrap" style="height:220px"><canvas id="chart-monthly"></canvas></div>
-    </div>
-    <div class="chart-card col-4" style="animation-delay:0.15s">
-      <div class="card-title">카테고리별 비율</div>
-      <div class="chart-wrap" style="height:220px"><canvas id="chart-donut"></canvas></div>
-    </div>
-    <div class="chart-card col-12" style="animation-delay:0.2s">
-      <div class="card-title">카테고리별 평균 조회수</div>
-      <div class="chart-wrap" style="height:180px"><canvas id="chart-category"></canvas></div>
+<!-- 유닛 -->
+<section class="sec" id="sec-units">
+  <div class="sec-lbl">Units</div>
+  <div class="sec-title">유닛별 활동</div>
+  <div class="hscroll">
+    <div class="unit-row" id="unit-row">
+      <div class="unit-card"><div class="sk" style="height:240px"></div></div>
+      <div class="unit-card"><div class="sk" style="height:240px"></div></div>
+      <div class="unit-card"><div class="sk" style="height:240px"></div></div>
     </div>
   </div>
+</section>
 
-  <!-- ── 급상승 배너 ── -->
-  <div id="trending-section" style="margin-bottom:28px;display:none">
-    <div class="section-header">
-      <div class="section-title" style="font-size:15px;color:var(--danger)">&#9650; 급상승 영상</div>
-    </div>
-    <div id="trending-list" style="display:flex;gap:10px;flex-wrap:wrap"></div>
+<!-- 타임라인 -->
+<section class="sec" id="sec-timeline">
+  <div class="sec-lbl">Timeline</div>
+  <div class="sec-title">전체 활동 타임라인</div>
+  <div class="tl-btns">
+    <button class="tl-btn active" onclick="setTlFilter('all',this)">전체</button>
+    <button class="tl-btn" onclick="setTlFilter('comeback',this)">한국 컴백</button>
+    <button class="tl-btn" onclick="setTlFilter('japan',this)">일본 앨범</button>
   </div>
+  <div class="tl-scroll" id="tl-scroll">
+    <div class="sk" style="height:175px;border-radius:var(--r);min-width:800px"></div>
+  </div>
+  <div class="tl-legend">
+    <div class="tl-legend-item"><div class="tl-legend-dot" style="background:#c8a96e"></div>한국 컴백</div>
+    <div class="tl-legend-item"><div class="tl-legend-dot" style="background:#e87ca0"></div>일본 앨범</div>
+  </div>
+</section>
 
-  <!-- ── 영상 목록 ── -->
-  <div class="video-section">
-    <div class="section-header">
-      <div class="section-title">영상 목록</div>
-      <div class="sort-row">
-        <button class="sort-btn active" onclick="setSort('view_count',this)">조회수</button>
-        <button class="sort-btn" onclick="setSort('like_count',this)">좋아요</button>
-        <button class="sort-btn" onclick="setSort('published_date',this)">최신순</button>
-        <button class="sort-btn" onclick="setSort('comment_count',this)">댓글</button>
+<!-- 고잉세븐틴 -->
+<section class="sec" id="sec-going">
+  <div class="sec-lbl">Going Seventeen</div>
+  <div class="sec-title">고잉세븐틴</div>
+  <div class="going-grid">
+    <div class="going-top">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:9px;flex-wrap:wrap;gap:7px">
+        <div style="font-size:12px;font-weight:500">댓글 워드클라우드</div>
+        <div style="display:flex;gap:7px;align-items:center">
+          <span id="wc-meta" style="font-size:10px;color:var(--muted)"></span>
+          <select id="wc-sel" style="font-size:11px;padding:3px 7px;max-width:190px">
+            <option value="all">전체 합산</option>
+          </select>
+        </div>
+      </div>
+      <div class="wc-box" id="wc-box">
+        <div class="wc-loading" id="wc-loading">워드클라우드 로딩 중...</div>
+        <div class="wc-cvs" id="wc-cvs"></div>
       </div>
     </div>
-    <div class="video-grid" id="video-grid"></div>
-    <div class="pagination" id="pagination"></div>
-  </div>
-
-</main>
-
-<!-- ── 모달 ── -->
-<div class="modal-backdrop" id="modal" onclick="closeModal(event)">
-  <div class="modal">
-    <div class="modal-header">
-      <div class="modal-title" id="modal-title"></div>
-      <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">&#x2715;</button>
+    <div class="going-bottom">
+      <div class="filter-bar">
+        <span class="flbl">기간</span>
+        <input type="date" id="f-from">
+        <span style="color:var(--muted);font-size:12px">~</span>
+        <input type="date" id="f-to">
+        <button class="btn" onclick="applyFilter()">적용</button>
+        <button class="btn btn-g" onclick="resetFilter()">초기화</button>
+      </div>
+      <div class="sort-row">
+        <button class="tl-btn active" onclick="setGSort('published_date',this)">최신순</button>
+        <button class="tl-btn" onclick="setGSort('view_count',this)">조회수</button>
+        <button class="tl-btn" onclick="setGSort('like_count',this)">좋아요</button>
+      </div>
+      <div class="vgrid" id="going-grid"></div>
+      <div class="pgn" id="going-pgn"></div>
     </div>
-    <div class="modal-body" id="modal-body"></div>
+  </div>
+</section>
+</div>
+
+<div class="mbk" id="modal" onclick="closeModal(event)">
+  <div class="mdl">
+    <div class="mhd">
+      <div class="mtitle" id="modal-title"></div>
+      <button class="mclose" onclick="document.getElementById('modal').classList.remove('open')">&#x2715;</button>
+    </div>
+    <div class="mbody" id="modal-body"></div>
   </div>
 </div>
 
 <script>
-// ── 설정 ──────────────────────────────────────────
-const API = "http://localhost:8000";
-const CHART_COLORS = {
-  "MV":       "#c8a96e",
-  "퍼포먼스": "#6e9dc8",
-  "고잉세븐틴":"#6ec88a",
-  "비하인드": "#c86e9d",
-  "티저":     "#e8705a",
-  "라이브":   "#9d6ec8",
-  "인터뷰":   "#c8c46e",
-  "커버":     "#6ec8c4",
-  "기타":     "#5a5a6a",
-};
+const API="http://localhost:8000";
+const UNIT_COLORS={bss:"#7f0fc0",jxw:"#9d6ec8",hxw:"#6ec88a",cxm:"#c86e9d",dxs:"#c8c46e"};
+const WC_COLORS=["#c8a96e","#6e9dc8","#6ec88a","#c86e9d","#e8705a","#7f0fc0","#9d6ec8","#c8c46e","#6ec8c4"];
 
-let state = {
-  category: "",
-  dateFrom: "",
-  dateTo:   "",
-  sortBy:   "view_count",
-  page:     0,
-  limit:    24,
-};
+// ── 일본 앨범 데이터 (하드코딩) ─────────────────────
+const JAPAN_ALBUMS = [
+  {date:"2016-08-31", title:"Boys Be (JP)",     sub_type:"JP 미니"},
+  {date:"2017-06-07", title:"Al1 (JP)",          sub_type:"JP 미니"},
+  {date:"2018-01-17", title:"We Make You (JP)",  sub_type:"JP 미니"},
+  {date:"2018-08-29", title:"You Make My Dawn (JP)", sub_type:"JP 미니"},
+  {date:"2019-04-03", title:"Always Yours (JP)", sub_type:"JP 미니"},
+  {date:"2020-01-22", title:"Heng:garæ (JP)",    sub_type:"JP 정규"},
+  {date:"2021-09-29", title:"Power of Love (JP)", sub_type:"JP 미니"},
+  {date:"2022-09-07", title:"Dream (JP)",         sub_type:"JP 정규"},
+  {date:"2023-09-06", title:"Spill The Feels (JP)", sub_type:"JP 미니"},
+  {date:"2024-09-04", title:"Eternally (JP)",     sub_type:"JP 정규"},
+];
 
-let charts = {};
+// ── 한국 컴백 데이터 ─────────────────────────────────
+const KR_COMEBACKS = [
+  {date:"2015-05-29", title:"17 CARAT",          sub_type:"미니"},
+  {date:"2015-10-19", title:"Boys Be",            sub_type:"미니"},
+  {date:"2016-04-25", title:"Al1",                sub_type:"미니"},
+  {date:"2016-10-04", title:"Going Seventeen",    sub_type:"미니"},
+  {date:"2017-05-22", title:"You Make My Dawn",   sub_type:"미니"},
+  {date:"2018-04-09", title:"You Make My Dawn",   sub_type:"미니"},
+  {date:"2019-01-21", title:"You Make My Dawn",   sub_type:"미니"},
+  {date:"2019-09-16", title:"An Ode",             sub_type:"정규"},
+  {date:"2020-06-22", title:"Heng:garæ",          sub_type:"미니"},
+  {date:"2021-04-05", title:"Semicolon",          sub_type:"스페셜"},
+  {date:"2021-06-18", title:"Your Choice",        sub_type:"미니"},
+  {date:"2021-10-22", title:"Attacca",            sub_type:"미니"},
+  {date:"2022-05-27", title:"Face the Sun",       sub_type:"정규"},
+  {date:"2022-10-24", title:"Sector 17",          sub_type:"리패키지"},
+  {date:"2023-04-24", title:"FML",                sub_type:"정규"},
+  {date:"2023-10-23", title:"SPILL THE FEELS",    sub_type:"미니"},
+  {date:"2024-04-29", title:"MAESTRO",            sub_type:"정규"},
+  {date:"2024-10-14", title:"SPILL THE FEELS",    sub_type:"미니"},
+];
 
-// ── 숫자 포맷 ─────────────────────────────────────
-function fmt(n) {
-  if (!n) return "0";
-  if (n >= 1e8) return (n/1e8).toFixed(1) + "억";
-  if (n >= 1e4) return (n/1e4).toFixed(1) + "만";
-  return n.toLocaleString();
+let gState={dateFrom:"",dateTo:"",sortBy:"published_date",page:0,limit:16};
+let tlFilter="all";
+let wcData={all:[],perVideo:[]};
+
+const fmt=n=>!n?"0":n>=1e8?(n/1e8).toFixed(1)+"억":n>=1e4?(n/1e4).toFixed(1)+"만":n.toLocaleString();
+
+async function api(path){
+  try{const r=await fetch(API+path);if(!r.ok)throw new Error(r.status);return await r.json();}
+  catch(e){console.error("[API]",path,e);return null;}
 }
 
-function fmtPct(n) { return n ? n.toFixed(2) + "%" : "0%"; }
+function navTo(id,btn){
+  document.getElementById(id)?.scrollIntoView({behavior:"smooth"});
+  document.querySelectorAll(".nav-btn").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+}
 
-// ── API 호출 ──────────────────────────────────────
-async function api(path) {
-  try {
-    const res = await fetch(API + path);
-    if (!res.ok) throw new Error(res.status);
-    return await res.json();
-  } catch(e) {
-    console.error("[API 오류]", path, e);
-    return null;
+async function init(){
+  await Promise.all([loadSummary(),loadUnits(),loadGoingVideos(),loadWordcloud()]);
+  renderTimeline("all");
+}
+
+async function loadSummary(){
+  const d=await api("/stats/summary");
+  if(!d)return;
+  document.getElementById("stat-row").innerHTML=`
+    <div class="stat-card" style="animation-delay:.05s"><div class="stat-lbl">구독자</div><div class="stat-val" style="color:var(--accent)">${fmt(d.subscriber_count)}</div></div>
+    <div class="stat-card" style="animation-delay:.1s"><div class="stat-lbl">총 영상</div><div class="stat-val">${fmt(d.total_videos)}</div></div>
+    <div class="stat-card" style="animation-delay:.15s"><div class="stat-lbl">총 조회수</div><div class="stat-val">${fmt(d.total_views)}</div></div>
+    <div class="stat-card" style="animation-delay:.2s"><div class="stat-lbl">평균 조회수</div><div class="stat-val">${fmt(Math.round(d.avg_views||0))}</div></div>
+    <div class="stat-card" style="animation-delay:.25s"><div class="stat-lbl">최근 업로드</div><div class="stat-val" style="font-size:15px">${d.latest_video_date||"-"}</div></div>
+  `;
+  document.getElementById("updated").textContent=d.collected_at?"업데이트: "+d.collected_at.slice(0,16).replace("T"," "):"";
+}
+
+async function loadUnits(){
+  const units=await api("/units/");
+  if(!units)return;
+  const row=document.getElementById("unit-row");
+  row.innerHTML="";
+  for(let i=0;i<units.length;i++){
+    const u=units[i];
+    const color=UNIT_COLORS[u.unit_id]||"#888";
+    const [videos,stats]=await Promise.all([
+      api(`/units/${u.unit_id}/videos?limit=3&sort_by=view_count`),
+      api(`/units/${u.unit_id}/stats`),
+    ]);
+    const yearly=stats?.yearly||[];
+    const peakYear=yearly.length?yearly.reduce((a,b)=>a.total_views>b.total_views?a:b):null;
+    const card=document.createElement("div");
+    card.className="unit-card";
+    card.style.animationDelay=`${i*.06}s`;
+    card.style.borderTop=`3px solid ${color}`;
+    card.innerHTML=`
+      <div class="uc-head">
+        <div class="uc-badge ${u.type==='official'?'uc-badge-off':'uc-badge-sub'}">${u.type==='official'?'공식 유닛':'서브 유닛'}</div>
+        <div class="uc-name">${u.name_ko}</div>
+        <div class="uc-name-en">${u.name_en}</div>
+        <div class="uc-members">${(u.members||[]).map(m=>`<span class="member-chip">${m}</span>`).join("")}</div>
+        <div class="uc-desc">${u.description}</div>
+      </div>
+      <div class="uc-body">
+        <div class="uc-stats">
+          <div class="uc-stat"><div class="uc-stat-val" style="color:${color}">${u.video_count||0}</div><div class="uc-stat-lbl">영상 수</div></div>
+          <div class="uc-stat"><div class="uc-stat-val">${fmt(u.total_views||0)}</div><div class="uc-stat-lbl">총 조회수</div></div>
+          <div class="uc-stat"><div class="uc-stat-val">${peakYear?peakYear.year:"-"}</div><div class="uc-stat-lbl">최고 연도</div></div>
+        </div>
+        <div style="font-size:10px;color:var(--muted);margin-bottom:7px;letter-spacing:.07em;text-transform:uppercase">주요 영상</div>
+        <div class="uc-vids">
+          ${(videos||[]).map(v=>`
+            <div class="uc-vid" onclick="openModal('${v.video_id}')">
+              ${v.thumbnail?`<img class="uc-thumb" src="${v.thumbnail}" alt="" loading="lazy" onerror="this.style.display='none'">`:
+                `<div class="uc-thumb"></div>`}
+              <div style="flex:1;overflow:hidden">
+                <div class="uc-vid-title">${v.title}</div>
+                <div class="uc-vid-views">${fmt(v.view_count)}회 · ${v.published_date}</div>
+              </div>
+            </div>`).join("")}
+          ${(!videos||!videos.length)?`<div style="font-size:11px;color:var(--muted);text-align:center;padding:10px">관련 영상 없음</div>`:""}
+        </div>
+        ${u.debut?`<div class="uc-debut">데뷔: ${u.debut}</div>`:""}
+      </div>
+    `;
+    row.appendChild(card);
   }
 }
 
-// ── 초기 로드 ─────────────────────────────────────
-async function init() {
-  await Promise.all([loadSummary(), loadCategories(), loadCharts(), loadTrending()]);
-  await loadVideos();
+// ── 타임라인: 한국 컴백 + 일본 앨범 (프론트에서 직접 렌더링) ──
+function setTlFilter(f,btn){
+  tlFilter=f;
+  document.querySelectorAll(".tl-btn").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+  renderTimeline(f);
 }
 
-// ── 요약 통계 ─────────────────────────────────────
-async function loadSummary() {
-  const d = await api("/stats/summary");
-  if (!d) return;
-  document.getElementById("stat-grid").innerHTML = `
-    <div class="stat-card">
-      <div class="stat-label">총 영상</div>
-      <div class="stat-value stat-accent">${fmt(d.total_videos)}</div>
-      <div class="stat-sub">최근 ${d.latest_video_date || "-"}</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-label">총 조회수</div>
-      <div class="stat-value">${fmt(d.total_views)}</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-label">평균 조회수</div>
-      <div class="stat-value">${fmt(Math.round(d.avg_views))}</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-label">평균 좋아요율</div>
-      <div class="stat-value">${fmtPct(d.avg_like_rate)}</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-label">구독자</div>
-      <div class="stat-value">${fmt(d.subscriber_count)}</div>
-    </div>
-  `;
-  document.getElementById("last-updated").textContent =
-    "업데이트: " + (d.collected_at ? d.collected_at.slice(0,16).replace("T"," ") : "-");
+function renderTimeline(filter){
+  const wrap=document.getElementById("tl-scroll");
+
+  // 필터에 따라 데이터 선택
+  let events=[];
+  if(filter==="all"||filter==="comeback"){
+    KR_COMEBACKS.forEach(c=>events.push({...c, event_type:"comeback"}));
+  }
+  if(filter==="all"||filter==="japan"){
+    JAPAN_ALBUMS.forEach(j=>events.push({...j, event_type:"japan"}));
+  }
+  events.sort((a,b)=>a.date.localeCompare(b.date));
+
+  if(!events.length){wrap.innerHTML=`<div class="empty">데이터 없음</div>`;return;}
+
+  const years=[...new Set(events.map(e=>e.date.slice(0,4)))].sort();
+  const minY=parseInt(years[0]),maxY=parseInt(years[years.length-1]);
+  const totalYears=maxY-minY+1;
+  const W=Math.max(900,totalYears*115);
+  const H=185,PAD=45,TRACK=95,usable=W-PAD*2;
+
+  const dateToX=ds=>{
+    const d=new Date(ds);
+    return PAD+((d.getFullYear()+d.getMonth()/12-minY)/totalYears)*usable;
+  };
+
+  let svg=`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg" style="display:block;min-width:${W}px">`;
+
+  // 연도 눈금
+  for(let y=minY;y<=maxY;y++){
+    const x=PAD+((y-minY)/totalYears)*usable;
+    svg+=`<line x1="${x}" y1="30" x2="${x}" y2="${H-22}" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>`;
+    svg+=`<text x="${x+3}" y="22" font-size="10" fill="#6a6870" font-family="DM Sans,sans-serif">${y}</text>`;
+  }
+
+  // 메인 트랙
+  svg+=`<line x1="${PAD}" y1="${TRACK}" x2="${W-PAD}" y2="${TRACK}" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>`;
+
+  // 일본 앨범: 세로 점선 stroke
+  if(filter==="all"||filter==="japan"){
+    JAPAN_ALBUMS.forEach(j=>{
+      const x=dateToX(j.date);
+      svg+=`<line x1="${x}" y1="32" x2="${x}" y2="${H-22}" stroke="#e87ca0" stroke-width="1" stroke-dasharray="3 3" opacity=".5"/>`;
+    });
+  }
+
+  // 이벤트 점 + 레이블
+  const krEvents=events.filter(e=>e.event_type==="comeback");
+  const jpEvents=events.filter(e=>e.event_type==="japan");
+
+  // 한국 컴백 — 위쪽 레이블 (홀/짝 교대)
+  krEvents.forEach((ev,i)=>{
+    const x=dateToX(ev.date);
+    const above=i%2===0;
+    const textY=above?TRACK-22:TRACK+34;
+    const ly1=above?TRACK-7:TRACK+7;
+    const ly2=above?TRACK-14:TRACK+26;
+    const lbl=ev.title.length>13?ev.title.slice(0,12)+"…":ev.title;
+    svg+=`<circle cx="${x}" cy="${TRACK}" r="7" fill="#c8a96e" opacity=".9"/>`;
+    svg+=`<line x1="${x}" y1="${ly1}" x2="${x}" y2="${ly2}" stroke="#c8a96e" stroke-width=".8" opacity=".4"/>`;
+    svg+=`<text x="${x}" y="${textY}" font-size="9.5" fill="#c8a96e" font-family="DM Sans,sans-serif" text-anchor="middle">${lbl}</text>`;
+    if(ev.sub_type){
+      const sy=above?textY-10:textY+10;
+      svg+=`<text x="${x}" y="${sy}" font-size="8" fill="#6a6870" font-family="DM Sans,sans-serif" text-anchor="middle">${ev.sub_type}</text>`;
+    }
+  });
+
+  // 일본 앨범 — 트랙 위 작은 다이아몬드
+  jpEvents.forEach((ev,i)=>{
+    const x=dateToX(ev.date);
+    const size=5;
+    svg+=`<polygon points="${x},${TRACK-size} ${x+size},${TRACK} ${x},${TRACK+size} ${x-size},${TRACK}" fill="#e87ca0" opacity=".85"/>`;
+    // 레이블은 트랙 아래 고정 (겹침 방지)
+    const textY=TRACK+22+(i%2)*12;
+    const lbl=ev.title.length>12?ev.title.slice(0,11)+"…":ev.title;
+    svg+=`<text x="${x}" y="${textY}" font-size="8.5" fill="#e87ca0" font-family="DM Sans,sans-serif" text-anchor="middle" opacity=".85">${lbl}</text>`;
+  });
+
+  svg+=`</svg>`;
+  wrap.innerHTML=svg;
 }
 
-// ── 카테고리 드롭다운 ─────────────────────────────
-async function loadCategories() {
-  const d = await api("/videos/categories");
-  if (!d) return;
-  const sel = document.getElementById("filter-category");
-  d.forEach(c => {
-    const opt = document.createElement("option");
-    opt.value = c.video_type;
-    opt.textContent = `${c.video_type} (${c.count})`;
+async function loadGoingVideos(){
+  const grid=document.getElementById("going-grid");
+  grid.innerHTML=Array(8).fill(`
+    <div class="vcard">
+      <div class="sk" style="aspect-ratio:16/9"></div>
+      <div class="vinfo"><div class="sk" style="height:11px;margin-bottom:4px"></div><div class="sk" style="height:10px;width:50%"></div></div>
+    </div>`).join("");
+  let url=`/videos/?category=고잉세븐틴&sort_by=${gState.sortBy}&order=desc&limit=${gState.limit}&offset=${gState.page*gState.limit}`;
+  if(gState.dateFrom)url+=`&date_from=${gState.dateFrom}`;
+  if(gState.dateTo)  url+=`&date_to=${gState.dateTo}`;
+  const d=await api(url);
+  if(!d){grid.innerHTML=`<div class="empty">데이터 없음 — 백엔드 서버 확인</div>`;return;}
+  if(!d.data.length){grid.innerHTML=`<div class="empty">해당 조건의 영상이 없습니다.</div>`;renderGoingPgn(0);return;}
+  grid.innerHTML=d.data.map((v,i)=>`
+    <div class="vcard" style="animation-delay:${i*.022}s" onclick="openModal('${v.video_id}')">
+      ${v.thumbnail?`<img class="vthumb" src="${v.thumbnail}" alt="" loading="lazy" onerror="this.style.display='none'">`:
+        `<div class="vthumb"></div>`}
+      <div class="vinfo">
+        <div class="vtitle">${v.title}</div>
+        <div class="vmeta"><span class="vviews">${fmt(v.view_count)}회</span><span class="vbadge">${v.published_date}</span></div>
+      </div>
+    </div>`).join("");
+  renderGoingPgn(d.total);
+}
+
+function renderGoingPgn(total){
+  const pages=Math.ceil(total/gState.limit);
+  const pg=document.getElementById("going-pgn");
+  if(pages<=1){pg.innerHTML="";return;}
+  pg.innerHTML=Array.from({length:Math.min(pages,8)},(_,i)=>
+    `<button class="pgbtn ${i===gState.page?"active":""}" onclick="goPage(${i})">${i+1}</button>`).join("");
+}
+
+function goPage(n){gState.page=n;loadGoingVideos();document.getElementById("sec-going").scrollIntoView({behavior:"smooth"});}
+function applyFilter(){gState.dateFrom=document.getElementById("f-from").value;gState.dateTo=document.getElementById("f-to").value;gState.page=0;loadGoingVideos();}
+function resetFilter(){gState.dateFrom="";gState.dateTo="";gState.page=0;document.getElementById("f-from").value="";document.getElementById("f-to").value="";loadGoingVideos();}
+function setGSort(col,btn){gState.sortBy=col;gState.page=0;document.querySelectorAll(".sort-row .tl-btn").forEach(b=>b.classList.remove("active"));btn.classList.add("active");loadGoingVideos();}
+
+async function loadWordcloud(){
+  const[allRes,perVideoRes]=await Promise.all([api("/wordcloud/all"),api("/wordcloud/per-video?limit=50")]);
+  if(!allRes||allRes.error){
+    document.getElementById("wc-loading").textContent="데이터 없음 — collect_going17_comments.py 먼저 실행하세요";
+    return;
+  }
+  wcData.all=allRes.words||[];
+  wcData.perVideo=Array.isArray(perVideoRes)?perVideoRes:[];
+  document.getElementById("wc-meta").textContent=`댓글 ${(allRes.total_comments||0).toLocaleString()}개`;
+  const sel=document.getElementById("wc-sel");
+  wcData.perVideo.forEach(v=>{
+    const opt=document.createElement("option");
+    opt.value=v.video_id;
+    opt.textContent=`${v.published_date} — ${v.video_title.slice(0,28)}`;
     sel.appendChild(opt);
+  });
+  sel.addEventListener("change",()=>{
+    if(sel.value==="all")renderWC(wcData.all);
+    else{const f=wcData.perVideo.find(v=>v.video_id===sel.value);renderWC(f?f.words:[]);}
+  });
+  renderWC(wcData.all);
+}
+
+function renderWC(words){
+  const loading=document.getElementById("wc-loading");
+  const cvs=document.getElementById("wc-cvs");
+  loading.style.display="none";
+  cvs.innerHTML="";
+  if(!words||!words.length){loading.style.display="flex";loading.textContent="단어 데이터 없음";return;}
+  const box=document.getElementById("wc-box");
+  const W=box.clientWidth||500,H=box.clientHeight||195;
+  const placed=[];
+  const scale=v=>Math.round(11+(v/100)*27);
+  function overlaps(nx,ny,nw,nh){return placed.some(p=>nx<p.x+p.w+6&&nx+nw+6>p.x&&ny<p.y+p.h+3&&ny+nh+3>p.y);}
+  function findPos(wPx,hPx){
+    const cx=W/2,cy=H/2;
+    for(let r=0;r<Math.max(W,H);r+=3)
+      for(let a=0;a<Math.PI*2;a+=.13){
+        const x=cx+r*Math.cos(a)-wPx/2,y=cy+r*Math.sin(a)-hPx/2;
+        if(x<2||y<2||x+wPx>W-2||y+hPx>H-2)continue;
+        if(!overlaps(x,y,wPx,hPx))return{x,y};
+      }
+    return null;
+  }
+  words.slice(0,65).forEach((word,i)=>{
+    const fs=scale(word.normalized);
+    const color=WC_COLORS[i%WC_COLORS.length];
+    const tmp=document.createElement("span");
+    tmp.style.cssText=`position:absolute;visibility:hidden;font-size:${fs}px;font-weight:${fs>23?500:400};white-space:nowrap`;
+    tmp.textContent=word.text;
+    cvs.appendChild(tmp);
+    const wPx=tmp.offsetWidth+5,hPx=tmp.offsetHeight;
+    cvs.removeChild(tmp);
+    const pos=findPos(wPx,hPx);
+    if(!pos)return;
+    placed.push({x:pos.x,y:pos.y,w:wPx,h:hPx});
+    const el=document.createElement("span");
+    el.textContent=word.text;
+    el.title=`${word.text}: ${word.value}회`;
+    el.style.cssText=`position:absolute;left:${pos.x}px;top:${pos.y}px;font-size:${fs}px;font-weight:${fs>23?500:400};color:${color};white-space:nowrap;opacity:0;transition:opacity .12s,transform .12s;cursor:default`;
+    el.addEventListener("mouseenter",()=>{el.style.opacity=".5";el.style.transform="scale(1.1)";});
+    el.addEventListener("mouseleave",()=>{el.style.opacity="1";el.style.transform="scale(1)";});
+    cvs.appendChild(el);
+    setTimeout(()=>{el.style.opacity="1";},i*9);
   });
 }
 
-// ── 차트 ──────────────────────────────────────────
-async function loadCharts() {
-  const [monthly, catStats] = await Promise.all([
-    api("/stats/monthly" + (state.category ? `?category=${state.category}` : "")),
-    api("/stats/by-category" +
-      (state.dateFrom || state.dateTo
-        ? `?date_from=${state.dateFrom}&date_to=${state.dateTo}` : "")),
-  ]);
-
-  const chartDefaults = {
-    color: "#e8e4da",
-    font: { family: "'DM Sans', sans-serif", size: 11 },
-  };
-  Chart.defaults.color = chartDefaults.color;
-  Chart.defaults.font  = chartDefaults.font;
-
-  // 월별 라인차트
-  if (monthly && monthly.length) {
-    if (charts.monthly) charts.monthly.destroy();
-    charts.monthly = new Chart(document.getElementById("chart-monthly"), {
-      type: "bar",
-      data: {
-        labels: monthly.map(m => m.year_month),
-        datasets: [{
-          label: "총 조회수",
-          data: monthly.map(m => m.total_views),
-          backgroundColor: "rgba(200,169,110,0.25)",
-          borderColor: "#c8a96e",
-          borderWidth: 1.5,
-          borderRadius: 4,
-          yAxisID: "y",
-        },{
-          label: "업로드 수",
-          data: monthly.map(m => m.upload_count),
-          type: "line",
-          borderColor: "#6e9dc8",
-          backgroundColor: "transparent",
-          borderWidth: 2,
-          pointRadius: 3,
-          pointBackgroundColor: "#6e9dc8",
-          tension: 0.3,
-          yAxisID: "y2",
-        }]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { position: "top", labels: { boxWidth: 12 } } },
-        scales: {
-          x: { grid: { color: "rgba(255,255,255,0.04)" }, ticks: { maxTicksLimit: 12 } },
-          y: { grid: { color: "rgba(255,255,255,0.04)" }, position: "left" },
-          y2: { grid: { display: false }, position: "right" },
-        }
-      }
-    });
-  }
-
-  // 도넛차트
-  if (catStats && catStats.length) {
-    if (charts.donut) charts.donut.destroy();
-    charts.donut = new Chart(document.getElementById("chart-donut"), {
-      type: "doughnut",
-      data: {
-        labels: catStats.map(c => c.video_type),
-        datasets: [{
-          data: catStats.map(c => c.count),
-          backgroundColor: catStats.map(c => CHART_COLORS[c.video_type] || "#5a5a6a"),
-          borderWidth: 0,
-          hoverOffset: 6,
-        }]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        cutout: "65%",
-        plugins: { legend: { position: "right", labels: { boxWidth: 10, padding: 8, font:{size:11} } } }
-      }
-    });
-
-    // 카테고리별 평균 조회수
-    if (charts.category) charts.category.destroy();
-    const sorted = [...catStats].sort((a,b) => b.avg_views - a.avg_views);
-    charts.category = new Chart(document.getElementById("chart-category"), {
-      type: "bar",
-      data: {
-        labels: sorted.map(c => c.video_type),
-        datasets: [{
-          data: sorted.map(c => Math.round(c.avg_views)),
-          backgroundColor: sorted.map(c => CHART_COLORS[c.video_type] || "#5a5a6a"),
-          borderRadius: 4,
-          borderWidth: 0,
-        }]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false, indexAxis: "y",
-        plugins: { legend: { display: false } },
-        scales: {
-          x: { grid: { color: "rgba(255,255,255,0.04)" } },
-          y: { grid: { display: false } }
-        }
-      }
-    });
-  }
-}
-
-// ── 급상승 ─────────────────────────────────────────
-async function loadTrending() {
-  const d = await api("/stats/trending?top_n=10&spike_threshold=200");
-  if (!d || !d.length) return;
-  const spikes = d.filter(v => v.is_spike);
-  if (!spikes.length) return;
-
-  document.getElementById("trending-section").style.display = "block";
-  document.getElementById("trending-list").innerHTML = spikes.map(v => `
-    <div class="stat-card" style="flex:0 0 auto;max-width:200px;cursor:pointer" onclick="openModal('${v.video_id}')">
-      <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px">
-        <span class="spike-badge">+${Math.round(v.growth_rate)}%</span>
-        <span class="video-badge">${v.video_type}</span>
-      </div>
-      <div style="font-size:12px;font-weight:500;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${v.title}</div>
+async function openModal(videoId){
+  document.getElementById("modal").classList.add("open");
+  document.getElementById("modal-title").textContent="불러오는 중...";
+  document.getElementById("modal-body").innerHTML=`<div class="sk" style="height:140px;border-radius:var(--rsm);margin-bottom:11px"></div>`;
+  const d=await api(`/videos/${videoId}`);
+  if(!d){document.getElementById("modal-body").innerHTML=`<div class="empty">상세 정보 없음</div>`;return;}
+  document.getElementById("modal-title").textContent=d.title;
+  const lr=d.view_count?((d.like_count/d.view_count)*100).toFixed(2):"0";
+  document.getElementById("modal-body").innerHTML=`
+    ${d.thumbnail?`<img class="mthumb" src="${d.thumbnail}" alt="">`:""}
+    <div class="mstats">
+      <div class="mstat"><div class="mstat-val">${fmt(d.view_count)}</div><div class="mstat-lbl">조회수</div></div>
+      <div class="mstat"><div class="mstat-val">${fmt(d.like_count)}</div><div class="mstat-lbl">좋아요</div></div>
+      <div class="mstat"><div class="mstat-val">${lr}%</div><div class="mstat-lbl">좋아요율</div></div>
     </div>
-  `).join("");
-}
-
-// ── 영상 목록 ─────────────────────────────────────
-async function loadVideos() {
-  const grid = document.getElementById("video-grid");
-  grid.innerHTML = Array(8).fill(`
-    <div class="video-card">
-      <div class="skeleton" style="aspect-ratio:16/9"></div>
-      <div class="video-info">
-        <div class="skeleton" style="height:14px;margin-bottom:6px"></div>
-        <div class="skeleton" style="height:12px;width:60%"></div>
-      </div>
-    </div>
-  `).join("");
-
-  let url = `/videos/?sort_by=${state.sortBy}&order=desc&limit=${state.limit}&offset=${state.page * state.limit}`;
-  if (state.category) url += `&category=${state.category}`;
-  if (state.dateFrom)  url += `&date_from=${state.dateFrom}`;
-  if (state.dateTo)    url += `&date_to=${state.dateTo}`;
-
-  const d = await api(url);
-  if (!d) { grid.innerHTML = '<div class="empty">데이터를 불러올 수 없습니다.<br>FastAPI 서버가 실행 중인지 확인해주세요.</div>'; return; }
-
-  if (!d.data.length) {
-    grid.innerHTML = '<div class="empty">해당 조건에 맞는 영상이 없습니다.</div>';
-    renderPagination(0);
-    return;
-  }
-
-  grid.innerHTML = d.data.map((v, i) => `
-    <div class="video-card" style="animation-delay:${i*0.03}s" onclick="openModal('${v.video_id}')">
-      ${v.thumbnail
-        ? `<img class="video-thumb" src="${v.thumbnail}" alt="${v.title}" loading="lazy" onerror="this.style.display='none'">`
-        : `<div class="video-thumb" style="background:#1e2030;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px">썸네일 없음</div>`}
-      <div class="video-info">
-        <div class="video-title">${v.title}</div>
-        <div class="video-meta">
-          <span class="video-views">${fmt(v.view_count)} 회</span>
-          <span class="video-badge">${v.video_type}</span>
-        </div>
-      </div>
-    </div>
-  `).join("");
-
-  renderPagination(d.total);
-}
-
-// ── 페이지네이션 ──────────────────────────────────
-function renderPagination(total) {
-  const totalPages = Math.ceil(total / state.limit);
-  const pg = document.getElementById("pagination");
-  if (totalPages <= 1) { pg.innerHTML = ""; return; }
-
-  let html = "";
-  for (let i = 0; i < Math.min(totalPages, 10); i++) {
-    html += `<button class="page-btn ${i === state.page ? 'active' : ''}" onclick="goPage(${i})">${i+1}</button>`;
-  }
-  pg.innerHTML = html;
-}
-
-function goPage(n) { state.page = n; loadVideos(); window.scrollTo({top:0,behavior:"smooth"}); }
-
-// ── 필터/정렬 ─────────────────────────────────────
-function applyFilter() {
-  state.category = document.getElementById("filter-category").value;
-  state.dateFrom  = document.getElementById("filter-from").value;
-  state.dateTo    = document.getElementById("filter-to").value;
-  state.page = 0;
-  loadVideos();
-  loadCharts();
-}
-
-function resetFilter() {
-  state.category = "";
-  state.dateFrom = "";
-  state.dateTo   = "";
-  state.page     = 0;
-  document.getElementById("filter-category").value = "";
-  document.getElementById("filter-from").value = "";
-  document.getElementById("filter-to").value   = "";
-  loadVideos();
-  loadCharts();
-}
-
-function setSort(col, btn) {
-  state.sortBy = col;
-  state.page   = 0;
-  document.querySelectorAll(".sort-btn").forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
-  loadVideos();
-}
-
-// ── 영상 모달 ─────────────────────────────────────
-async function openModal(videoId) {
-  const modal = document.getElementById("modal");
-  modal.classList.add("open");
-  document.getElementById("modal-title").textContent = "불러오는 중...";
-  document.getElementById("modal-body").innerHTML = '<div class="skeleton" style="height:160px;border-radius:8px;margin-bottom:14px"></div>';
-
-  const d = await api(`/videos/${videoId}`);
-  if (!d) {
-    document.getElementById("modal-body").innerHTML = '<div class="empty">상세 정보를 불러올 수 없습니다.</div>';
-    return;
-  }
-
-  document.getElementById("modal-title").textContent = d.title;
-  const likeRate = d.view_count ? ((d.like_count / d.view_count) * 100).toFixed(2) : "0";
-
-  document.getElementById("modal-body").innerHTML = `
-    ${d.thumbnail ? `<img class="modal-thumb" src="${d.thumbnail}" alt="${d.title}">` : ""}
-    <div class="modal-stats">
-      <div class="modal-stat"><div class="modal-stat-val">${fmt(d.view_count)}</div><div class="modal-stat-lbl">조회수</div></div>
-      <div class="modal-stat"><div class="modal-stat-val">${fmt(d.like_count)}</div><div class="modal-stat-lbl">좋아요</div></div>
-      <div class="modal-stat"><div class="modal-stat-val">${likeRate}%</div><div class="modal-stat-lbl">좋아요율</div></div>
-    </div>
-    <div class="modal-meta">
+    <div class="mmeta">
       <span>&#128197; ${d.published_date}</span>
       <span>&#127916; ${d.video_type}</span>
-      <span>&#9201; ${d.duration ? d.duration.toFixed(1) + "분" : "-"}</span>
+      ${d.duration?`<span>&#9201; ${d.duration.toFixed(1)}분</span>`:""}
       <span>&#128172; ${fmt(d.comment_count)}</span>
     </div>
-    ${d.view_history && d.view_history.length
-      ? `<div style="margin-top:12px;font-size:12px;color:var(--muted)">조회수 히스토리 ${d.view_history.length}개 기록됨</div>`
-      : ""}
-    <div style="margin-top:16px">
+    <div style="margin-top:13px">
       <a href="https://youtube.com/watch?v=${d.video_id}" target="_blank"
-         style="color:var(--accent);font-size:13px;text-decoration:none;border-bottom:1px solid rgba(200,169,110,0.3)">
+         style="color:var(--accent);font-size:12px;text-decoration:none;border-bottom:1px solid rgba(200,169,110,.3)">
         YouTube에서 보기 &#8599;
       </a>
     </div>
   `;
 }
 
-function closeModal(e) {
-  if (e.target === document.getElementById("modal")) {
-    document.getElementById("modal").classList.remove("open");
-  }
-}
+function closeModal(e){if(e.target===document.getElementById("modal"))document.getElementById("modal").classList.remove("open");}
 
-// ── 실행 ──────────────────────────────────────────
 init();
 </script>
 </body>

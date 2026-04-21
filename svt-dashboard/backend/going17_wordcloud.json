@@ -1,0 +1,8609 @@
+{
+  "generated_at": "2026-04-21T10:52:18.780625",
+  "total_comments": 15000,
+  "total_videos": 163,
+  "all_words": [
+    {
+      "text": "his",
+      "value": 1811,
+      "normalized": 100.0
+    },
+    {
+      "text": "hoshi",
+      "value": 1638,
+      "normalized": 90.4
+    },
+    {
+      "text": "dino",
+      "value": 1535,
+      "normalized": 84.8
+    },
+    {
+      "text": "mingyu",
+      "value": 1493,
+      "normalized": 82.4
+    },
+    {
+      "text": "dk",
+      "value": 1484,
+      "normalized": 81.9
+    },
+    {
+      "text": "love",
+      "value": 1200,
+      "normalized": 66.3
+    },
+    {
+      "text": "really",
+      "value": 1174,
+      "normalized": 64.8
+    },
+    {
+      "text": "seungkwan",
+      "value": 1149,
+      "normalized": 63.4
+    },
+    {
+      "text": "him",
+      "value": 1098,
+      "normalized": 60.6
+    },
+    {
+      "text": "jun",
+      "value": 1036,
+      "normalized": 57.2
+    },
+    {
+      "text": "vernon",
+      "value": 1021,
+      "normalized": 56.4
+    },
+    {
+      "text": "can",
+      "value": 1016,
+      "normalized": 56.1
+    },
+    {
+      "text": "episode",
+      "value": 1004,
+      "normalized": 55.4
+    },
+    {
+      "text": "all",
+      "value": 948,
+      "normalized": 52.3
+    },
+    {
+      "text": "them",
+      "value": 906,
+      "normalized": 50.0
+    },
+    {
+      "text": "gose",
+      "value": 861,
+      "normalized": 47.5
+    },
+    {
+      "text": "jeonghan",
+      "value": 800,
+      "normalized": 44.2
+    },
+    {
+      "text": "너무",
+      "value": 761,
+      "normalized": 42.0
+    },
+    {
+      "text": "being",
+      "value": 743,
+      "normalized": 41.0
+    },
+    {
+      "text": "cute",
+      "value": 732,
+      "normalized": 40.4
+    },
+    {
+      "text": "woozi",
+      "value": 730,
+      "normalized": 40.3
+    },
+    {
+      "text": "one",
+      "value": 721,
+      "normalized": 39.8
+    },
+    {
+      "text": "way",
+      "value": 718,
+      "normalized": 39.6
+    },
+    {
+      "text": "members",
+      "value": 715,
+      "normalized": 39.5
+    },
+    {
+      "text": "진짜",
+      "value": 701,
+      "normalized": 38.7
+    },
+    {
+      "text": "even",
+      "value": 674,
+      "normalized": 37.2
+    },
+    {
+      "text": "funny",
+      "value": 655,
+      "normalized": 36.2
+    },
+    {
+      "text": "much",
+      "value": 587,
+      "normalized": 32.4
+    },
+    {
+      "text": "time",
+      "value": 580,
+      "normalized": 32.0
+    },
+    {
+      "text": "scoups",
+      "value": 576,
+      "normalized": 31.8
+    },
+    {
+      "text": "always",
+      "value": 568,
+      "normalized": 31.4
+    },
+    {
+      "text": "out",
+      "value": 562,
+      "normalized": 31.0
+    },
+    {
+      "text": "up",
+      "value": 527,
+      "normalized": 29.1
+    },
+    {
+      "text": "too",
+      "value": 513,
+      "normalized": 28.3
+    },
+    {
+      "text": "joshua",
+      "value": 508,
+      "normalized": 28.1
+    },
+    {
+      "text": "good",
+      "value": 498,
+      "normalized": 27.5
+    },
+    {
+      "text": "wonwoo",
+      "value": 493,
+      "normalized": 27.2
+    },
+    {
+      "text": "if",
+      "value": 471,
+      "normalized": 26.0
+    },
+    {
+      "text": "about",
+      "value": 468,
+      "normalized": 25.8
+    },
+    {
+      "text": "team",
+      "value": 459,
+      "normalized": 25.3
+    },
+    {
+      "text": "game",
+      "value": 456,
+      "normalized": 25.2
+    },
+    {
+      "text": "back",
+      "value": 450,
+      "normalized": 24.8
+    },
+    {
+      "text": "more",
+      "value": 441,
+      "normalized": 24.4
+    },
+    {
+      "text": "why",
+      "value": 438,
+      "normalized": 24.2
+    },
+    {
+      "text": "see",
+      "value": 435,
+      "normalized": 24.0
+    },
+    {
+      "text": "no",
+      "value": 431,
+      "normalized": 23.8
+    },
+    {
+      "text": "minghao",
+      "value": 415,
+      "normalized": 22.9
+    },
+    {
+      "text": "know",
+      "value": 412,
+      "normalized": 22.7
+    },
+    {
+      "text": "would",
+      "value": 412,
+      "normalized": 22.7
+    },
+    {
+      "text": "will",
+      "value": 404,
+      "normalized": 22.3
+    },
+    {
+      "text": "lol",
+      "value": 395,
+      "normalized": 21.8
+    },
+    {
+      "text": "here",
+      "value": 390,
+      "normalized": 21.5
+    },
+    {
+      "text": "the8",
+      "value": 383,
+      "normalized": 21.1
+    },
+    {
+      "text": "got",
+      "value": 379,
+      "normalized": 20.9
+    },
+    {
+      "text": "after",
+      "value": 356,
+      "normalized": 19.7
+    },
+    {
+      "text": "other",
+      "value": 356,
+      "normalized": 19.7
+    },
+    {
+      "text": "because",
+      "value": 351,
+      "normalized": 19.4
+    },
+    {
+      "text": "coups",
+      "value": 342,
+      "normalized": 18.9
+    },
+    {
+      "text": "well",
+      "value": 339,
+      "normalized": 18.7
+    },
+    {
+      "text": "10",
+      "value": 335,
+      "normalized": 18.5
+    },
+    {
+      "text": "everyone",
+      "value": 333,
+      "normalized": 18.4
+    },
+    {
+      "text": "get",
+      "value": 331,
+      "normalized": 18.3
+    },
+    {
+      "text": "then",
+      "value": 329,
+      "normalized": 18.2
+    },
+    {
+      "text": "while",
+      "value": 327,
+      "normalized": 18.1
+    },
+    {
+      "text": "laugh",
+      "value": 327,
+      "normalized": 18.1
+    },
+    {
+      "text": "our",
+      "value": 324,
+      "normalized": 17.9
+    },
+    {
+      "text": "never",
+      "value": 323,
+      "normalized": 17.8
+    },
+    {
+      "text": "happy",
+      "value": 323,
+      "normalized": 17.8
+    },
+    {
+      "text": "were",
+      "value": 321,
+      "normalized": 17.7
+    },
+    {
+      "text": "said",
+      "value": 314,
+      "normalized": 17.3
+    },
+    {
+      "text": "don",
+      "value": 313,
+      "normalized": 17.3
+    },
+    {
+      "text": "every",
+      "value": 310,
+      "normalized": 17.1
+    },
+    {
+      "text": "13",
+      "value": 310,
+      "normalized": 17.1
+    },
+    {
+      "text": "such",
+      "value": 308,
+      "normalized": 17.0
+    },
+    {
+      "text": "fun",
+      "value": 302,
+      "normalized": 16.7
+    },
+    {
+      "text": "first",
+      "value": 294,
+      "normalized": 16.2
+    },
+    {
+      "text": "end",
+      "value": 292,
+      "normalized": 16.1
+    },
+    {
+      "text": "still",
+      "value": 291,
+      "normalized": 16.1
+    },
+    {
+      "text": "make",
+      "value": 291,
+      "normalized": 16.1
+    },
+    {
+      "text": "made",
+      "value": 290,
+      "normalized": 16.0
+    },
+    {
+      "text": "11",
+      "value": 285,
+      "normalized": 15.7
+    },
+    {
+      "text": "looks",
+      "value": 284,
+      "normalized": 15.7
+    },
+    {
+      "text": "best",
+      "value": 276,
+      "normalized": 15.2
+    },
+    {
+      "text": "laughing",
+      "value": 273,
+      "normalized": 15.1
+    },
+    {
+      "text": "now",
+      "value": 268,
+      "normalized": 14.8
+    },
+    {
+      "text": "lmao",
+      "value": 265,
+      "normalized": 14.6
+    },
+    {
+      "text": "17",
+      "value": 264,
+      "normalized": 14.6
+    },
+    {
+      "text": "19",
+      "value": 263,
+      "normalized": 14.5
+    },
+    {
+      "text": "20",
+      "value": 258,
+      "normalized": 14.2
+    },
+    {
+      "text": "each",
+      "value": 256,
+      "normalized": 14.1
+    },
+    {
+      "text": "us",
+      "value": 256,
+      "normalized": 14.1
+    },
+    {
+      "text": "whole",
+      "value": 256,
+      "normalized": 14.1
+    },
+    {
+      "text": "had",
+      "value": 255,
+      "normalized": 14.1
+    },
+    {
+      "text": "only",
+      "value": 255,
+      "normalized": 14.1
+    },
+    {
+      "text": "ep",
+      "value": 254,
+      "normalized": 14.0
+    },
+    {
+      "text": "mafia",
+      "value": 253,
+      "normalized": 14.0
+    },
+    {
+      "text": "getting",
+      "value": 253,
+      "normalized": 14.0
+    },
+    {
+      "text": "12",
+      "value": 250,
+      "normalized": 13.8
+    },
+    {
+      "text": "most",
+      "value": 249,
+      "normalized": 13.7
+    },
+    {
+      "text": "zombie",
+      "value": 249,
+      "normalized": 13.7
+    },
+    {
+      "text": "man",
+      "value": 248,
+      "normalized": 13.7
+    },
+    {
+      "text": "watching",
+      "value": 248,
+      "normalized": 13.7
+    },
+    {
+      "text": "literally",
+      "value": 248,
+      "normalized": 13.7
+    },
+    {
+      "text": "hard",
+      "value": 246,
+      "normalized": 13.6
+    },
+    {
+      "text": "next",
+      "value": 245,
+      "normalized": 13.5
+    },
+    {
+      "text": "22",
+      "value": 244,
+      "normalized": 13.5
+    },
+    {
+      "text": "think",
+      "value": 241,
+      "normalized": 13.3
+    },
+    {
+      "text": "look",
+      "value": 237,
+      "normalized": 13.1
+    },
+    {
+      "text": "acting",
+      "value": 236,
+      "normalized": 13.0
+    },
+    {
+      "text": "21",
+      "value": 235,
+      "normalized": 13.0
+    },
+    {
+      "text": "again",
+      "value": 233,
+      "normalized": 12.9
+    },
+    {
+      "text": "boo",
+      "value": 233,
+      "normalized": 12.9
+    },
+    {
+      "text": "last",
+      "value": 226,
+      "normalized": 12.5
+    },
+    {
+      "text": "miss",
+      "value": 222,
+      "normalized": 12.3
+    },
+    {
+      "text": "feel",
+      "value": 221,
+      "normalized": 12.2
+    },
+    {
+      "text": "saying",
+      "value": 220,
+      "normalized": 12.1
+    },
+    {
+      "text": "content",
+      "value": 219,
+      "normalized": 12.1
+    },
+    {
+      "text": "23",
+      "value": 218,
+      "normalized": 12.0
+    },
+    {
+      "text": "staff",
+      "value": 218,
+      "normalized": 12.0
+    },
+    {
+      "text": "these",
+      "value": 215,
+      "normalized": 11.9
+    },
+    {
+      "text": "real",
+      "value": 214,
+      "normalized": 11.8
+    },
+    {
+      "text": "doing",
+      "value": 213,
+      "normalized": 11.8
+    },
+    {
+      "text": "14",
+      "value": 211,
+      "normalized": 11.7
+    },
+    {
+      "text": "26",
+      "value": 211,
+      "normalized": 11.7
+    },
+    {
+      "text": "16",
+      "value": 211,
+      "normalized": 11.7
+    },
+    {
+      "text": "15",
+      "value": 209,
+      "normalized": 11.5
+    },
+    {
+      "text": "27",
+      "value": 209,
+      "normalized": 11.5
+    },
+    {
+      "text": "right",
+      "value": 207,
+      "normalized": 11.4
+    },
+    {
+      "text": "win",
+      "value": 204,
+      "normalized": 11.3
+    },
+    {
+      "text": "18",
+      "value": 204,
+      "normalized": 11.3
+    },
+    {
+      "text": "without",
+      "value": 204,
+      "normalized": 11.3
+    },
+    {
+      "text": "didn",
+      "value": 202,
+      "normalized": 11.2
+    },
+    {
+      "text": "been",
+      "value": 201,
+      "normalized": 11.1
+    },
+    {
+      "text": "go",
+      "value": 201,
+      "normalized": 11.1
+    },
+    {
+      "text": "25",
+      "value": 200,
+      "normalized": 11.0
+    },
+    {
+      "text": "trying",
+      "value": 199,
+      "normalized": 11.0
+    },
+    {
+      "text": "omg",
+      "value": 198,
+      "normalized": 10.9
+    },
+    {
+      "text": "part",
+      "value": 198,
+      "normalized": 10.9
+    },
+    {
+      "text": "finally",
+      "value": 198,
+      "normalized": 10.9
+    },
+    {
+      "text": "together",
+      "value": 191,
+      "normalized": 10.5
+    },
+    {
+      "text": "same",
+      "value": 189,
+      "normalized": 10.4
+    },
+    {
+      "text": "episodes",
+      "value": 189,
+      "normalized": 10.4
+    },
+    {
+      "text": "watch",
+      "value": 188,
+      "normalized": 10.4
+    },
+    {
+      "text": "into",
+      "value": 188,
+      "normalized": 10.4
+    },
+    {
+      "text": "making",
+      "value": 188,
+      "normalized": 10.4
+    },
+    {
+      "text": "hilarious",
+      "value": 187,
+      "normalized": 10.3
+    },
+    {
+      "text": "actually",
+      "value": 186,
+      "normalized": 10.3
+    },
+    {
+      "text": "24",
+      "value": 185,
+      "normalized": 10.2
+    },
+    {
+      "text": "need",
+      "value": 183,
+      "normalized": 10.1
+    },
+    {
+      "text": "than",
+      "value": 182,
+      "normalized": 10.0
+    }
+  ],
+  "per_video": [
+    {
+      "video_id": "Cr9NHLoQjm8",
+      "video_title": "[GOING SEVENTEEN] EP.149 마피아불 #2 (Mafiapoly #2)",
+      "published_date": "2025-12-17",
+      "words": [
+        {
+          "text": "mafia",
+          "value": 151,
+          "normalized": 100.0
+        },
+        {
+          "text": "dino",
+          "value": 103,
+          "normalized": 68.2
+        },
+        {
+          "text": "vernon",
+          "value": 91,
+          "normalized": 60.3
+        },
+        {
+          "text": "jun",
+          "value": 77,
+          "normalized": 51.0
+        },
+        {
+          "text": "really",
+          "value": 54,
+          "normalized": 35.8
+        },
+        {
+          "text": "his",
+          "value": 41,
+          "normalized": 27.2
+        },
+        {
+          "text": "episode",
+          "value": 41,
+          "normalized": 27.2
+        },
+        {
+          "text": "being",
+          "value": 39,
+          "normalized": 25.8
+        },
+        {
+          "text": "game",
+          "value": 39,
+          "normalized": 25.8
+        },
+        {
+          "text": "all",
+          "value": 38,
+          "normalized": 25.2
+        },
+        {
+          "text": "him",
+          "value": 38,
+          "normalized": 25.2
+        },
+        {
+          "text": "dk",
+          "value": 34,
+          "normalized": 22.5
+        },
+        {
+          "text": "too",
+          "value": 31,
+          "normalized": 20.5
+        },
+        {
+          "text": "mingyu",
+          "value": 30,
+          "normalized": 19.9
+        },
+        {
+          "text": "golden",
+          "value": 29,
+          "normalized": 19.2
+        },
+        {
+          "text": "bat",
+          "value": 29,
+          "normalized": 19.2
+        },
+        {
+          "text": "even",
+          "value": 29,
+          "normalized": 19.2
+        },
+        {
+          "text": "good",
+          "value": 29,
+          "normalized": 19.2
+        },
+        {
+          "text": "joshua",
+          "value": 27,
+          "normalized": 17.9
+        },
+        {
+          "text": "one",
+          "value": 25,
+          "normalized": 16.6
+        },
+        {
+          "text": "minghao",
+          "value": 25,
+          "normalized": 16.6
+        },
+        {
+          "text": "time",
+          "value": 24,
+          "normalized": 15.9
+        },
+        {
+          "text": "well",
+          "value": 23,
+          "normalized": 15.2
+        },
+        {
+          "text": "gose",
+          "value": 22,
+          "normalized": 14.6
+        },
+        {
+          "text": "if",
+          "value": 22,
+          "normalized": 14.6
+        },
+        {
+          "text": "out",
+          "value": 22,
+          "normalized": 14.6
+        },
+        {
+          "text": "more",
+          "value": 21,
+          "normalized": 13.9
+        },
+        {
+          "text": "acting",
+          "value": 21,
+          "normalized": 13.9
+        },
+        {
+          "text": "never",
+          "value": 20,
+          "normalized": 13.2
+        },
+        {
+          "text": "them",
+          "value": 20,
+          "normalized": 13.2
+        }
+      ]
+    },
+    {
+      "video_id": "MbqitUOcMxw",
+      "video_title": "[GOING SEVENTEEN] EP.148 마피아불 #1 (Mafiapoly #1)",
+      "published_date": "2025-12-10",
+      "words": [
+        {
+          "text": "hoshi",
+          "value": 83,
+          "normalized": 100.0
+        },
+        {
+          "text": "mafia",
+          "value": 72,
+          "normalized": 86.7
+        },
+        {
+          "text": "mingyu",
+          "value": 64,
+          "normalized": 77.1
+        },
+        {
+          "text": "jun",
+          "value": 53,
+          "normalized": 63.9
+        },
+        {
+          "text": "seungkwan",
+          "value": 41,
+          "normalized": 49.4
+        },
+        {
+          "text": "game",
+          "value": 40,
+          "normalized": 48.2
+        },
+        {
+          "text": "him",
+          "value": 29,
+          "normalized": 34.9
+        },
+        {
+          "text": "cute",
+          "value": 26,
+          "normalized": 31.3
+        },
+        {
+          "text": "episode",
+          "value": 25,
+          "normalized": 30.1
+        },
+        {
+          "text": "here",
+          "value": 22,
+          "normalized": 26.5
+        },
+        {
+          "text": "without",
+          "value": 21,
+          "normalized": 25.3
+        },
+        {
+          "text": "his",
+          "value": 19,
+          "normalized": 22.9
+        },
+        {
+          "text": "dino",
+          "value": 17,
+          "normalized": 20.5
+        },
+        {
+          "text": "even",
+          "value": 17,
+          "normalized": 20.5
+        },
+        {
+          "text": "all",
+          "value": 16,
+          "normalized": 19.3
+        },
+        {
+          "text": "dk",
+          "value": 16,
+          "normalized": 19.3
+        },
+        {
+          "text": "one",
+          "value": 15,
+          "normalized": 18.1
+        },
+        {
+          "text": "members",
+          "value": 14,
+          "normalized": 16.9
+        },
+        {
+          "text": "poor",
+          "value": 14,
+          "normalized": 16.9
+        },
+        {
+          "text": "no",
+          "value": 13,
+          "normalized": 15.7
+        },
+        {
+          "text": "still",
+          "value": 13,
+          "normalized": 15.7
+        },
+        {
+          "text": "love",
+          "value": 13,
+          "normalized": 15.7
+        },
+        {
+          "text": "why",
+          "value": 13,
+          "normalized": 15.7
+        },
+        {
+          "text": "너무",
+          "value": 13,
+          "normalized": 15.7
+        },
+        {
+          "text": "being",
+          "value": 12,
+          "normalized": 14.5
+        },
+        {
+          "text": "out",
+          "value": 12,
+          "normalized": 14.5
+        },
+        {
+          "text": "first",
+          "value": 12,
+          "normalized": 14.5
+        },
+        {
+          "text": "every",
+          "value": 12,
+          "normalized": 14.5
+        },
+        {
+          "text": "looks",
+          "value": 12,
+          "normalized": 14.5
+        },
+        {
+          "text": "승관이",
+          "value": 12,
+          "normalized": 14.5
+        }
+      ]
+    },
+    {
+      "video_id": "x-dEKCW3mmc",
+      "video_title": "[GOING SEVENTEEN] EP.147 Chat, Chat #2",
+      "published_date": "2025-12-03",
+      "words": [
+        {
+          "text": "love",
+          "value": 68,
+          "normalized": 100.0
+        },
+        {
+          "text": "jun",
+          "value": 59,
+          "normalized": 86.8
+        },
+        {
+          "text": "about",
+          "value": 47,
+          "normalized": 69.1
+        },
+        {
+          "text": "twilight",
+          "value": 46,
+          "normalized": 67.6
+        },
+        {
+          "text": "them",
+          "value": 39,
+          "normalized": 57.4
+        },
+        {
+          "text": "really",
+          "value": 39,
+          "normalized": 57.4
+        },
+        {
+          "text": "seungkwan",
+          "value": 33,
+          "normalized": 48.5
+        },
+        {
+          "text": "can",
+          "value": 32,
+          "normalized": 47.1
+        },
+        {
+          "text": "all",
+          "value": 31,
+          "normalized": 45.6
+        },
+        {
+          "text": "talk",
+          "value": 30,
+          "normalized": 44.1
+        },
+        {
+          "text": "members",
+          "value": 29,
+          "normalized": 42.6
+        },
+        {
+          "text": "podcast",
+          "value": 28,
+          "normalized": 41.2
+        },
+        {
+          "text": "너무",
+          "value": 27,
+          "normalized": 39.7
+        },
+        {
+          "text": "more",
+          "value": 24,
+          "normalized": 35.3
+        },
+        {
+          "text": "talking",
+          "value": 23,
+          "normalized": 33.8
+        },
+        {
+          "text": "being",
+          "value": 19,
+          "normalized": 27.9
+        },
+        {
+          "text": "one",
+          "value": 19,
+          "normalized": 27.9
+        },
+        {
+          "text": "mingyu",
+          "value": 18,
+          "normalized": 26.5
+        },
+        {
+          "text": "always",
+          "value": 18,
+          "normalized": 26.5
+        },
+        {
+          "text": "much",
+          "value": 18,
+          "normalized": 26.5
+        },
+        {
+          "text": "us",
+          "value": 18,
+          "normalized": 26.5
+        },
+        {
+          "text": "know",
+          "value": 17,
+          "normalized": 25.0
+        },
+        {
+          "text": "too",
+          "value": 17,
+          "normalized": 25.0
+        },
+        {
+          "text": "진짜",
+          "value": 17,
+          "normalized": 25.0
+        },
+        {
+          "text": "need",
+          "value": 17,
+          "normalized": 25.0
+        },
+        {
+          "text": "watched",
+          "value": 16,
+          "normalized": 23.5
+        },
+        {
+          "text": "even",
+          "value": 16,
+          "normalized": 23.5
+        },
+        {
+          "text": "episode",
+          "value": 16,
+          "normalized": 23.5
+        },
+        {
+          "text": "time",
+          "value": 16,
+          "normalized": 23.5
+        },
+        {
+          "text": "would",
+          "value": 15,
+          "normalized": 22.1
+        }
+      ]
+    },
+    {
+      "video_id": "BMeK_rcQfrU",
+      "video_title": "[GOING SEVENTEEN] EP.146 Chat, Chat #1",
+      "published_date": "2025-11-26",
+      "words": [
+        {
+          "text": "them",
+          "value": 47,
+          "normalized": 100.0
+        },
+        {
+          "text": "love",
+          "value": 46,
+          "normalized": 97.9
+        },
+        {
+          "text": "about",
+          "value": 33,
+          "normalized": 70.2
+        },
+        {
+          "text": "more",
+          "value": 31,
+          "normalized": 66.0
+        },
+        {
+          "text": "can",
+          "value": 28,
+          "normalized": 59.6
+        },
+        {
+          "text": "talk",
+          "value": 28,
+          "normalized": 59.6
+        },
+        {
+          "text": "너무",
+          "value": 28,
+          "normalized": 59.6
+        },
+        {
+          "text": "other",
+          "value": 25,
+          "normalized": 53.2
+        },
+        {
+          "text": "much",
+          "value": 25,
+          "normalized": 53.2
+        },
+        {
+          "text": "jun",
+          "value": 25,
+          "normalized": 53.2
+        },
+        {
+          "text": "hoshi",
+          "value": 24,
+          "normalized": 51.1
+        },
+        {
+          "text": "him",
+          "value": 24,
+          "normalized": 51.1
+        },
+        {
+          "text": "진짜",
+          "value": 24,
+          "normalized": 51.1
+        },
+        {
+          "text": "fun",
+          "value": 21,
+          "normalized": 44.7
+        },
+        {
+          "text": "all",
+          "value": 21,
+          "normalized": 44.7
+        },
+        {
+          "text": "really",
+          "value": 19,
+          "normalized": 40.4
+        },
+        {
+          "text": "jeonghan",
+          "value": 19,
+          "normalized": 40.4
+        },
+        {
+          "text": "mingyu",
+          "value": 18,
+          "normalized": 38.3
+        },
+        {
+          "text": "members",
+          "value": 18,
+          "normalized": 38.3
+        },
+        {
+          "text": "time",
+          "value": 18,
+          "normalized": 38.3
+        },
+        {
+          "text": "podcast",
+          "value": 17,
+          "normalized": 36.2
+        },
+        {
+          "text": "even",
+          "value": 17,
+          "normalized": 36.2
+        },
+        {
+          "text": "each",
+          "value": 16,
+          "normalized": 34.0
+        },
+        {
+          "text": "want",
+          "value": 15,
+          "normalized": 31.9
+        },
+        {
+          "text": "episode",
+          "value": 15,
+          "normalized": 31.9
+        },
+        {
+          "text": "meeting",
+          "value": 14,
+          "normalized": 29.8
+        },
+        {
+          "text": "gose",
+          "value": 14,
+          "normalized": 29.8
+        },
+        {
+          "text": "woozi",
+          "value": 13,
+          "normalized": 27.7
+        },
+        {
+          "text": "vernon",
+          "value": 13,
+          "normalized": 27.7
+        },
+        {
+          "text": "good",
+          "value": 13,
+          "normalized": 27.7
+        }
+      ]
+    },
+    {
+      "video_id": "u1O2b6tQjtw",
+      "video_title": "[GOING SEVENTEEN] EP.145 빠퇴 #2 (Let’s Go Home #2)",
+      "published_date": "2025-11-19",
+      "words": [
+        {
+          "text": "dino",
+          "value": 52,
+          "normalized": 100.0
+        },
+        {
+          "text": "jun",
+          "value": 45,
+          "normalized": 86.5
+        },
+        {
+          "text": "love",
+          "value": 36,
+          "normalized": 69.2
+        },
+        {
+          "text": "hoshi",
+          "value": 26,
+          "normalized": 50.0
+        },
+        {
+          "text": "gose",
+          "value": 26,
+          "normalized": 50.0
+        },
+        {
+          "text": "last",
+          "value": 23,
+          "normalized": 44.2
+        },
+        {
+          "text": "team",
+          "value": 22,
+          "normalized": 42.3
+        },
+        {
+          "text": "game",
+          "value": 21,
+          "normalized": 40.4
+        },
+        {
+          "text": "episode",
+          "value": 19,
+          "normalized": 36.5
+        },
+        {
+          "text": "staff",
+          "value": 18,
+          "normalized": 34.6
+        },
+        {
+          "text": "cute",
+          "value": 18,
+          "normalized": 34.6
+        },
+        {
+          "text": "fun",
+          "value": 16,
+          "normalized": 30.8
+        },
+        {
+          "text": "dk",
+          "value": 16,
+          "normalized": 30.8
+        },
+        {
+          "text": "overcooked",
+          "value": 16,
+          "normalized": 30.8
+        },
+        {
+          "text": "always",
+          "value": 15,
+          "normalized": 28.8
+        },
+        {
+          "text": "lol",
+          "value": 15,
+          "normalized": 28.8
+        },
+        {
+          "text": "can",
+          "value": 14,
+          "normalized": 26.9
+        },
+        {
+          "text": "play",
+          "value": 14,
+          "normalized": 26.9
+        },
+        {
+          "text": "them",
+          "value": 13,
+          "normalized": 25.0
+        },
+        {
+          "text": "mingyu",
+          "value": 13,
+          "normalized": 25.0
+        },
+        {
+          "text": "much",
+          "value": 13,
+          "normalized": 25.0
+        },
+        {
+          "text": "next",
+          "value": 12,
+          "normalized": 23.1
+        },
+        {
+          "text": "being",
+          "value": 11,
+          "normalized": 21.2
+        },
+        {
+          "text": "his",
+          "value": 10,
+          "normalized": 19.2
+        },
+        {
+          "text": "el",
+          "value": 10,
+          "normalized": 19.2
+        },
+        {
+          "text": "well",
+          "value": 9,
+          "normalized": 17.3
+        },
+        {
+          "text": "games",
+          "value": 9,
+          "normalized": 17.3
+        },
+        {
+          "text": "time",
+          "value": 9,
+          "normalized": 17.3
+        },
+        {
+          "text": "one",
+          "value": 9,
+          "normalized": 17.3
+        },
+        {
+          "text": "chaotic",
+          "value": 9,
+          "normalized": 17.3
+        }
+      ]
+    },
+    {
+      "video_id": "M75NAPmAd9g",
+      "video_title": "[GOING SEVENTEEN] EP.144 빠퇴 #1 (Let’s Go Home #1)",
+      "published_date": "2025-11-12",
+      "words": [
+        {
+          "text": "너무",
+          "value": 35,
+          "normalized": 100.0
+        },
+        {
+          "text": "team",
+          "value": 28,
+          "normalized": 80.0
+        },
+        {
+          "text": "home",
+          "value": 25,
+          "normalized": 71.4
+        },
+        {
+          "text": "jun",
+          "value": 24,
+          "normalized": 68.6
+        },
+        {
+          "text": "멤버들",
+          "value": 23,
+          "normalized": 65.7
+        },
+        {
+          "text": "go",
+          "value": 21,
+          "normalized": 60.0
+        },
+        {
+          "text": "vernon",
+          "value": 21,
+          "normalized": 60.0
+        },
+        {
+          "text": "진짜",
+          "value": 20,
+          "normalized": 57.1
+        },
+        {
+          "text": "cute",
+          "value": 19,
+          "normalized": 54.3
+        },
+        {
+          "text": "dino",
+          "value": 19,
+          "normalized": 54.3
+        },
+        {
+          "text": "게임",
+          "value": 19,
+          "normalized": 54.3
+        },
+        {
+          "text": "제작진",
+          "value": 17,
+          "normalized": 48.6
+        },
+        {
+          "text": "joshua",
+          "value": 16,
+          "normalized": 45.7
+        },
+        {
+          "text": "게임을",
+          "value": 16,
+          "normalized": 45.7
+        },
+        {
+          "text": "time",
+          "value": 15,
+          "normalized": 42.9
+        },
+        {
+          "text": "episode",
+          "value": 15,
+          "normalized": 42.9
+        },
+        {
+          "text": "staff",
+          "value": 14,
+          "normalized": 40.0
+        },
+        {
+          "text": "his",
+          "value": 13,
+          "normalized": 37.1
+        },
+        {
+          "text": "솔직히",
+          "value": 13,
+          "normalized": 37.1
+        },
+        {
+          "text": "빠퇴",
+          "value": 13,
+          "normalized": 37.1
+        },
+        {
+          "text": "컨텐츠",
+          "value": 13,
+          "normalized": 37.1
+        },
+        {
+          "text": "제작진이",
+          "value": 13,
+          "normalized": 37.1
+        },
+        {
+          "text": "happy",
+          "value": 12,
+          "normalized": 34.3
+        },
+        {
+          "text": "많이",
+          "value": 12,
+          "normalized": 34.3
+        },
+        {
+          "text": "같이",
+          "value": 12,
+          "normalized": 34.3
+        },
+        {
+          "text": "것도",
+          "value": 12,
+          "normalized": 34.3
+        },
+        {
+          "text": "있는",
+          "value": 12,
+          "normalized": 34.3
+        },
+        {
+          "text": "hoshi",
+          "value": 11,
+          "normalized": 31.4
+        },
+        {
+          "text": "coups",
+          "value": 11,
+          "normalized": 31.4
+        },
+        {
+          "text": "하는",
+          "value": 11,
+          "normalized": 31.4
+        }
+      ]
+    },
+    {
+      "video_id": "QUrgUJViAZU",
+      "video_title": "[GOING SEVENTEEN] EP.143 무죄 추정 #2 (Innocent Until Proven Guilty #2)",
+      "published_date": "2025-11-05",
+      "words": [
+        {
+          "text": "really",
+          "value": 48,
+          "normalized": 100.0
+        },
+        {
+          "text": "dk",
+          "value": 43,
+          "normalized": 89.6
+        },
+        {
+          "text": "scoups",
+          "value": 42,
+          "normalized": 87.5
+        },
+        {
+          "text": "his",
+          "value": 37,
+          "normalized": 77.1
+        },
+        {
+          "text": "acting",
+          "value": 31,
+          "normalized": 64.6
+        },
+        {
+          "text": "behind",
+          "value": 29,
+          "normalized": 60.4
+        },
+        {
+          "text": "seungcheol",
+          "value": 27,
+          "normalized": 56.2
+        },
+        {
+          "text": "all",
+          "value": 27,
+          "normalized": 56.2
+        },
+        {
+          "text": "scenes",
+          "value": 26,
+          "normalized": 54.2
+        },
+        {
+          "text": "hoshi",
+          "value": 23,
+          "normalized": 47.9
+        },
+        {
+          "text": "him",
+          "value": 23,
+          "normalized": 47.9
+        },
+        {
+          "text": "them",
+          "value": 21,
+          "normalized": 43.8
+        },
+        {
+          "text": "can",
+          "value": 21,
+          "normalized": 43.8
+        },
+        {
+          "text": "gose",
+          "value": 20,
+          "normalized": 41.7
+        },
+        {
+          "text": "episode",
+          "value": 20,
+          "normalized": 41.7
+        },
+        {
+          "text": "cheol",
+          "value": 18,
+          "normalized": 37.5
+        },
+        {
+          "text": "good",
+          "value": 18,
+          "normalized": 37.5
+        },
+        {
+          "text": "team",
+          "value": 18,
+          "normalized": 37.5
+        },
+        {
+          "text": "one",
+          "value": 18,
+          "normalized": 37.5
+        },
+        {
+          "text": "innocent",
+          "value": 17,
+          "normalized": 35.4
+        },
+        {
+          "text": "serious",
+          "value": 16,
+          "normalized": 33.3
+        },
+        {
+          "text": "real",
+          "value": 16,
+          "normalized": 33.3
+        },
+        {
+          "text": "너무",
+          "value": 16,
+          "normalized": 33.3
+        },
+        {
+          "text": "well",
+          "value": 15,
+          "normalized": 31.2
+        },
+        {
+          "text": "defending",
+          "value": 14,
+          "normalized": 29.2
+        },
+        {
+          "text": "were",
+          "value": 14,
+          "normalized": 29.2
+        },
+        {
+          "text": "being",
+          "value": 14,
+          "normalized": 29.2
+        },
+        {
+          "text": "out",
+          "value": 14,
+          "normalized": 29.2
+        },
+        {
+          "text": "thought",
+          "value": 14,
+          "normalized": 29.2
+        },
+        {
+          "text": "love",
+          "value": 14,
+          "normalized": 29.2
+        }
+      ]
+    },
+    {
+      "video_id": "-65B1lQzHYA",
+      "video_title": "[GOING SEVENTEEN] EP.142 무죄 추정 #1 (Innocent Until Proven Guilty #1)",
+      "published_date": "2025-10-29",
+      "words": [
+        {
+          "text": "his",
+          "value": 40,
+          "normalized": 100.0
+        },
+        {
+          "text": "episode",
+          "value": 36,
+          "normalized": 90.0
+        },
+        {
+          "text": "can",
+          "value": 32,
+          "normalized": 80.0
+        },
+        {
+          "text": "mingyu",
+          "value": 31,
+          "normalized": 77.5
+        },
+        {
+          "text": "gose",
+          "value": 31,
+          "normalized": 77.5
+        },
+        {
+          "text": "serious",
+          "value": 29,
+          "normalized": 72.5
+        },
+        {
+          "text": "jun",
+          "value": 29,
+          "normalized": 72.5
+        },
+        {
+          "text": "really",
+          "value": 28,
+          "normalized": 70.0
+        },
+        {
+          "text": "scoups",
+          "value": 23,
+          "normalized": 57.5
+        },
+        {
+          "text": "acting",
+          "value": 21,
+          "normalized": 52.5
+        },
+        {
+          "text": "dk",
+          "value": 21,
+          "normalized": 52.5
+        },
+        {
+          "text": "all",
+          "value": 20,
+          "normalized": 50.0
+        },
+        {
+          "text": "woozi",
+          "value": 19,
+          "normalized": 47.5
+        },
+        {
+          "text": "laugh",
+          "value": 19,
+          "normalized": 47.5
+        },
+        {
+          "text": "time",
+          "value": 19,
+          "normalized": 47.5
+        },
+        {
+          "text": "know",
+          "value": 17,
+          "normalized": 42.5
+        },
+        {
+          "text": "him",
+          "value": 17,
+          "normalized": 42.5
+        },
+        {
+          "text": "being",
+          "value": 16,
+          "normalized": 40.0
+        },
+        {
+          "text": "seungcheol",
+          "value": 16,
+          "normalized": 40.0
+        },
+        {
+          "text": "looks",
+          "value": 16,
+          "normalized": 40.0
+        },
+        {
+          "text": "them",
+          "value": 15,
+          "normalized": 37.5
+        },
+        {
+          "text": "team",
+          "value": 15,
+          "normalized": 37.5
+        },
+        {
+          "text": "good",
+          "value": 15,
+          "normalized": 37.5
+        },
+        {
+          "text": "아니",
+          "value": 15,
+          "normalized": 37.5
+        },
+        {
+          "text": "진짜",
+          "value": 15,
+          "normalized": 37.5
+        },
+        {
+          "text": "vernon",
+          "value": 14,
+          "normalized": 35.0
+        },
+        {
+          "text": "lawyer",
+          "value": 13,
+          "normalized": 32.5
+        },
+        {
+          "text": "drama",
+          "value": 13,
+          "normalized": 32.5
+        },
+        {
+          "text": "whole",
+          "value": 13,
+          "normalized": 32.5
+        },
+        {
+          "text": "actor",
+          "value": 12,
+          "normalized": 30.0
+        }
+      ]
+    },
+    {
+      "video_id": "RTpUJsJAoTE",
+      "video_title": "[GOING SEVENTEEN] EP.141 부승관과 구기 종목 #2 (BOO SEUNGKWAN and Ball Sports #2)",
+      "published_date": "2025-10-22",
+      "words": [
+        {
+          "text": "seungkwan",
+          "value": 111,
+          "normalized": 100.0
+        },
+        {
+          "text": "mingyu",
+          "value": 44,
+          "normalized": 39.6
+        },
+        {
+          "text": "good",
+          "value": 34,
+          "normalized": 30.6
+        },
+        {
+          "text": "really",
+          "value": 34,
+          "normalized": 30.6
+        },
+        {
+          "text": "boo",
+          "value": 34,
+          "normalized": 30.6
+        },
+        {
+          "text": "his",
+          "value": 33,
+          "normalized": 29.7
+        },
+        {
+          "text": "hoshi",
+          "value": 32,
+          "normalized": 28.8
+        },
+        {
+          "text": "episode",
+          "value": 29,
+          "normalized": 26.1
+        },
+        {
+          "text": "badminton",
+          "value": 23,
+          "normalized": 20.7
+        },
+        {
+          "text": "dino",
+          "value": 21,
+          "normalized": 18.9
+        },
+        {
+          "text": "10",
+          "value": 20,
+          "normalized": 18.0
+        },
+        {
+          "text": "sports",
+          "value": 19,
+          "normalized": 17.1
+        },
+        {
+          "text": "him",
+          "value": 19,
+          "normalized": 17.1
+        },
+        {
+          "text": "all",
+          "value": 18,
+          "normalized": 16.2
+        },
+        {
+          "text": "love",
+          "value": 18,
+          "normalized": 16.2
+        },
+        {
+          "text": "game",
+          "value": 18,
+          "normalized": 16.2
+        },
+        {
+          "text": "match",
+          "value": 18,
+          "normalized": 16.2
+        },
+        {
+          "text": "funny",
+          "value": 17,
+          "normalized": 15.3
+        },
+        {
+          "text": "can",
+          "value": 16,
+          "normalized": 14.4
+        },
+        {
+          "text": "ending",
+          "value": 16,
+          "normalized": 14.4
+        },
+        {
+          "text": "cool",
+          "value": 16,
+          "normalized": 14.4
+        },
+        {
+          "text": "playing",
+          "value": 16,
+          "normalized": 14.4
+        },
+        {
+          "text": "way",
+          "value": 14,
+          "normalized": 12.6
+        },
+        {
+          "text": "gose",
+          "value": 14,
+          "normalized": 12.6
+        },
+        {
+          "text": "them",
+          "value": 14,
+          "normalized": 12.6
+        },
+        {
+          "text": "too",
+          "value": 13,
+          "normalized": 11.7
+        },
+        {
+          "text": "13",
+          "value": 13,
+          "normalized": 11.7
+        },
+        {
+          "text": "lol",
+          "value": 12,
+          "normalized": 10.8
+        },
+        {
+          "text": "won",
+          "value": 11,
+          "normalized": 9.9
+        },
+        {
+          "text": "play",
+          "value": 11,
+          "normalized": 9.9
+        }
+      ]
+    },
+    {
+      "video_id": "Jo-T56qzZR8",
+      "video_title": "[GOING SEVENTEEN] EP.140 부승관과 구기 종목 #1 (BOO SEUNGKWAN and Ball Sports #1)",
+      "published_date": "2025-10-15",
+      "words": [
+        {
+          "text": "seungkwan",
+          "value": 79,
+          "normalized": 100.0
+        },
+        {
+          "text": "dino",
+          "value": 42,
+          "normalized": 53.2
+        },
+        {
+          "text": "his",
+          "value": 38,
+          "normalized": 48.1
+        },
+        {
+          "text": "hoshi",
+          "value": 37,
+          "normalized": 46.8
+        },
+        {
+          "text": "episode",
+          "value": 34,
+          "normalized": 43.0
+        },
+        {
+          "text": "funny",
+          "value": 26,
+          "normalized": 32.9
+        },
+        {
+          "text": "mingyu",
+          "value": 23,
+          "normalized": 29.1
+        },
+        {
+          "text": "cute",
+          "value": 22,
+          "normalized": 27.8
+        },
+        {
+          "text": "can",
+          "value": 22,
+          "normalized": 27.8
+        },
+        {
+          "text": "ball",
+          "value": 22,
+          "normalized": 27.8
+        },
+        {
+          "text": "23",
+          "value": 20,
+          "normalized": 25.3
+        },
+        {
+          "text": "boo",
+          "value": 20,
+          "normalized": 25.3
+        },
+        {
+          "text": "joshua",
+          "value": 19,
+          "normalized": 24.1
+        },
+        {
+          "text": "woozi",
+          "value": 19,
+          "normalized": 24.1
+        },
+        {
+          "text": "good",
+          "value": 18,
+          "normalized": 22.8
+        },
+        {
+          "text": "really",
+          "value": 18,
+          "normalized": 22.8
+        },
+        {
+          "text": "22",
+          "value": 17,
+          "normalized": 21.5
+        },
+        {
+          "text": "all",
+          "value": 17,
+          "normalized": 21.5
+        },
+        {
+          "text": "love",
+          "value": 16,
+          "normalized": 20.3
+        },
+        {
+          "text": "dk",
+          "value": 16,
+          "normalized": 20.3
+        },
+        {
+          "text": "vernon",
+          "value": 15,
+          "normalized": 19.0
+        },
+        {
+          "text": "time",
+          "value": 15,
+          "normalized": 19.0
+        },
+        {
+          "text": "him",
+          "value": 14,
+          "normalized": 17.7
+        },
+        {
+          "text": "sports",
+          "value": 14,
+          "normalized": 17.7
+        },
+        {
+          "text": "14",
+          "value": 13,
+          "normalized": 16.5
+        },
+        {
+          "text": "being",
+          "value": 12,
+          "normalized": 15.2
+        },
+        {
+          "text": "them",
+          "value": 12,
+          "normalized": 15.2
+        },
+        {
+          "text": "know",
+          "value": 12,
+          "normalized": 15.2
+        },
+        {
+          "text": "10",
+          "value": 12,
+          "normalized": 15.2
+        },
+        {
+          "text": "too",
+          "value": 12,
+          "normalized": 15.2
+        }
+      ]
+    },
+    {
+      "video_id": "EJI2bLi8vlI",
+      "video_title": "[GOING SEVENTEEN] EP.139 GOOD OFFER 2 #2",
+      "published_date": "2025-10-08",
+      "words": [
+        {
+          "text": "dino",
+          "value": 116,
+          "normalized": 100.0
+        },
+        {
+          "text": "hoshi",
+          "value": 93,
+          "normalized": 80.2
+        },
+        {
+          "text": "mingyu",
+          "value": 85,
+          "normalized": 73.3
+        },
+        {
+          "text": "seungkwan",
+          "value": 70,
+          "normalized": 60.3
+        },
+        {
+          "text": "his",
+          "value": 65,
+          "normalized": 56.0
+        },
+        {
+          "text": "love",
+          "value": 47,
+          "normalized": 40.5
+        },
+        {
+          "text": "him",
+          "value": 43,
+          "normalized": 37.1
+        },
+        {
+          "text": "episode",
+          "value": 35,
+          "normalized": 30.2
+        },
+        {
+          "text": "really",
+          "value": 32,
+          "normalized": 27.6
+        },
+        {
+          "text": "woozi",
+          "value": 29,
+          "normalized": 25.0
+        },
+        {
+          "text": "win",
+          "value": 27,
+          "normalized": 23.3
+        },
+        {
+          "text": "being",
+          "value": 27,
+          "normalized": 23.3
+        },
+        {
+          "text": "maknae",
+          "value": 26,
+          "normalized": 22.4
+        },
+        {
+          "text": "leaders",
+          "value": 26,
+          "normalized": 22.4
+        },
+        {
+          "text": "all",
+          "value": 25,
+          "normalized": 21.6
+        },
+        {
+          "text": "always",
+          "value": 22,
+          "normalized": 19.0
+        },
+        {
+          "text": "vernon",
+          "value": 20,
+          "normalized": 17.2
+        },
+        {
+          "text": "even",
+          "value": 20,
+          "normalized": 17.2
+        },
+        {
+          "text": "our",
+          "value": 20,
+          "normalized": 17.2
+        },
+        {
+          "text": "up",
+          "value": 19,
+          "normalized": 16.4
+        },
+        {
+          "text": "much",
+          "value": 19,
+          "normalized": 16.4
+        },
+        {
+          "text": "cute",
+          "value": 19,
+          "normalized": 16.4
+        },
+        {
+          "text": "money",
+          "value": 18,
+          "normalized": 15.5
+        },
+        {
+          "text": "them",
+          "value": 18,
+          "normalized": 15.5
+        },
+        {
+          "text": "end",
+          "value": 17,
+          "normalized": 14.7
+        },
+        {
+          "text": "jeonghan",
+          "value": 17,
+          "normalized": 14.7
+        },
+        {
+          "text": "one",
+          "value": 16,
+          "normalized": 13.8
+        },
+        {
+          "text": "giving",
+          "value": 16,
+          "normalized": 13.8
+        },
+        {
+          "text": "too",
+          "value": 16,
+          "normalized": 13.8
+        },
+        {
+          "text": "way",
+          "value": 16,
+          "normalized": 13.8
+        }
+      ]
+    },
+    {
+      "video_id": "GuS4O-zz09s",
+      "video_title": "[GOING SEVENTEEN] EP.138 GOOD OFFER 2 #1",
+      "published_date": "2025-10-01",
+      "words": [
+        {
+          "text": "jeonghan",
+          "value": 63,
+          "normalized": 100.0
+        },
+        {
+          "text": "hoshi",
+          "value": 46,
+          "normalized": 73.0
+        },
+        {
+          "text": "his",
+          "value": 43,
+          "normalized": 68.3
+        },
+        {
+          "text": "dk",
+          "value": 38,
+          "normalized": 60.3
+        },
+        {
+          "text": "dino",
+          "value": 33,
+          "normalized": 52.4
+        },
+        {
+          "text": "good",
+          "value": 29,
+          "normalized": 46.0
+        },
+        {
+          "text": "can",
+          "value": 25,
+          "normalized": 39.7
+        },
+        {
+          "text": "miss",
+          "value": 25,
+          "normalized": 39.7
+        },
+        {
+          "text": "offer",
+          "value": 23,
+          "normalized": 36.5
+        },
+        {
+          "text": "mingyu",
+          "value": 22,
+          "normalized": 34.9
+        },
+        {
+          "text": "gose",
+          "value": 21,
+          "normalized": 33.3
+        },
+        {
+          "text": "really",
+          "value": 20,
+          "normalized": 31.7
+        },
+        {
+          "text": "seungkwan",
+          "value": 20,
+          "normalized": 31.7
+        },
+        {
+          "text": "him",
+          "value": 19,
+          "normalized": 30.2
+        },
+        {
+          "text": "all",
+          "value": 18,
+          "normalized": 28.6
+        },
+        {
+          "text": "will",
+          "value": 18,
+          "normalized": 28.6
+        },
+        {
+          "text": "here",
+          "value": 17,
+          "normalized": 27.0
+        },
+        {
+          "text": "episode",
+          "value": 17,
+          "normalized": 27.0
+        },
+        {
+          "text": "game",
+          "value": 16,
+          "normalized": 25.4
+        },
+        {
+          "text": "without",
+          "value": 16,
+          "normalized": 25.4
+        },
+        {
+          "text": "brain",
+          "value": 16,
+          "normalized": 25.4
+        },
+        {
+          "text": "watch",
+          "value": 15,
+          "normalized": 23.8
+        },
+        {
+          "text": "love",
+          "value": 15,
+          "normalized": 23.8
+        },
+        {
+          "text": "much",
+          "value": 15,
+          "normalized": 23.8
+        },
+        {
+          "text": "너무",
+          "value": 15,
+          "normalized": 23.8
+        },
+        {
+          "text": "games",
+          "value": 14,
+          "normalized": 22.2
+        },
+        {
+          "text": "time",
+          "value": 14,
+          "normalized": 22.2
+        },
+        {
+          "text": "missing",
+          "value": 14,
+          "normalized": 22.2
+        },
+        {
+          "text": "wonwoo",
+          "value": 14,
+          "normalized": 22.2
+        },
+        {
+          "text": "one",
+          "value": 14,
+          "normalized": 22.2
+        }
+      ]
+    },
+    {
+      "video_id": "qgCxPNFF3rY",
+      "video_title": "[GOING SEVENTEEN] EP.137 세븐틴, 무리 지어 쉬다 #2 (SEVENTEEN, How The Pack Rests #2)",
+      "published_date": "2025-09-24",
+      "words": [
+        {
+          "text": "love",
+          "value": 36,
+          "normalized": 100.0
+        },
+        {
+          "text": "dino",
+          "value": 36,
+          "normalized": 100.0
+        },
+        {
+          "text": "vernon",
+          "value": 32,
+          "normalized": 88.9
+        },
+        {
+          "text": "woozi",
+          "value": 31,
+          "normalized": 86.1
+        },
+        {
+          "text": "them",
+          "value": 27,
+          "normalized": 75.0
+        },
+        {
+          "text": "singing",
+          "value": 26,
+          "normalized": 72.2
+        },
+        {
+          "text": "really",
+          "value": 26,
+          "normalized": 72.2
+        },
+        {
+          "text": "hoshi",
+          "value": 25,
+          "normalized": 69.4
+        },
+        {
+          "text": "bss",
+          "value": 23,
+          "normalized": 63.9
+        },
+        {
+          "text": "jun",
+          "value": 21,
+          "normalized": 58.3
+        },
+        {
+          "text": "his",
+          "value": 20,
+          "normalized": 55.6
+        },
+        {
+          "text": "17",
+          "value": 19,
+          "normalized": 52.8
+        },
+        {
+          "text": "together",
+          "value": 16,
+          "normalized": 44.4
+        },
+        {
+          "text": "funny",
+          "value": 16,
+          "normalized": 44.4
+        },
+        {
+          "text": "always",
+          "value": 15,
+          "normalized": 41.7
+        },
+        {
+          "text": "one",
+          "value": 15,
+          "normalized": 41.7
+        },
+        {
+          "text": "narrator",
+          "value": 15,
+          "normalized": 41.7
+        },
+        {
+          "text": "day",
+          "value": 15,
+          "normalized": 41.7
+        },
+        {
+          "text": "너무",
+          "value": 15,
+          "normalized": 41.7
+        },
+        {
+          "text": "eating",
+          "value": 15,
+          "normalized": 41.7
+        },
+        {
+          "text": "verkwan",
+          "value": 15,
+          "normalized": 41.7
+        },
+        {
+          "text": "진짜",
+          "value": 15,
+          "normalized": 41.7
+        },
+        {
+          "text": "him",
+          "value": 15,
+          "normalized": 41.7
+        },
+        {
+          "text": "much",
+          "value": 14,
+          "normalized": 38.9
+        },
+        {
+          "text": "gotta",
+          "value": 13,
+          "normalized": 36.1
+        },
+        {
+          "text": "chew",
+          "value": 13,
+          "normalized": 36.1
+        },
+        {
+          "text": "cute",
+          "value": 13,
+          "normalized": 36.1
+        },
+        {
+          "text": "28",
+          "value": 13,
+          "normalized": 36.1
+        },
+        {
+          "text": "song",
+          "value": 12,
+          "normalized": 33.3
+        },
+        {
+          "text": "26",
+          "value": 12,
+          "normalized": 33.3
+        }
+      ]
+    },
+    {
+      "video_id": "5U3_1azWJcc",
+      "video_title": "[GOING SEVENTEEN] EP.136 세븐틴, 무리 지어 쉬다 #1 (SEVENTEEN, How The Pack Rests #1)",
+      "published_date": "2025-09-17",
+      "words": [
+        {
+          "text": "vernon",
+          "value": 31,
+          "normalized": 100.0
+        },
+        {
+          "text": "hoshi",
+          "value": 29,
+          "normalized": 93.5
+        },
+        {
+          "text": "mingyu",
+          "value": 27,
+          "normalized": 87.1
+        },
+        {
+          "text": "love",
+          "value": 24,
+          "normalized": 77.4
+        },
+        {
+          "text": "really",
+          "value": 21,
+          "normalized": 67.7
+        },
+        {
+          "text": "minghao",
+          "value": 21,
+          "normalized": 67.7
+        },
+        {
+          "text": "너무",
+          "value": 18,
+          "normalized": 58.1
+        },
+        {
+          "text": "national",
+          "value": 17,
+          "normalized": 54.8
+        },
+        {
+          "text": "his",
+          "value": 17,
+          "normalized": 54.8
+        },
+        {
+          "text": "woozi",
+          "value": 16,
+          "normalized": 51.6
+        },
+        {
+          "text": "documentary",
+          "value": 15,
+          "normalized": 48.4
+        },
+        {
+          "text": "gose",
+          "value": 15,
+          "normalized": 48.4
+        },
+        {
+          "text": "staff",
+          "value": 15,
+          "normalized": 48.4
+        },
+        {
+          "text": "them",
+          "value": 15,
+          "normalized": 48.4
+        },
+        {
+          "text": "can",
+          "value": 15,
+          "normalized": 48.4
+        },
+        {
+          "text": "him",
+          "value": 15,
+          "normalized": 48.4
+        },
+        {
+          "text": "meditating",
+          "value": 14,
+          "normalized": 45.2
+        },
+        {
+          "text": "episode",
+          "value": 14,
+          "normalized": 45.2
+        },
+        {
+          "text": "wild",
+          "value": 14,
+          "normalized": 45.2
+        },
+        {
+          "text": "much",
+          "value": 13,
+          "normalized": 41.9
+        },
+        {
+          "text": "geographic",
+          "value": 13,
+          "normalized": 41.9
+        },
+        {
+          "text": "time",
+          "value": 13,
+          "normalized": 41.9
+        },
+        {
+          "text": "why",
+          "value": 13,
+          "normalized": 41.9
+        },
+        {
+          "text": "watching",
+          "value": 13,
+          "normalized": 41.9
+        },
+        {
+          "text": "the8",
+          "value": 13,
+          "normalized": 41.9
+        },
+        {
+          "text": "always",
+          "value": 13,
+          "normalized": 41.9
+        },
+        {
+          "text": "narrator",
+          "value": 12,
+          "normalized": 38.7
+        },
+        {
+          "text": "12",
+          "value": 12,
+          "normalized": 38.7
+        },
+        {
+          "text": "while",
+          "value": 12,
+          "normalized": 38.7
+        },
+        {
+          "text": "jun",
+          "value": 12,
+          "normalized": 38.7
+        }
+      ]
+    },
+    {
+      "video_id": "qCq1xbf-8ls",
+      "video_title": "[GOING SEVENTEEN] EP.135 더 게장 #2 (The Gejang #2)",
+      "published_date": "2025-09-10",
+      "words": [
+        {
+          "text": "dino",
+          "value": 57,
+          "normalized": 100.0
+        },
+        {
+          "text": "his",
+          "value": 32,
+          "normalized": 56.1
+        },
+        {
+          "text": "cute",
+          "value": 30,
+          "normalized": 52.6
+        },
+        {
+          "text": "hoshi",
+          "value": 27,
+          "normalized": 47.4
+        },
+        {
+          "text": "jun",
+          "value": 27,
+          "normalized": 47.4
+        },
+        {
+          "text": "love",
+          "value": 25,
+          "normalized": 43.9
+        },
+        {
+          "text": "episode",
+          "value": 23,
+          "normalized": 40.4
+        },
+        {
+          "text": "one",
+          "value": 22,
+          "normalized": 38.6
+        },
+        {
+          "text": "coups",
+          "value": 20,
+          "normalized": 35.1
+        },
+        {
+          "text": "joshua",
+          "value": 19,
+          "normalized": 33.3
+        },
+        {
+          "text": "scoups",
+          "value": 19,
+          "normalized": 33.3
+        },
+        {
+          "text": "members",
+          "value": 18,
+          "normalized": 31.6
+        },
+        {
+          "text": "can",
+          "value": 17,
+          "normalized": 29.8
+        },
+        {
+          "text": "vernon",
+          "value": 17,
+          "normalized": 29.8
+        },
+        {
+          "text": "seungkwan",
+          "value": 17,
+          "normalized": 29.8
+        },
+        {
+          "text": "really",
+          "value": 17,
+          "normalized": 29.8
+        },
+        {
+          "text": "all",
+          "value": 16,
+          "normalized": 28.1
+        },
+        {
+          "text": "gose",
+          "value": 16,
+          "normalized": 28.1
+        },
+        {
+          "text": "him",
+          "value": 16,
+          "normalized": 28.1
+        },
+        {
+          "text": "next",
+          "value": 15,
+          "normalized": 26.3
+        },
+        {
+          "text": "minghao",
+          "value": 14,
+          "normalized": 24.6
+        },
+        {
+          "text": "looks",
+          "value": 14,
+          "normalized": 24.6
+        },
+        {
+          "text": "funny",
+          "value": 14,
+          "normalized": 24.6
+        },
+        {
+          "text": "roly",
+          "value": 14,
+          "normalized": 24.6
+        },
+        {
+          "text": "them",
+          "value": 14,
+          "normalized": 24.6
+        },
+        {
+          "text": "poly",
+          "value": 13,
+          "normalized": 22.8
+        },
+        {
+          "text": "mingyu",
+          "value": 13,
+          "normalized": 22.8
+        },
+        {
+          "text": "right",
+          "value": 12,
+          "normalized": 21.1
+        },
+        {
+          "text": "only",
+          "value": 12,
+          "normalized": 21.1
+        },
+        {
+          "text": "way",
+          "value": 11,
+          "normalized": 19.3
+        }
+      ]
+    },
+    {
+      "video_id": "_iQ4DBMXHpk",
+      "video_title": "[GOING SEVENTEEN] EP.134 더 게장 #1 (The Gejang #1)",
+      "published_date": "2025-09-03",
+      "words": [
+        {
+          "text": "seungkwan",
+          "value": 48,
+          "normalized": 100.0
+        },
+        {
+          "text": "dk",
+          "value": 40,
+          "normalized": 83.3
+        },
+        {
+          "text": "mom",
+          "value": 37,
+          "normalized": 77.1
+        },
+        {
+          "text": "mingyu",
+          "value": 34,
+          "normalized": 70.8
+        },
+        {
+          "text": "them",
+          "value": 32,
+          "normalized": 66.7
+        },
+        {
+          "text": "dino",
+          "value": 27,
+          "normalized": 56.2
+        },
+        {
+          "text": "episode",
+          "value": 27,
+          "normalized": 56.2
+        },
+        {
+          "text": "woozi",
+          "value": 24,
+          "normalized": 50.0
+        },
+        {
+          "text": "members",
+          "value": 24,
+          "normalized": 50.0
+        },
+        {
+          "text": "cute",
+          "value": 24,
+          "normalized": 50.0
+        },
+        {
+          "text": "really",
+          "value": 24,
+          "normalized": 50.0
+        },
+        {
+          "text": "love",
+          "value": 22,
+          "normalized": 45.8
+        },
+        {
+          "text": "all",
+          "value": 21,
+          "normalized": 43.8
+        },
+        {
+          "text": "his",
+          "value": 20,
+          "normalized": 41.7
+        },
+        {
+          "text": "hoshi",
+          "value": 19,
+          "normalized": 39.6
+        },
+        {
+          "text": "jun",
+          "value": 18,
+          "normalized": 37.5
+        },
+        {
+          "text": "sahur",
+          "value": 18,
+          "normalized": 37.5
+        },
+        {
+          "text": "even",
+          "value": 16,
+          "normalized": 33.3
+        },
+        {
+          "text": "너무",
+          "value": 16,
+          "normalized": 33.3
+        },
+        {
+          "text": "tralala",
+          "value": 15,
+          "normalized": 31.2
+        },
+        {
+          "text": "family",
+          "value": 15,
+          "normalized": 31.2
+        },
+        {
+          "text": "each",
+          "value": 15,
+          "normalized": 31.2
+        },
+        {
+          "text": "about",
+          "value": 15,
+          "normalized": 31.2
+        },
+        {
+          "text": "gose",
+          "value": 15,
+          "normalized": 31.2
+        },
+        {
+          "text": "food",
+          "value": 15,
+          "normalized": 31.2
+        },
+        {
+          "text": "up",
+          "value": 14,
+          "normalized": 29.2
+        },
+        {
+          "text": "can",
+          "value": 14,
+          "normalized": 29.2
+        },
+        {
+          "text": "way",
+          "value": 14,
+          "normalized": 29.2
+        },
+        {
+          "text": "said",
+          "value": 14,
+          "normalized": 29.2
+        },
+        {
+          "text": "mother",
+          "value": 14,
+          "normalized": 29.2
+        }
+      ]
+    },
+    {
+      "video_id": "aaeycpZr9TM",
+      "video_title": "[GOING SEVENTEEN] EP.133 이 콘텐츠는 전부 사실이 아닙니다 : 너의 인연은 #2 (None Of This Is True: Our Connection #2)",
+      "published_date": "2025-08-27",
+      "words": [
+        {
+          "text": "dino",
+          "value": 110,
+          "normalized": 100.0
+        },
+        {
+          "text": "joshua",
+          "value": 44,
+          "normalized": 40.0
+        },
+        {
+          "text": "his",
+          "value": 44,
+          "normalized": 40.0
+        },
+        {
+          "text": "cute",
+          "value": 41,
+          "normalized": 37.3
+        },
+        {
+          "text": "kid",
+          "value": 38,
+          "normalized": 34.5
+        },
+        {
+          "text": "vernon",
+          "value": 30,
+          "normalized": 27.3
+        },
+        {
+          "text": "dk",
+          "value": 27,
+          "normalized": 24.5
+        },
+        {
+          "text": "wonwoo",
+          "value": 25,
+          "normalized": 22.7
+        },
+        {
+          "text": "yoonwoo",
+          "value": 25,
+          "normalized": 22.7
+        },
+        {
+          "text": "teacher",
+          "value": 21,
+          "normalized": 19.1
+        },
+        {
+          "text": "little",
+          "value": 21,
+          "normalized": 19.1
+        },
+        {
+          "text": "way",
+          "value": 20,
+          "normalized": 18.2
+        },
+        {
+          "text": "can",
+          "value": 20,
+          "normalized": 18.2
+        },
+        {
+          "text": "up",
+          "value": 19,
+          "normalized": 17.3
+        },
+        {
+          "text": "really",
+          "value": 19,
+          "normalized": 17.3
+        },
+        {
+          "text": "25",
+          "value": 16,
+          "normalized": 14.5
+        },
+        {
+          "text": "him",
+          "value": 15,
+          "normalized": 13.6
+        },
+        {
+          "text": "all",
+          "value": 15,
+          "normalized": 13.6
+        },
+        {
+          "text": "time",
+          "value": 15,
+          "normalized": 13.6
+        },
+        {
+          "text": "why",
+          "value": 14,
+          "normalized": 12.7
+        },
+        {
+          "text": "too",
+          "value": 14,
+          "normalized": 12.7
+        },
+        {
+          "text": "funny",
+          "value": 14,
+          "normalized": 12.7
+        },
+        {
+          "text": "even",
+          "value": 14,
+          "normalized": 12.7
+        },
+        {
+          "text": "screen",
+          "value": 14,
+          "normalized": 12.7
+        },
+        {
+          "text": "acting",
+          "value": 14,
+          "normalized": 12.7
+        },
+        {
+          "text": "being",
+          "value": 13,
+          "normalized": 11.8
+        },
+        {
+          "text": "because",
+          "value": 13,
+          "normalized": 11.8
+        },
+        {
+          "text": "adorable",
+          "value": 13,
+          "normalized": 11.8
+        },
+        {
+          "text": "part",
+          "value": 12,
+          "normalized": 10.9
+        },
+        {
+          "text": "love",
+          "value": 12,
+          "normalized": 10.9
+        }
+      ]
+    },
+    {
+      "video_id": "3KcsMPS7Iv4",
+      "video_title": "[GOING SEVENTEEN] EP.132 이 콘텐츠는 전부 사실이 아닙니다 : 너의 인연은 #1 (None Of This Is True: Our Connection #1)",
+      "published_date": "2025-08-20",
+      "words": [
+        {
+          "text": "his",
+          "value": 32,
+          "normalized": 100.0
+        },
+        {
+          "text": "dino",
+          "value": 31,
+          "normalized": 96.9
+        },
+        {
+          "text": "gose",
+          "value": 30,
+          "normalized": 93.8
+        },
+        {
+          "text": "hoshi",
+          "value": 29,
+          "normalized": 90.6
+        },
+        {
+          "text": "wonwoo",
+          "value": 26,
+          "normalized": 81.2
+        },
+        {
+          "text": "true",
+          "value": 25,
+          "normalized": 78.1
+        },
+        {
+          "text": "episode",
+          "value": 23,
+          "normalized": 71.9
+        },
+        {
+          "text": "none",
+          "value": 22,
+          "normalized": 68.8
+        },
+        {
+          "text": "dog",
+          "value": 21,
+          "normalized": 65.6
+        },
+        {
+          "text": "can",
+          "value": 20,
+          "normalized": 62.5
+        },
+        {
+          "text": "even",
+          "value": 20,
+          "normalized": 62.5
+        },
+        {
+          "text": "woozi",
+          "value": 19,
+          "normalized": 59.4
+        },
+        {
+          "text": "acting",
+          "value": 18,
+          "normalized": 56.2
+        },
+        {
+          "text": "love",
+          "value": 18,
+          "normalized": 56.2
+        },
+        {
+          "text": "funny",
+          "value": 18,
+          "normalized": 56.2
+        },
+        {
+          "text": "up",
+          "value": 17,
+          "normalized": 53.1
+        },
+        {
+          "text": "laugh",
+          "value": 17,
+          "normalized": 53.1
+        },
+        {
+          "text": "vernon",
+          "value": 15,
+          "normalized": 46.9
+        },
+        {
+          "text": "members",
+          "value": 15,
+          "normalized": 46.9
+        },
+        {
+          "text": "seungkwan",
+          "value": 15,
+          "normalized": 46.9
+        },
+        {
+          "text": "good",
+          "value": 14,
+          "normalized": 43.8
+        },
+        {
+          "text": "if",
+          "value": 13,
+          "normalized": 40.6
+        },
+        {
+          "text": "got",
+          "value": 13,
+          "normalized": 40.6
+        },
+        {
+          "text": "crying",
+          "value": 13,
+          "normalized": 40.6
+        },
+        {
+          "text": "really",
+          "value": 13,
+          "normalized": 40.6
+        },
+        {
+          "text": "why",
+          "value": 12,
+          "normalized": 37.5
+        },
+        {
+          "text": "way",
+          "value": 12,
+          "normalized": 37.5
+        },
+        {
+          "text": "then",
+          "value": 12,
+          "normalized": 37.5
+        },
+        {
+          "text": "time",
+          "value": 12,
+          "normalized": 37.5
+        },
+        {
+          "text": "editors",
+          "value": 11,
+          "normalized": 34.4
+        }
+      ]
+    },
+    {
+      "video_id": "Z4guem5XzCw",
+      "video_title": "[GOING SEVENTEEN] EP.131 물배틀그라운드 #2 (WATER BATTLEGROUNDS #2)",
+      "published_date": "2025-08-13",
+      "words": [
+        {
+          "text": "mingyu",
+          "value": 86,
+          "normalized": 100.0
+        },
+        {
+          "text": "dk",
+          "value": 67,
+          "normalized": 77.9
+        },
+        {
+          "text": "him",
+          "value": 45,
+          "normalized": 52.3
+        },
+        {
+          "text": "seungkwan",
+          "value": 42,
+          "normalized": 48.8
+        },
+        {
+          "text": "president",
+          "value": 42,
+          "normalized": 48.8
+        },
+        {
+          "text": "his",
+          "value": 39,
+          "normalized": 45.3
+        },
+        {
+          "text": "hoshi",
+          "value": 30,
+          "normalized": 34.9
+        },
+        {
+          "text": "game",
+          "value": 30,
+          "normalized": 34.9
+        },
+        {
+          "text": "dino",
+          "value": 28,
+          "normalized": 32.6
+        },
+        {
+          "text": "being",
+          "value": 27,
+          "normalized": 31.4
+        },
+        {
+          "text": "jun",
+          "value": 26,
+          "normalized": 30.2
+        },
+        {
+          "text": "class",
+          "value": 26,
+          "normalized": 30.2
+        },
+        {
+          "text": "love",
+          "value": 25,
+          "normalized": 29.1
+        },
+        {
+          "text": "out",
+          "value": 22,
+          "normalized": 25.6
+        },
+        {
+          "text": "gose",
+          "value": 22,
+          "normalized": 25.6
+        },
+        {
+          "text": "can",
+          "value": 20,
+          "normalized": 23.3
+        },
+        {
+          "text": "even",
+          "value": 20,
+          "normalized": 23.3
+        },
+        {
+          "text": "always",
+          "value": 20,
+          "normalized": 23.3
+        },
+        {
+          "text": "vernon",
+          "value": 20,
+          "normalized": 23.3
+        },
+        {
+          "text": "next",
+          "value": 19,
+          "normalized": 22.1
+        },
+        {
+          "text": "why",
+          "value": 18,
+          "normalized": 20.9
+        },
+        {
+          "text": "up",
+          "value": 18,
+          "normalized": 20.9
+        },
+        {
+          "text": "really",
+          "value": 18,
+          "normalized": 20.9
+        },
+        {
+          "text": "scoups",
+          "value": 17,
+          "normalized": 19.8
+        },
+        {
+          "text": "got",
+          "value": 17,
+          "normalized": 19.8
+        },
+        {
+          "text": "one",
+          "value": 17,
+          "normalized": 19.8
+        },
+        {
+          "text": "team",
+          "value": 17,
+          "normalized": 19.8
+        },
+        {
+          "text": "episode",
+          "value": 16,
+          "normalized": 18.6
+        },
+        {
+          "text": "first",
+          "value": 16,
+          "normalized": 18.6
+        },
+        {
+          "text": "time",
+          "value": 16,
+          "normalized": 18.6
+        }
+      ]
+    },
+    {
+      "video_id": "fnLUyKhLwrg",
+      "video_title": "[GOING SEVENTEEN] EP.130 물배틀그라운드 #1 (WATER BATTLEGROUNDS #1)",
+      "published_date": "2025-08-06",
+      "words": [
+        {
+          "text": "mingyu",
+          "value": 70,
+          "normalized": 100.0
+        },
+        {
+          "text": "seungkwan",
+          "value": 69,
+          "normalized": 98.6
+        },
+        {
+          "text": "game",
+          "value": 43,
+          "normalized": 61.4
+        },
+        {
+          "text": "him",
+          "value": 37,
+          "normalized": 52.9
+        },
+        {
+          "text": "hoshi",
+          "value": 33,
+          "normalized": 47.1
+        },
+        {
+          "text": "vernon",
+          "value": 31,
+          "normalized": 44.3
+        },
+        {
+          "text": "his",
+          "value": 30,
+          "normalized": 42.9
+        },
+        {
+          "text": "gose",
+          "value": 30,
+          "normalized": 42.9
+        },
+        {
+          "text": "episode",
+          "value": 28,
+          "normalized": 40.0
+        },
+        {
+          "text": "jun",
+          "value": 27,
+          "normalized": 38.6
+        },
+        {
+          "text": "love",
+          "value": 26,
+          "normalized": 37.1
+        },
+        {
+          "text": "really",
+          "value": 24,
+          "normalized": 34.3
+        },
+        {
+          "text": "fun",
+          "value": 23,
+          "normalized": 32.9
+        },
+        {
+          "text": "being",
+          "value": 22,
+          "normalized": 31.4
+        },
+        {
+          "text": "smart",
+          "value": 20,
+          "normalized": 28.6
+        },
+        {
+          "text": "woozi",
+          "value": 20,
+          "normalized": 28.6
+        },
+        {
+          "text": "진짜",
+          "value": 19,
+          "normalized": 27.1
+        },
+        {
+          "text": "all",
+          "value": 18,
+          "normalized": 25.7
+        },
+        {
+          "text": "them",
+          "value": 18,
+          "normalized": 25.7
+        },
+        {
+          "text": "drone",
+          "value": 18,
+          "normalized": 25.7
+        },
+        {
+          "text": "scoups",
+          "value": 18,
+          "normalized": 25.7
+        },
+        {
+          "text": "team",
+          "value": 17,
+          "normalized": 24.3
+        },
+        {
+          "text": "way",
+          "value": 17,
+          "normalized": 24.3
+        },
+        {
+          "text": "more",
+          "value": 17,
+          "normalized": 24.3
+        },
+        {
+          "text": "members",
+          "value": 16,
+          "normalized": 22.9
+        },
+        {
+          "text": "up",
+          "value": 16,
+          "normalized": 22.9
+        },
+        {
+          "text": "here",
+          "value": 16,
+          "normalized": 22.9
+        },
+        {
+          "text": "cute",
+          "value": 16,
+          "normalized": 22.9
+        },
+        {
+          "text": "one",
+          "value": 15,
+          "normalized": 21.4
+        },
+        {
+          "text": "out",
+          "value": 15,
+          "normalized": 21.4
+        }
+      ]
+    },
+    {
+      "video_id": "cli_QQe2USg",
+      "video_title": "[GOING SEVENTEEN] EP.129 MC 부격돌 : 위험한 초대 #2 (MC BOO’s Dangerous Invitation #2)",
+      "published_date": "2025-07-30",
+      "words": [
+        {
+          "text": "hoshi",
+          "value": 38,
+          "normalized": 100.0
+        },
+        {
+          "text": "dk",
+          "value": 33,
+          "normalized": 86.8
+        },
+        {
+          "text": "mingyu",
+          "value": 32,
+          "normalized": 84.2
+        },
+        {
+          "text": "woozi",
+          "value": 32,
+          "normalized": 84.2
+        },
+        {
+          "text": "episode",
+          "value": 31,
+          "normalized": 81.6
+        },
+        {
+          "text": "vernon",
+          "value": 30,
+          "normalized": 78.9
+        },
+        {
+          "text": "his",
+          "value": 27,
+          "normalized": 71.1
+        },
+        {
+          "text": "all",
+          "value": 24,
+          "normalized": 63.2
+        },
+        {
+          "text": "water",
+          "value": 23,
+          "normalized": 60.5
+        },
+        {
+          "text": "them",
+          "value": 18,
+          "normalized": 47.4
+        },
+        {
+          "text": "even",
+          "value": 18,
+          "normalized": 47.4
+        },
+        {
+          "text": "진짜",
+          "value": 18,
+          "normalized": 47.4
+        },
+        {
+          "text": "flying",
+          "value": 17,
+          "normalized": 44.7
+        },
+        {
+          "text": "into",
+          "value": 16,
+          "normalized": 42.1
+        },
+        {
+          "text": "funny",
+          "value": 16,
+          "normalized": 42.1
+        },
+        {
+          "text": "being",
+          "value": 16,
+          "normalized": 42.1
+        },
+        {
+          "text": "really",
+          "value": 14,
+          "normalized": 36.8
+        },
+        {
+          "text": "seungkwan",
+          "value": 14,
+          "normalized": 36.8
+        },
+        {
+          "text": "time",
+          "value": 14,
+          "normalized": 36.8
+        },
+        {
+          "text": "20",
+          "value": 14,
+          "normalized": 36.8
+        },
+        {
+          "text": "love",
+          "value": 13,
+          "normalized": 34.2
+        },
+        {
+          "text": "can",
+          "value": 13,
+          "normalized": 34.2
+        },
+        {
+          "text": "much",
+          "value": 13,
+          "normalized": 34.2
+        },
+        {
+          "text": "17",
+          "value": 13,
+          "normalized": 34.2
+        },
+        {
+          "text": "scoups",
+          "value": 12,
+          "normalized": 31.6
+        },
+        {
+          "text": "27",
+          "value": 12,
+          "normalized": 31.6
+        },
+        {
+          "text": "one",
+          "value": 11,
+          "normalized": 28.9
+        },
+        {
+          "text": "him",
+          "value": 11,
+          "normalized": 28.9
+        },
+        {
+          "text": "last",
+          "value": 11,
+          "normalized": 28.9
+        },
+        {
+          "text": "know",
+          "value": 11,
+          "normalized": 28.9
+        }
+      ]
+    },
+    {
+      "video_id": "27FE8Brbfzs",
+      "video_title": "[GOING SEVENTEEN] EP.128 MC 부격돌 : 위험한 초대 #1 (MC BOO’s Dangerous Invitation #1)",
+      "published_date": "2025-07-23",
+      "words": [
+        {
+          "text": "dk",
+          "value": 60,
+          "normalized": 100.0
+        },
+        {
+          "text": "dino",
+          "value": 56,
+          "normalized": 93.3
+        },
+        {
+          "text": "진짜",
+          "value": 39,
+          "normalized": 65.0
+        },
+        {
+          "text": "his",
+          "value": 35,
+          "normalized": 58.3
+        },
+        {
+          "text": "scoups",
+          "value": 32,
+          "normalized": 53.3
+        },
+        {
+          "text": "water",
+          "value": 32,
+          "normalized": 53.3
+        },
+        {
+          "text": "flying",
+          "value": 27,
+          "normalized": 45.0
+        },
+        {
+          "text": "episode",
+          "value": 27,
+          "normalized": 45.0
+        },
+        {
+          "text": "love",
+          "value": 27,
+          "normalized": 45.0
+        },
+        {
+          "text": "너무",
+          "value": 27,
+          "normalized": 45.0
+        },
+        {
+          "text": "times",
+          "value": 25,
+          "normalized": 41.7
+        },
+        {
+          "text": "mingyu",
+          "value": 22,
+          "normalized": 36.7
+        },
+        {
+          "text": "jun",
+          "value": 20,
+          "normalized": 33.3
+        },
+        {
+          "text": "one",
+          "value": 18,
+          "normalized": 30.0
+        },
+        {
+          "text": "way",
+          "value": 18,
+          "normalized": 30.0
+        },
+        {
+          "text": "splashed",
+          "value": 17,
+          "normalized": 28.3
+        },
+        {
+          "text": "him",
+          "value": 16,
+          "normalized": 26.7
+        },
+        {
+          "text": "into",
+          "value": 14,
+          "normalized": 23.3
+        },
+        {
+          "text": "launched",
+          "value": 14,
+          "normalized": 23.3
+        },
+        {
+          "text": "members",
+          "value": 14,
+          "normalized": 23.3
+        },
+        {
+          "text": "them",
+          "value": 13,
+          "normalized": 21.7
+        },
+        {
+          "text": "coups",
+          "value": 13,
+          "normalized": 21.7
+        },
+        {
+          "text": "all",
+          "value": 12,
+          "normalized": 20.0
+        },
+        {
+          "text": "no",
+          "value": 12,
+          "normalized": 20.0
+        },
+        {
+          "text": "can",
+          "value": 11,
+          "normalized": 18.3
+        },
+        {
+          "text": "hoshi",
+          "value": 11,
+          "normalized": 18.3
+        },
+        {
+          "text": "gose",
+          "value": 11,
+          "normalized": 18.3
+        },
+        {
+          "text": "forbidden",
+          "value": 10,
+          "normalized": 16.7
+        },
+        {
+          "text": "12",
+          "value": 10,
+          "normalized": 16.7
+        },
+        {
+          "text": "guest",
+          "value": 10,
+          "normalized": 16.7
+        }
+      ]
+    },
+    {
+      "video_id": "PLUfUXEkPm4",
+      "video_title": "[GOING SEVENTEEN] EP.127 두더지의 반란 #2 (The Rebellion of the Moles #2)",
+      "published_date": "2025-07-16",
+      "words": [
+        {
+          "text": "mole",
+          "value": 72,
+          "normalized": 100.0
+        },
+        {
+          "text": "dino",
+          "value": 52,
+          "normalized": 72.2
+        },
+        {
+          "text": "jeonghan",
+          "value": 51,
+          "normalized": 70.8
+        },
+        {
+          "text": "scoups",
+          "value": 39,
+          "normalized": 54.2
+        },
+        {
+          "text": "spy",
+          "value": 39,
+          "normalized": 54.2
+        },
+        {
+          "text": "dk",
+          "value": 33,
+          "normalized": 45.8
+        },
+        {
+          "text": "hoshi",
+          "value": 32,
+          "normalized": 44.4
+        },
+        {
+          "text": "his",
+          "value": 32,
+          "normalized": 44.4
+        },
+        {
+          "text": "him",
+          "value": 30,
+          "normalized": 41.7
+        },
+        {
+          "text": "one",
+          "value": 28,
+          "normalized": 38.9
+        },
+        {
+          "text": "vernon",
+          "value": 26,
+          "normalized": 36.1
+        },
+        {
+          "text": "really",
+          "value": 25,
+          "normalized": 34.7
+        },
+        {
+          "text": "next",
+          "value": 24,
+          "normalized": 33.3
+        },
+        {
+          "text": "seungkwan",
+          "value": 24,
+          "normalized": 33.3
+        },
+        {
+          "text": "10",
+          "value": 23,
+          "normalized": 31.9
+        },
+        {
+          "text": "no",
+          "value": 21,
+          "normalized": 29.2
+        },
+        {
+          "text": "if",
+          "value": 21,
+          "normalized": 29.2
+        },
+        {
+          "text": "episode",
+          "value": 20,
+          "normalized": 27.8
+        },
+        {
+          "text": "would",
+          "value": 20,
+          "normalized": 27.8
+        },
+        {
+          "text": "coups",
+          "value": 18,
+          "normalized": 25.0
+        },
+        {
+          "text": "all",
+          "value": 17,
+          "normalized": 23.6
+        },
+        {
+          "text": "always",
+          "value": 16,
+          "normalized": 22.2
+        },
+        {
+          "text": "being",
+          "value": 16,
+          "normalized": 22.2
+        },
+        {
+          "text": "can",
+          "value": 16,
+          "normalized": 22.2
+        },
+        {
+          "text": "12",
+          "value": 16,
+          "normalized": 22.2
+        },
+        {
+          "text": "team",
+          "value": 16,
+          "normalized": 22.2
+        },
+        {
+          "text": "time",
+          "value": 16,
+          "normalized": 22.2
+        },
+        {
+          "text": "cute",
+          "value": 15,
+          "normalized": 20.8
+        },
+        {
+          "text": "mingyu",
+          "value": 15,
+          "normalized": 20.8
+        },
+        {
+          "text": "gose",
+          "value": 15,
+          "normalized": 20.8
+        }
+      ]
+    },
+    {
+      "video_id": "JqO-ijFi3dw",
+      "video_title": "[GOING SEVENTEEN] EP.126 두더지의 반란 #1 (The Rebellion of the Moles #1)",
+      "published_date": "2025-07-09",
+      "words": [
+        {
+          "text": "jun",
+          "value": 62,
+          "normalized": 100.0
+        },
+        {
+          "text": "seungkwan",
+          "value": 57,
+          "normalized": 91.9
+        },
+        {
+          "text": "hoshi",
+          "value": 34,
+          "normalized": 54.8
+        },
+        {
+          "text": "really",
+          "value": 27,
+          "normalized": 43.5
+        },
+        {
+          "text": "time",
+          "value": 26,
+          "normalized": 41.9
+        },
+        {
+          "text": "them",
+          "value": 24,
+          "normalized": 38.7
+        },
+        {
+          "text": "vernon",
+          "value": 23,
+          "normalized": 37.1
+        },
+        {
+          "text": "gose",
+          "value": 23,
+          "normalized": 37.1
+        },
+        {
+          "text": "him",
+          "value": 22,
+          "normalized": 35.5
+        },
+        {
+          "text": "love",
+          "value": 22,
+          "normalized": 35.5
+        },
+        {
+          "text": "his",
+          "value": 22,
+          "normalized": 35.5
+        },
+        {
+          "text": "funny",
+          "value": 22,
+          "normalized": 35.5
+        },
+        {
+          "text": "cute",
+          "value": 22,
+          "normalized": 35.5
+        },
+        {
+          "text": "joshua",
+          "value": 20,
+          "normalized": 32.3
+        },
+        {
+          "text": "if",
+          "value": 20,
+          "normalized": 32.3
+        },
+        {
+          "text": "way",
+          "value": 18,
+          "normalized": 29.0
+        },
+        {
+          "text": "dk",
+          "value": 18,
+          "normalized": 29.0
+        },
+        {
+          "text": "can",
+          "value": 17,
+          "normalized": 27.4
+        },
+        {
+          "text": "much",
+          "value": 17,
+          "normalized": 27.4
+        },
+        {
+          "text": "19",
+          "value": 16,
+          "normalized": 25.8
+        },
+        {
+          "text": "hurt",
+          "value": 16,
+          "normalized": 25.8
+        },
+        {
+          "text": "hurts",
+          "value": 15,
+          "normalized": 24.2
+        },
+        {
+          "text": "first",
+          "value": 15,
+          "normalized": 24.2
+        },
+        {
+          "text": "11",
+          "value": 15,
+          "normalized": 24.2
+        },
+        {
+          "text": "mole",
+          "value": 14,
+          "normalized": 22.6
+        },
+        {
+          "text": "moles",
+          "value": 14,
+          "normalized": 22.6
+        },
+        {
+          "text": "see",
+          "value": 13,
+          "normalized": 21.0
+        },
+        {
+          "text": "here",
+          "value": 13,
+          "normalized": 21.0
+        },
+        {
+          "text": "even",
+          "value": 13,
+          "normalized": 21.0
+        },
+        {
+          "text": "episode",
+          "value": 13,
+          "normalized": 21.0
+        }
+      ]
+    },
+    {
+      "video_id": "SLXeeM5CsZ4",
+      "video_title": "[GOING SEVENTEEN] EP.125 세븐틴을 찾아라 #2 (Where’s SEVENTEEN? #2)",
+      "published_date": "2025-07-02",
+      "words": [
+        {
+          "text": "dino",
+          "value": 87,
+          "normalized": 100.0
+        },
+        {
+          "text": "hoshi",
+          "value": 57,
+          "normalized": 65.5
+        },
+        {
+          "text": "vernon",
+          "value": 57,
+          "normalized": 65.5
+        },
+        {
+          "text": "his",
+          "value": 50,
+          "normalized": 57.5
+        },
+        {
+          "text": "him",
+          "value": 47,
+          "normalized": 54.0
+        },
+        {
+          "text": "members",
+          "value": 45,
+          "normalized": 51.7
+        },
+        {
+          "text": "really",
+          "value": 41,
+          "normalized": 47.1
+        },
+        {
+          "text": "dk",
+          "value": 34,
+          "normalized": 39.1
+        },
+        {
+          "text": "cute",
+          "value": 33,
+          "normalized": 37.9
+        },
+        {
+          "text": "minghao",
+          "value": 33,
+          "normalized": 37.9
+        },
+        {
+          "text": "the8",
+          "value": 31,
+          "normalized": 35.6
+        },
+        {
+          "text": "find",
+          "value": 29,
+          "normalized": 33.3
+        },
+        {
+          "text": "found",
+          "value": 26,
+          "normalized": 29.9
+        },
+        {
+          "text": "love",
+          "value": 24,
+          "normalized": 27.6
+        },
+        {
+          "text": "can",
+          "value": 23,
+          "normalized": 26.4
+        },
+        {
+          "text": "finding",
+          "value": 21,
+          "normalized": 24.1
+        },
+        {
+          "text": "way",
+          "value": 21,
+          "normalized": 24.1
+        },
+        {
+          "text": "all",
+          "value": 20,
+          "normalized": 23.0
+        },
+        {
+          "text": "being",
+          "value": 20,
+          "normalized": 23.0
+        },
+        {
+          "text": "them",
+          "value": 19,
+          "normalized": 21.8
+        },
+        {
+          "text": "good",
+          "value": 19,
+          "normalized": 21.8
+        },
+        {
+          "text": "mingyu",
+          "value": 17,
+          "normalized": 19.5
+        },
+        {
+          "text": "kwon",
+          "value": 16,
+          "normalized": 18.4
+        },
+        {
+          "text": "even",
+          "value": 16,
+          "normalized": 18.4
+        },
+        {
+          "text": "member",
+          "value": 16,
+          "normalized": 18.4
+        },
+        {
+          "text": "episode",
+          "value": 15,
+          "normalized": 17.2
+        },
+        {
+          "text": "much",
+          "value": 15,
+          "normalized": 17.2
+        },
+        {
+          "text": "너무",
+          "value": 15,
+          "normalized": 17.2
+        },
+        {
+          "text": "one",
+          "value": 14,
+          "normalized": 16.1
+        },
+        {
+          "text": "everyone",
+          "value": 14,
+          "normalized": 16.1
+        }
+      ]
+    },
+    {
+      "video_id": "SHMw-u9xdxc",
+      "video_title": "[GOING SEVENTEEN] EP.124 세븐틴을 찾아라 #1 (Where’s SEVENTEEN? #1)",
+      "published_date": "2025-06-25",
+      "words": [
+        {
+          "text": "dino",
+          "value": 133,
+          "normalized": 100.0
+        },
+        {
+          "text": "dk",
+          "value": 59,
+          "normalized": 44.4
+        },
+        {
+          "text": "the8",
+          "value": 59,
+          "normalized": 44.4
+        },
+        {
+          "text": "his",
+          "value": 47,
+          "normalized": 35.3
+        },
+        {
+          "text": "him",
+          "value": 44,
+          "normalized": 33.1
+        },
+        {
+          "text": "minghao",
+          "value": 40,
+          "normalized": 30.1
+        },
+        {
+          "text": "know",
+          "value": 36,
+          "normalized": 27.1
+        },
+        {
+          "text": "members",
+          "value": 36,
+          "normalized": 27.1
+        },
+        {
+          "text": "can",
+          "value": 33,
+          "normalized": 24.8
+        },
+        {
+          "text": "way",
+          "value": 32,
+          "normalized": 24.1
+        },
+        {
+          "text": "them",
+          "value": 31,
+          "normalized": 23.3
+        },
+        {
+          "text": "hoshi",
+          "value": 26,
+          "normalized": 19.5
+        },
+        {
+          "text": "mingyu",
+          "value": 25,
+          "normalized": 18.8
+        },
+        {
+          "text": "wonwoo",
+          "value": 25,
+          "normalized": 18.8
+        },
+        {
+          "text": "everyone",
+          "value": 24,
+          "normalized": 18.0
+        },
+        {
+          "text": "cute",
+          "value": 24,
+          "normalized": 18.0
+        },
+        {
+          "text": "all",
+          "value": 23,
+          "normalized": 17.3
+        },
+        {
+          "text": "find",
+          "value": 22,
+          "normalized": 16.5
+        },
+        {
+          "text": "really",
+          "value": 22,
+          "normalized": 16.5
+        },
+        {
+          "text": "even",
+          "value": 22,
+          "normalized": 16.5
+        },
+        {
+          "text": "vernon",
+          "value": 21,
+          "normalized": 15.8
+        },
+        {
+          "text": "episode",
+          "value": 21,
+          "normalized": 15.8
+        },
+        {
+          "text": "much",
+          "value": 21,
+          "normalized": 15.8
+        },
+        {
+          "text": "gose",
+          "value": 19,
+          "normalized": 14.3
+        },
+        {
+          "text": "scoups",
+          "value": 19,
+          "normalized": 14.3
+        },
+        {
+          "text": "love",
+          "value": 17,
+          "normalized": 12.8
+        },
+        {
+          "text": "being",
+          "value": 17,
+          "normalized": 12.8
+        },
+        {
+          "text": "woozi",
+          "value": 17,
+          "normalized": 12.8
+        },
+        {
+          "text": "would",
+          "value": 16,
+          "normalized": 12.0
+        },
+        {
+          "text": "one",
+          "value": 16,
+          "normalized": 12.0
+        }
+      ]
+    },
+    {
+      "video_id": "9Lafr1VoeHs",
+      "video_title": "[GOING SEVENTEEN] 2025 Opening Title Sequence",
+      "published_date": "2025-06-04",
+      "words": [
+        {
+          "text": "back",
+          "value": 97,
+          "normalized": 100.0
+        },
+        {
+          "text": "gose",
+          "value": 62,
+          "normalized": 63.9
+        },
+        {
+          "text": "finally",
+          "value": 38,
+          "normalized": 39.2
+        },
+        {
+          "text": "therapy",
+          "value": 26,
+          "normalized": 26.8
+        },
+        {
+          "text": "13",
+          "value": 22,
+          "normalized": 22.7
+        },
+        {
+          "text": "healing",
+          "value": 22,
+          "normalized": 22.7
+        },
+        {
+          "text": "world",
+          "value": 19,
+          "normalized": 19.6
+        },
+        {
+          "text": "opening",
+          "value": 17,
+          "normalized": 17.5
+        },
+        {
+          "text": "all",
+          "value": 17,
+          "normalized": 17.5
+        },
+        {
+          "text": "our",
+          "value": 16,
+          "normalized": 16.5
+        },
+        {
+          "text": "can",
+          "value": 16,
+          "normalized": 16.5
+        },
+        {
+          "text": "artists",
+          "value": 15,
+          "normalized": 15.5
+        },
+        {
+          "text": "intro",
+          "value": 13,
+          "normalized": 13.4
+        },
+        {
+          "text": "wait",
+          "value": 13,
+          "normalized": 13.4
+        },
+        {
+          "text": "coming",
+          "value": 12,
+          "normalized": 12.4
+        },
+        {
+          "text": "again",
+          "value": 12,
+          "normalized": 12.4
+        },
+        {
+          "text": "backkk",
+          "value": 11,
+          "normalized": 11.3
+        },
+        {
+          "text": "real",
+          "value": 10,
+          "normalized": 10.3
+        },
+        {
+          "text": "life",
+          "value": 10,
+          "normalized": 10.3
+        },
+        {
+          "text": "omg",
+          "value": 10,
+          "normalized": 10.3
+        },
+        {
+          "text": "love",
+          "value": 9,
+          "normalized": 9.3
+        },
+        {
+          "text": "happy",
+          "value": 9,
+          "normalized": 9.3
+        },
+        {
+          "text": "thank",
+          "value": 9,
+          "normalized": 9.3
+        },
+        {
+          "text": "backkkk",
+          "value": 9,
+          "normalized": 9.3
+        },
+        {
+          "text": "waiting",
+          "value": 8,
+          "normalized": 8.2
+        },
+        {
+          "text": "miss",
+          "value": 8,
+          "normalized": 8.2
+        },
+        {
+          "text": "2025",
+          "value": 8,
+          "normalized": 8.2
+        },
+        {
+          "text": "members",
+          "value": 7,
+          "normalized": 7.2
+        },
+        {
+          "text": "been",
+          "value": 7,
+          "normalized": 7.2
+        },
+        {
+          "text": "wednesday",
+          "value": 7,
+          "normalized": 7.2
+        }
+      ]
+    },
+    {
+      "video_id": "ln1sUIOChqk",
+      "video_title": "[GOING SEVENTEEN] COMEBACK SPECIAL : SEVENTEEN TV BEHIND",
+      "published_date": "2025-06-04",
+      "words": [
+        {
+          "text": "hoshi",
+          "value": 82,
+          "normalized": 100.0
+        },
+        {
+          "text": "seungkwan",
+          "value": 47,
+          "normalized": 57.3
+        },
+        {
+          "text": "funny",
+          "value": 39,
+          "normalized": 47.6
+        },
+        {
+          "text": "scene",
+          "value": 38,
+          "normalized": 46.3
+        },
+        {
+          "text": "dk",
+          "value": 38,
+          "normalized": 46.3
+        },
+        {
+          "text": "really",
+          "value": 35,
+          "normalized": 42.7
+        },
+        {
+          "text": "his",
+          "value": 33,
+          "normalized": 40.2
+        },
+        {
+          "text": "dino",
+          "value": 30,
+          "normalized": 36.6
+        },
+        {
+          "text": "can",
+          "value": 29,
+          "normalized": 35.4
+        },
+        {
+          "text": "진짜",
+          "value": 27,
+          "normalized": 32.9
+        },
+        {
+          "text": "woozi",
+          "value": 24,
+          "normalized": 29.3
+        },
+        {
+          "text": "laughing",
+          "value": 22,
+          "normalized": 26.8
+        },
+        {
+          "text": "laugh",
+          "value": 22,
+          "normalized": 26.8
+        },
+        {
+          "text": "너무",
+          "value": 22,
+          "normalized": 26.8
+        },
+        {
+          "text": "him",
+          "value": 19,
+          "normalized": 23.2
+        },
+        {
+          "text": "out",
+          "value": 19,
+          "normalized": 23.2
+        },
+        {
+          "text": "acting",
+          "value": 18,
+          "normalized": 22.0
+        },
+        {
+          "text": "love",
+          "value": 18,
+          "normalized": 22.0
+        },
+        {
+          "text": "much",
+          "value": 18,
+          "normalized": 22.0
+        },
+        {
+          "text": "trying",
+          "value": 16,
+          "normalized": 19.5
+        },
+        {
+          "text": "all",
+          "value": 16,
+          "normalized": 19.5
+        },
+        {
+          "text": "12",
+          "value": 15,
+          "normalized": 18.3
+        },
+        {
+          "text": "part",
+          "value": 15,
+          "normalized": 18.3
+        },
+        {
+          "text": "members",
+          "value": 14,
+          "normalized": 17.1
+        },
+        {
+          "text": "them",
+          "value": 14,
+          "normalized": 17.1
+        },
+        {
+          "text": "too",
+          "value": 14,
+          "normalized": 17.1
+        },
+        {
+          "text": "lol",
+          "value": 14,
+          "normalized": 17.1
+        },
+        {
+          "text": "one",
+          "value": 13,
+          "normalized": 15.9
+        },
+        {
+          "text": "vernon",
+          "value": 13,
+          "normalized": 15.9
+        },
+        {
+          "text": "way",
+          "value": 13,
+          "normalized": 15.9
+        }
+      ]
+    },
+    {
+      "video_id": "Kul1OglaF58",
+      "video_title": "[GOING SEVENTEEN] COMEBACK SPECIAL : SEVENTEEN TV #2",
+      "published_date": "2025-05-28",
+      "words": [
+        {
+          "text": "his",
+          "value": 62,
+          "normalized": 100.0
+        },
+        {
+          "text": "seungkwan",
+          "value": 56,
+          "normalized": 90.3
+        },
+        {
+          "text": "dino",
+          "value": 52,
+          "normalized": 83.9
+        },
+        {
+          "text": "them",
+          "value": 44,
+          "normalized": 71.0
+        },
+        {
+          "text": "dk",
+          "value": 41,
+          "normalized": 66.1
+        },
+        {
+          "text": "hoshi",
+          "value": 39,
+          "normalized": 62.9
+        },
+        {
+          "text": "laugh",
+          "value": 37,
+          "normalized": 59.7
+        },
+        {
+          "text": "up",
+          "value": 37,
+          "normalized": 59.7
+        },
+        {
+          "text": "scoups",
+          "value": 36,
+          "normalized": 58.1
+        },
+        {
+          "text": "really",
+          "value": 30,
+          "normalized": 48.4
+        },
+        {
+          "text": "10",
+          "value": 29,
+          "normalized": 46.8
+        },
+        {
+          "text": "minghao",
+          "value": 28,
+          "normalized": 45.2
+        },
+        {
+          "text": "jun",
+          "value": 26,
+          "normalized": 41.9
+        },
+        {
+          "text": "all",
+          "value": 26,
+          "normalized": 41.9
+        },
+        {
+          "text": "crying",
+          "value": 25,
+          "normalized": 40.3
+        },
+        {
+          "text": "woozi",
+          "value": 24,
+          "normalized": 38.7
+        },
+        {
+          "text": "13",
+          "value": 24,
+          "normalized": 38.7
+        },
+        {
+          "text": "can",
+          "value": 24,
+          "normalized": 38.7
+        },
+        {
+          "text": "coups",
+          "value": 23,
+          "normalized": 37.1
+        },
+        {
+          "text": "know",
+          "value": 23,
+          "normalized": 37.1
+        },
+        {
+          "text": "love",
+          "value": 23,
+          "normalized": 37.1
+        },
+        {
+          "text": "너무",
+          "value": 23,
+          "normalized": 37.1
+        },
+        {
+          "text": "11",
+          "value": 22,
+          "normalized": 35.5
+        },
+        {
+          "text": "trying",
+          "value": 21,
+          "normalized": 33.9
+        },
+        {
+          "text": "even",
+          "value": 21,
+          "normalized": 33.9
+        },
+        {
+          "text": "towel",
+          "value": 21,
+          "normalized": 33.9
+        },
+        {
+          "text": "him",
+          "value": 21,
+          "normalized": 33.9
+        },
+        {
+          "text": "way",
+          "value": 21,
+          "normalized": 33.9
+        },
+        {
+          "text": "were",
+          "value": 20,
+          "normalized": 32.3
+        },
+        {
+          "text": "fake",
+          "value": 20,
+          "normalized": 32.3
+        }
+      ]
+    },
+    {
+      "video_id": "55vXlK_iOr0",
+      "video_title": "[GOING SEVENTEEN] COMEBACK SPECIAL : SEVENTEEN TV #1",
+      "published_date": "2025-05-21",
+      "words": [
+        {
+          "text": "his",
+          "value": 44,
+          "normalized": 100.0
+        },
+        {
+          "text": "can",
+          "value": 43,
+          "normalized": 97.7
+        },
+        {
+          "text": "all",
+          "value": 36,
+          "normalized": 81.8
+        },
+        {
+          "text": "hoshi",
+          "value": 35,
+          "normalized": 79.5
+        },
+        {
+          "text": "them",
+          "value": 35,
+          "normalized": 79.5
+        },
+        {
+          "text": "dino",
+          "value": 32,
+          "normalized": 72.7
+        },
+        {
+          "text": "really",
+          "value": 27,
+          "normalized": 61.4
+        },
+        {
+          "text": "if",
+          "value": 27,
+          "normalized": 61.4
+        },
+        {
+          "text": "acting",
+          "value": 26,
+          "normalized": 59.1
+        },
+        {
+          "text": "real",
+          "value": 25,
+          "normalized": 56.8
+        },
+        {
+          "text": "laugh",
+          "value": 25,
+          "normalized": 56.8
+        },
+        {
+          "text": "even",
+          "value": 25,
+          "normalized": 56.8
+        },
+        {
+          "text": "vernon",
+          "value": 25,
+          "normalized": 56.8
+        },
+        {
+          "text": "dk",
+          "value": 25,
+          "normalized": 56.8
+        },
+        {
+          "text": "jun",
+          "value": 25,
+          "normalized": 56.8
+        },
+        {
+          "text": "members",
+          "value": 23,
+          "normalized": 52.3
+        },
+        {
+          "text": "about",
+          "value": 22,
+          "normalized": 50.0
+        },
+        {
+          "text": "laughing",
+          "value": 22,
+          "normalized": 50.0
+        },
+        {
+          "text": "tattoo",
+          "value": 22,
+          "normalized": 50.0
+        },
+        {
+          "text": "being",
+          "value": 21,
+          "normalized": 47.7
+        },
+        {
+          "text": "know",
+          "value": 21,
+          "normalized": 47.7
+        },
+        {
+          "text": "seungkwan",
+          "value": 21,
+          "normalized": 47.7
+        },
+        {
+          "text": "진짜",
+          "value": 20,
+          "normalized": 45.5
+        },
+        {
+          "text": "out",
+          "value": 19,
+          "normalized": 43.2
+        },
+        {
+          "text": "time",
+          "value": 18,
+          "normalized": 40.9
+        },
+        {
+          "text": "10",
+          "value": 18,
+          "normalized": 40.9
+        },
+        {
+          "text": "see",
+          "value": 18,
+          "normalized": 40.9
+        },
+        {
+          "text": "more",
+          "value": 17,
+          "normalized": 38.6
+        },
+        {
+          "text": "fake",
+          "value": 17,
+          "normalized": 38.6
+        },
+        {
+          "text": "way",
+          "value": 17,
+          "normalized": 38.6
+        }
+      ]
+    },
+    {
+      "video_id": "3Jj-tVEif3k",
+      "video_title": "[GOING SEVENTEEN] COMEBACK SPECIAL 'SEVENTEEN TV' TEASER",
+      "published_date": "2025-05-14",
+      "words": [
+        {
+          "text": "back",
+          "value": 26,
+          "normalized": 100.0
+        },
+        {
+          "text": "can",
+          "value": 21,
+          "normalized": 80.8
+        },
+        {
+          "text": "towel",
+          "value": 20,
+          "normalized": 76.9
+        },
+        {
+          "text": "finally",
+          "value": 19,
+          "normalized": 73.1
+        },
+        {
+          "text": "gose",
+          "value": 18,
+          "normalized": 69.2
+        },
+        {
+          "text": "recreating",
+          "value": 17,
+          "normalized": 65.4
+        },
+        {
+          "text": "really",
+          "value": 17,
+          "normalized": 65.4
+        },
+        {
+          "text": "너무",
+          "value": 17,
+          "normalized": 65.4
+        },
+        {
+          "text": "진짜",
+          "value": 17,
+          "normalized": 65.4
+        },
+        {
+          "text": "omg",
+          "value": 16,
+          "normalized": 61.5
+        },
+        {
+          "text": "wait",
+          "value": 14,
+          "normalized": 53.8
+        },
+        {
+          "text": "comeback",
+          "value": 13,
+          "normalized": 50.0
+        },
+        {
+          "text": "love",
+          "value": 11,
+          "normalized": 42.3
+        },
+        {
+          "text": "much",
+          "value": 11,
+          "normalized": 42.3
+        },
+        {
+          "text": "days",
+          "value": 11,
+          "normalized": 42.3
+        },
+        {
+          "text": "incident",
+          "value": 11,
+          "normalized": 42.3
+        },
+        {
+          "text": "tv",
+          "value": 11,
+          "normalized": 42.3
+        },
+        {
+          "text": "excited",
+          "value": 10,
+          "normalized": 38.5
+        },
+        {
+          "text": "teaser",
+          "value": 10,
+          "normalized": 38.5
+        },
+        {
+          "text": "iconic",
+          "value": 10,
+          "normalized": 38.5
+        },
+        {
+          "text": "영원히",
+          "value": 10,
+          "normalized": 38.5
+        },
+        {
+          "text": "저는",
+          "value": 10,
+          "normalized": 38.5
+        },
+        {
+          "text": "special",
+          "value": 9,
+          "normalized": 34.6
+        },
+        {
+          "text": "would",
+          "value": 9,
+          "normalized": 34.6
+        },
+        {
+          "text": "them",
+          "value": 9,
+          "normalized": 34.6
+        },
+        {
+          "text": "see",
+          "value": 9,
+          "normalized": 34.6
+        },
+        {
+          "text": "debut",
+          "value": 9,
+          "normalized": 34.6
+        },
+        {
+          "text": "던져봐",
+          "value": 9,
+          "normalized": 34.6
+        },
+        {
+          "text": "will",
+          "value": 9,
+          "normalized": 34.6
+        },
+        {
+          "text": "당신의",
+          "value": 9,
+          "normalized": 34.6
+        }
+      ]
+    },
+    {
+      "video_id": "8h1GzmMN7K0",
+      "video_title": "[GOING SEVENTEEN] EP.123 세봉 초등학교 #2 (SEVONG Elementary School #2)",
+      "published_date": "2024-12-11",
+      "words": [
+        {
+          "text": "hoshi",
+          "value": 44,
+          "normalized": 100.0
+        },
+        {
+          "text": "gose",
+          "value": 41,
+          "normalized": 93.2
+        },
+        {
+          "text": "his",
+          "value": 35,
+          "normalized": 79.5
+        },
+        {
+          "text": "cute",
+          "value": 34,
+          "normalized": 77.3
+        },
+        {
+          "text": "mingyu",
+          "value": 31,
+          "normalized": 70.5
+        },
+        {
+          "text": "vernon",
+          "value": 29,
+          "normalized": 65.9
+        },
+        {
+          "text": "dk",
+          "value": 26,
+          "normalized": 59.1
+        },
+        {
+          "text": "him",
+          "value": 26,
+          "normalized": 59.1
+        },
+        {
+          "text": "love",
+          "value": 26,
+          "normalized": 59.1
+        },
+        {
+          "text": "episode",
+          "value": 24,
+          "normalized": 54.5
+        },
+        {
+          "text": "wonwoo",
+          "value": 23,
+          "normalized": 52.3
+        },
+        {
+          "text": "being",
+          "value": 23,
+          "normalized": 52.3
+        },
+        {
+          "text": "president",
+          "value": 22,
+          "normalized": 50.0
+        },
+        {
+          "text": "all",
+          "value": 22,
+          "normalized": 50.0
+        },
+        {
+          "text": "woozi",
+          "value": 19,
+          "normalized": 43.2
+        },
+        {
+          "text": "happy",
+          "value": 18,
+          "normalized": 40.9
+        },
+        {
+          "text": "out",
+          "value": 18,
+          "normalized": 40.9
+        },
+        {
+          "text": "game",
+          "value": 16,
+          "normalized": 36.4
+        },
+        {
+          "text": "너무",
+          "value": 16,
+          "normalized": 36.4
+        },
+        {
+          "text": "26",
+          "value": 15,
+          "normalized": 34.1
+        },
+        {
+          "text": "class",
+          "value": 14,
+          "normalized": 31.8
+        },
+        {
+          "text": "year",
+          "value": 14,
+          "normalized": 31.8
+        },
+        {
+          "text": "them",
+          "value": 14,
+          "normalized": 31.8
+        },
+        {
+          "text": "25",
+          "value": 14,
+          "normalized": 31.8
+        },
+        {
+          "text": "way",
+          "value": 13,
+          "normalized": 29.5
+        },
+        {
+          "text": "best",
+          "value": 13,
+          "normalized": 29.5
+        },
+        {
+          "text": "each",
+          "value": 13,
+          "normalized": 29.5
+        },
+        {
+          "text": "can",
+          "value": 13,
+          "normalized": 29.5
+        },
+        {
+          "text": "thank",
+          "value": 13,
+          "normalized": 29.5
+        },
+        {
+          "text": "19",
+          "value": 13,
+          "normalized": 29.5
+        }
+      ]
+    },
+    {
+      "video_id": "XKJuYk4XBOQ",
+      "video_title": "[GOING SEVENTEEN] EP.122 세봉 초등학교 #1 (SEVONG Elementary School #1)",
+      "published_date": "2024-12-04",
+      "words": [
+        {
+          "text": "seungkwan",
+          "value": 57,
+          "normalized": 100.0
+        },
+        {
+          "text": "hoshi",
+          "value": 55,
+          "normalized": 96.5
+        },
+        {
+          "text": "joshua",
+          "value": 45,
+          "normalized": 78.9
+        },
+        {
+          "text": "his",
+          "value": 42,
+          "normalized": 73.7
+        },
+        {
+          "text": "vernon",
+          "value": 41,
+          "normalized": 71.9
+        },
+        {
+          "text": "cute",
+          "value": 33,
+          "normalized": 57.9
+        },
+        {
+          "text": "episode",
+          "value": 31,
+          "normalized": 54.4
+        },
+        {
+          "text": "mingyu",
+          "value": 27,
+          "normalized": 47.4
+        },
+        {
+          "text": "woozi",
+          "value": 26,
+          "normalized": 45.6
+        },
+        {
+          "text": "funny",
+          "value": 25,
+          "normalized": 43.9
+        },
+        {
+          "text": "love",
+          "value": 24,
+          "normalized": 42.1
+        },
+        {
+          "text": "dk",
+          "value": 23,
+          "normalized": 40.4
+        },
+        {
+          "text": "jun",
+          "value": 23,
+          "normalized": 40.4
+        },
+        {
+          "text": "wonwoo",
+          "value": 22,
+          "normalized": 38.6
+        },
+        {
+          "text": "way",
+          "value": 21,
+          "normalized": 36.8
+        },
+        {
+          "text": "너무",
+          "value": 21,
+          "normalized": 36.8
+        },
+        {
+          "text": "him",
+          "value": 20,
+          "normalized": 35.1
+        },
+        {
+          "text": "always",
+          "value": 18,
+          "normalized": 31.6
+        },
+        {
+          "text": "진짜",
+          "value": 17,
+          "normalized": 29.8
+        },
+        {
+          "text": "school",
+          "value": 16,
+          "normalized": 28.1
+        },
+        {
+          "text": "one",
+          "value": 16,
+          "normalized": 28.1
+        },
+        {
+          "text": "all",
+          "value": 15,
+          "normalized": 26.3
+        },
+        {
+          "text": "being",
+          "value": 15,
+          "normalized": 26.3
+        },
+        {
+          "text": "really",
+          "value": 15,
+          "normalized": 26.3
+        },
+        {
+          "text": "boo",
+          "value": 15,
+          "normalized": 26.3
+        },
+        {
+          "text": "about",
+          "value": 14,
+          "normalized": 24.6
+        },
+        {
+          "text": "can",
+          "value": 13,
+          "normalized": 22.8
+        },
+        {
+          "text": "too",
+          "value": 13,
+          "normalized": 22.8
+        },
+        {
+          "text": "16",
+          "value": 13,
+          "normalized": 22.8
+        },
+        {
+          "text": "jeonghan",
+          "value": 13,
+          "normalized": 22.8
+        }
+      ]
+    },
+    {
+      "video_id": "EjR9lAGEQaM",
+      "video_title": "[GOING SEVENTEEN] EP.121 GOING Millionaire #2",
+      "published_date": "2024-11-27",
+      "words": [
+        {
+          "text": "mingyu",
+          "value": 88,
+          "normalized": 100.0
+        },
+        {
+          "text": "dk",
+          "value": 71,
+          "normalized": 80.7
+        },
+        {
+          "text": "jun",
+          "value": 63,
+          "normalized": 71.6
+        },
+        {
+          "text": "class",
+          "value": 41,
+          "normalized": 46.6
+        },
+        {
+          "text": "his",
+          "value": 33,
+          "normalized": 37.5
+        },
+        {
+          "text": "president",
+          "value": 31,
+          "normalized": 35.2
+        },
+        {
+          "text": "way",
+          "value": 29,
+          "normalized": 33.0
+        },
+        {
+          "text": "episode",
+          "value": 28,
+          "normalized": 31.8
+        },
+        {
+          "text": "gose",
+          "value": 27,
+          "normalized": 30.7
+        },
+        {
+          "text": "really",
+          "value": 26,
+          "normalized": 29.5
+        },
+        {
+          "text": "malatang",
+          "value": 25,
+          "normalized": 28.4
+        },
+        {
+          "text": "all",
+          "value": 24,
+          "normalized": 27.3
+        },
+        {
+          "text": "can",
+          "value": 23,
+          "normalized": 26.1
+        },
+        {
+          "text": "next",
+          "value": 19,
+          "normalized": 21.6
+        },
+        {
+          "text": "clown",
+          "value": 18,
+          "normalized": 20.5
+        },
+        {
+          "text": "love",
+          "value": 18,
+          "normalized": 20.5
+        },
+        {
+          "text": "him",
+          "value": 18,
+          "normalized": 20.5
+        },
+        {
+          "text": "woozi",
+          "value": 17,
+          "normalized": 19.3
+        },
+        {
+          "text": "watch",
+          "value": 17,
+          "normalized": 19.3
+        },
+        {
+          "text": "episodes",
+          "value": 16,
+          "normalized": 18.2
+        },
+        {
+          "text": "members",
+          "value": 16,
+          "normalized": 18.2
+        },
+        {
+          "text": "our",
+          "value": 16,
+          "normalized": 18.2
+        },
+        {
+          "text": "even",
+          "value": 15,
+          "normalized": 17.0
+        },
+        {
+          "text": "vernon",
+          "value": 15,
+          "normalized": 17.0
+        },
+        {
+          "text": "question",
+          "value": 15,
+          "normalized": 17.0
+        },
+        {
+          "text": "cute",
+          "value": 15,
+          "normalized": 17.0
+        },
+        {
+          "text": "answer",
+          "value": 14,
+          "normalized": 15.9
+        },
+        {
+          "text": "30",
+          "value": 14,
+          "normalized": 15.9
+        },
+        {
+          "text": "every",
+          "value": 13,
+          "normalized": 14.8
+        },
+        {
+          "text": "funny",
+          "value": 13,
+          "normalized": 14.8
+        }
+      ]
+    },
+    {
+      "video_id": "gT70I_iBjys",
+      "video_title": "[GOING SEVENTEEN] EP.120 GOING Millionaire #1",
+      "published_date": "2024-11-20",
+      "words": [
+        {
+          "text": "jun",
+          "value": 80,
+          "normalized": 100.0
+        },
+        {
+          "text": "love",
+          "value": 35,
+          "normalized": 43.8
+        },
+        {
+          "text": "episode",
+          "value": 34,
+          "normalized": 42.5
+        },
+        {
+          "text": "vernon",
+          "value": 33,
+          "normalized": 41.2
+        },
+        {
+          "text": "all",
+          "value": 27,
+          "normalized": 33.8
+        },
+        {
+          "text": "gose",
+          "value": 26,
+          "normalized": 32.5
+        },
+        {
+          "text": "can",
+          "value": 24,
+          "normalized": 30.0
+        },
+        {
+          "text": "his",
+          "value": 21,
+          "normalized": 26.2
+        },
+        {
+          "text": "the8",
+          "value": 20,
+          "normalized": 25.0
+        },
+        {
+          "text": "him",
+          "value": 20,
+          "normalized": 25.0
+        },
+        {
+          "text": "indian",
+          "value": 19,
+          "normalized": 23.8
+        },
+        {
+          "text": "being",
+          "value": 18,
+          "normalized": 22.5
+        },
+        {
+          "text": "crorepati",
+          "value": 18,
+          "normalized": 22.5
+        },
+        {
+          "text": "members",
+          "value": 17,
+          "normalized": 21.2
+        },
+        {
+          "text": "show",
+          "value": 17,
+          "normalized": 21.2
+        },
+        {
+          "text": "cute",
+          "value": 17,
+          "normalized": 21.2
+        },
+        {
+          "text": "them",
+          "value": 17,
+          "normalized": 21.2
+        },
+        {
+          "text": "banega",
+          "value": 17,
+          "normalized": 21.2
+        },
+        {
+          "text": "minghao",
+          "value": 16,
+          "normalized": 20.0
+        },
+        {
+          "text": "really",
+          "value": 16,
+          "normalized": 20.0
+        },
+        {
+          "text": "answer",
+          "value": 15,
+          "normalized": 18.8
+        },
+        {
+          "text": "29",
+          "value": 15,
+          "normalized": 18.8
+        },
+        {
+          "text": "junhui",
+          "value": 15,
+          "normalized": 18.8
+        },
+        {
+          "text": "much",
+          "value": 14,
+          "normalized": 17.5
+        },
+        {
+          "text": "see",
+          "value": 14,
+          "normalized": 17.5
+        },
+        {
+          "text": "너무",
+          "value": 14,
+          "normalized": 17.5
+        },
+        {
+          "text": "more",
+          "value": 14,
+          "normalized": 17.5
+        },
+        {
+          "text": "funny",
+          "value": 13,
+          "normalized": 16.2
+        },
+        {
+          "text": "dk",
+          "value": 13,
+          "normalized": 16.2
+        },
+        {
+          "text": "kbc",
+          "value": 13,
+          "normalized": 16.2
+        }
+      ]
+    },
+    {
+      "video_id": "650K75tw3cQ",
+      "video_title": "[GOING SEVENTEEN] EP.119 고잉 제작기 (GOING PRODUCTION)",
+      "published_date": "2024-11-13",
+      "words": [
+        {
+          "text": "skin",
+          "value": 86,
+          "normalized": 100.0
+        },
+        {
+          "text": "mingyu",
+          "value": 82,
+          "normalized": 95.3
+        },
+        {
+          "text": "love",
+          "value": 41,
+          "normalized": 47.7
+        },
+        {
+          "text": "his",
+          "value": 38,
+          "normalized": 44.2
+        },
+        {
+          "text": "beautiful",
+          "value": 34,
+          "normalized": 39.5
+        },
+        {
+          "text": "woozi",
+          "value": 32,
+          "normalized": 37.2
+        },
+        {
+          "text": "your",
+          "value": 32,
+          "normalized": 37.2
+        },
+        {
+          "text": "can",
+          "value": 30,
+          "normalized": 34.9
+        },
+        {
+          "text": "tone",
+          "value": 26,
+          "normalized": 30.2
+        },
+        {
+          "text": "all",
+          "value": 23,
+          "normalized": 26.7
+        },
+        {
+          "text": "tan",
+          "value": 22,
+          "normalized": 25.6
+        },
+        {
+          "text": "about",
+          "value": 22,
+          "normalized": 25.6
+        },
+        {
+          "text": "don",
+          "value": 22,
+          "normalized": 25.6
+        },
+        {
+          "text": "episode",
+          "value": 21,
+          "normalized": 24.4
+        },
+        {
+          "text": "dk",
+          "value": 21,
+          "normalized": 24.4
+        },
+        {
+          "text": "him",
+          "value": 21,
+          "normalized": 24.4
+        },
+        {
+          "text": "one",
+          "value": 20,
+          "normalized": 23.3
+        },
+        {
+          "text": "handsome",
+          "value": 20,
+          "normalized": 23.3
+        },
+        {
+          "text": "vernon",
+          "value": 19,
+          "normalized": 22.1
+        },
+        {
+          "text": "zombie",
+          "value": 19,
+          "normalized": 22.1
+        },
+        {
+          "text": "funny",
+          "value": 19,
+          "normalized": 22.1
+        },
+        {
+          "text": "always",
+          "value": 19,
+          "normalized": 22.1
+        },
+        {
+          "text": "happy",
+          "value": 19,
+          "normalized": 22.1
+        },
+        {
+          "text": "out",
+          "value": 18,
+          "normalized": 20.9
+        },
+        {
+          "text": "most",
+          "value": 17,
+          "normalized": 19.8
+        },
+        {
+          "text": "us",
+          "value": 16,
+          "normalized": 18.6
+        },
+        {
+          "text": "next",
+          "value": 16,
+          "normalized": 18.6
+        },
+        {
+          "text": "know",
+          "value": 15,
+          "normalized": 17.4
+        },
+        {
+          "text": "members",
+          "value": 15,
+          "normalized": 17.4
+        },
+        {
+          "text": "best",
+          "value": 15,
+          "normalized": 17.4
+        }
+      ]
+    },
+    {
+      "video_id": "xn0HzluujXk",
+      "video_title": "[GOING SEVENTEEN] EP.118 고잉 제작기 : 좀비와의 인터뷰 (GOING PRODUCTION : Interview With The Zombie)",
+      "published_date": "2024-11-06",
+      "words": [
+        {
+          "text": "zombie",
+          "value": 59,
+          "normalized": 100.0
+        },
+        {
+          "text": "vernon",
+          "value": 51,
+          "normalized": 86.4
+        },
+        {
+          "text": "woozi",
+          "value": 51,
+          "normalized": 86.4
+        },
+        {
+          "text": "dk",
+          "value": 44,
+          "normalized": 74.6
+        },
+        {
+          "text": "funny",
+          "value": 35,
+          "normalized": 59.3
+        },
+        {
+          "text": "mingyu",
+          "value": 29,
+          "normalized": 49.2
+        },
+        {
+          "text": "laugh",
+          "value": 28,
+          "normalized": 47.5
+        },
+        {
+          "text": "can",
+          "value": 23,
+          "normalized": 39.0
+        },
+        {
+          "text": "episode",
+          "value": 23,
+          "normalized": 39.0
+        },
+        {
+          "text": "his",
+          "value": 22,
+          "normalized": 37.3
+        },
+        {
+          "text": "love",
+          "value": 20,
+          "normalized": 33.9
+        },
+        {
+          "text": "laughing",
+          "value": 19,
+          "normalized": 32.2
+        },
+        {
+          "text": "really",
+          "value": 19,
+          "normalized": 32.2
+        },
+        {
+          "text": "too",
+          "value": 18,
+          "normalized": 30.5
+        },
+        {
+          "text": "most",
+          "value": 17,
+          "normalized": 28.8
+        },
+        {
+          "text": "one",
+          "value": 17,
+          "normalized": 28.8
+        },
+        {
+          "text": "way",
+          "value": 15,
+          "normalized": 25.4
+        },
+        {
+          "text": "wonwoo",
+          "value": 15,
+          "normalized": 25.4
+        },
+        {
+          "text": "너무",
+          "value": 15,
+          "normalized": 25.4
+        },
+        {
+          "text": "out",
+          "value": 14,
+          "normalized": 23.7
+        },
+        {
+          "text": "content",
+          "value": 13,
+          "normalized": 22.0
+        },
+        {
+          "text": "them",
+          "value": 13,
+          "normalized": 22.0
+        },
+        {
+          "text": "being",
+          "value": 13,
+          "normalized": 22.0
+        },
+        {
+          "text": "doing",
+          "value": 13,
+          "normalized": 22.0
+        },
+        {
+          "text": "even",
+          "value": 13,
+          "normalized": 22.0
+        },
+        {
+          "text": "the8",
+          "value": 13,
+          "normalized": 22.0
+        },
+        {
+          "text": "watching",
+          "value": 13,
+          "normalized": 22.0
+        },
+        {
+          "text": "laughter",
+          "value": 12,
+          "normalized": 20.3
+        },
+        {
+          "text": "minghao",
+          "value": 12,
+          "normalized": 20.3
+        },
+        {
+          "text": "now",
+          "value": 12,
+          "normalized": 20.3
+        }
+      ]
+    },
+    {
+      "video_id": "UnrcM3N_mGI",
+      "video_title": "[GOING SEVENTEEN] EP.118 고잉 제작기 : 웃지 마 (GOING PRODUCTION : Don't Laugh)",
+      "published_date": "2024-11-06",
+      "words": [
+        {
+          "text": "hoshi",
+          "value": 143,
+          "normalized": 100.0
+        },
+        {
+          "text": "his",
+          "value": 80,
+          "normalized": 55.9
+        },
+        {
+          "text": "mom",
+          "value": 75,
+          "normalized": 52.4
+        },
+        {
+          "text": "mother",
+          "value": 49,
+          "normalized": 34.3
+        },
+        {
+          "text": "cute",
+          "value": 48,
+          "normalized": 33.6
+        },
+        {
+          "text": "jeonghan",
+          "value": 31,
+          "normalized": 21.7
+        },
+        {
+          "text": "너무",
+          "value": 29,
+          "normalized": 20.3
+        },
+        {
+          "text": "one",
+          "value": 23,
+          "normalized": 16.1
+        },
+        {
+          "text": "gose",
+          "value": 23,
+          "normalized": 16.1
+        },
+        {
+          "text": "really",
+          "value": 23,
+          "normalized": 16.1
+        },
+        {
+          "text": "seungkwan",
+          "value": 23,
+          "normalized": 16.1
+        },
+        {
+          "text": "pretty",
+          "value": 19,
+          "normalized": 13.3
+        },
+        {
+          "text": "laugh",
+          "value": 18,
+          "normalized": 12.6
+        },
+        {
+          "text": "latte",
+          "value": 17,
+          "normalized": 11.9
+        },
+        {
+          "text": "dino",
+          "value": 16,
+          "normalized": 11.2
+        },
+        {
+          "text": "white",
+          "value": 15,
+          "normalized": 10.5
+        },
+        {
+          "text": "looks",
+          "value": 15,
+          "normalized": 10.5
+        },
+        {
+          "text": "her",
+          "value": 15,
+          "normalized": 10.5
+        },
+        {
+          "text": "funny",
+          "value": 15,
+          "normalized": 10.5
+        },
+        {
+          "text": "laughing",
+          "value": 13,
+          "normalized": 9.1
+        },
+        {
+          "text": "love",
+          "value": 13,
+          "normalized": 9.1
+        },
+        {
+          "text": "호시",
+          "value": 13,
+          "normalized": 9.1
+        },
+        {
+          "text": "look",
+          "value": 12,
+          "normalized": 8.4
+        },
+        {
+          "text": "out",
+          "value": 12,
+          "normalized": 8.4
+        },
+        {
+          "text": "way",
+          "value": 12,
+          "normalized": 8.4
+        },
+        {
+          "text": "too",
+          "value": 12,
+          "normalized": 8.4
+        },
+        {
+          "text": "scoups",
+          "value": 12,
+          "normalized": 8.4
+        },
+        {
+          "text": "smile",
+          "value": 11,
+          "normalized": 7.7
+        },
+        {
+          "text": "him",
+          "value": 11,
+          "normalized": 7.7
+        },
+        {
+          "text": "see",
+          "value": 11,
+          "normalized": 7.7
+        }
+      ]
+    },
+    {
+      "video_id": "xOtXdk1r_B4",
+      "video_title": "[GOING SEVENTEEN] EP.117 We Have to Cross Over in a Day? Are You Being Serious Right Now?! #2",
+      "published_date": "2024-10-30",
+      "words": [
+        {
+          "text": "mingyu",
+          "value": 104,
+          "normalized": 100.0
+        },
+        {
+          "text": "boat",
+          "value": 90,
+          "normalized": 86.5
+        },
+        {
+          "text": "his",
+          "value": 89,
+          "normalized": 85.6
+        },
+        {
+          "text": "team",
+          "value": 87,
+          "normalized": 83.7
+        },
+        {
+          "text": "jeonghan",
+          "value": 62,
+          "normalized": 59.6
+        },
+        {
+          "text": "hoshi",
+          "value": 49,
+          "normalized": 47.1
+        },
+        {
+          "text": "really",
+          "value": 38,
+          "normalized": 36.5
+        },
+        {
+          "text": "dino",
+          "value": 38,
+          "normalized": 36.5
+        },
+        {
+          "text": "love",
+          "value": 37,
+          "normalized": 35.6
+        },
+        {
+          "text": "cute",
+          "value": 36,
+          "normalized": 34.6
+        },
+        {
+          "text": "joshua",
+          "value": 35,
+          "normalized": 33.7
+        },
+        {
+          "text": "even",
+          "value": 32,
+          "normalized": 30.8
+        },
+        {
+          "text": "him",
+          "value": 32,
+          "normalized": 30.8
+        },
+        {
+          "text": "scoups",
+          "value": 31,
+          "normalized": 29.8
+        },
+        {
+          "text": "one",
+          "value": 29,
+          "normalized": 27.9
+        },
+        {
+          "text": "all",
+          "value": 28,
+          "normalized": 26.9
+        },
+        {
+          "text": "being",
+          "value": 27,
+          "normalized": 26.0
+        },
+        {
+          "text": "end",
+          "value": 27,
+          "normalized": 26.0
+        },
+        {
+          "text": "them",
+          "value": 26,
+          "normalized": 25.0
+        },
+        {
+          "text": "up",
+          "value": 26,
+          "normalized": 25.0
+        },
+        {
+          "text": "episode",
+          "value": 26,
+          "normalized": 25.0
+        },
+        {
+          "text": "can",
+          "value": 26,
+          "normalized": 25.0
+        },
+        {
+          "text": "hard",
+          "value": 24,
+          "normalized": 23.1
+        },
+        {
+          "text": "out",
+          "value": 24,
+          "normalized": 23.1
+        },
+        {
+          "text": "water",
+          "value": 23,
+          "normalized": 22.1
+        },
+        {
+          "text": "will",
+          "value": 22,
+          "normalized": 21.2
+        },
+        {
+          "text": "everyone",
+          "value": 22,
+          "normalized": 21.2
+        },
+        {
+          "text": "well",
+          "value": 21,
+          "normalized": 20.2
+        },
+        {
+          "text": "23",
+          "value": 21,
+          "normalized": 20.2
+        },
+        {
+          "text": "way",
+          "value": 20,
+          "normalized": 19.2
+        }
+      ]
+    },
+    {
+      "video_id": "gUtvE6Wu7sc",
+      "video_title": "[GOING SEVENTEEN] EP.116 We Have to Cross Over in a Day? Are You Being Serious Right Now?! #1",
+      "published_date": "2024-10-23",
+      "words": [
+        {
+          "text": "jeonghan",
+          "value": 95,
+          "normalized": 100.0
+        },
+        {
+          "text": "dk",
+          "value": 82,
+          "normalized": 86.3
+        },
+        {
+          "text": "mingyu",
+          "value": 74,
+          "normalized": 77.9
+        },
+        {
+          "text": "dino",
+          "value": 52,
+          "normalized": 54.7
+        },
+        {
+          "text": "hoshi",
+          "value": 48,
+          "normalized": 50.5
+        },
+        {
+          "text": "his",
+          "value": 44,
+          "normalized": 46.3
+        },
+        {
+          "text": "him",
+          "value": 40,
+          "normalized": 42.1
+        },
+        {
+          "text": "love",
+          "value": 38,
+          "normalized": 40.0
+        },
+        {
+          "text": "너무",
+          "value": 36,
+          "normalized": 37.9
+        },
+        {
+          "text": "team",
+          "value": 31,
+          "normalized": 32.6
+        },
+        {
+          "text": "way",
+          "value": 31,
+          "normalized": 32.6
+        },
+        {
+          "text": "joshua",
+          "value": 30,
+          "normalized": 31.6
+        },
+        {
+          "text": "always",
+          "value": 29,
+          "normalized": 30.5
+        },
+        {
+          "text": "really",
+          "value": 26,
+          "normalized": 27.4
+        },
+        {
+          "text": "members",
+          "value": 25,
+          "normalized": 26.3
+        },
+        {
+          "text": "minghao",
+          "value": 22,
+          "normalized": 23.2
+        },
+        {
+          "text": "all",
+          "value": 22,
+          "normalized": 23.2
+        },
+        {
+          "text": "being",
+          "value": 22,
+          "normalized": 23.2
+        },
+        {
+          "text": "the8",
+          "value": 22,
+          "normalized": 23.2
+        },
+        {
+          "text": "ad",
+          "value": 22,
+          "normalized": 23.2
+        },
+        {
+          "text": "them",
+          "value": 21,
+          "normalized": 22.1
+        },
+        {
+          "text": "woozi",
+          "value": 20,
+          "normalized": 21.1
+        },
+        {
+          "text": "진짜",
+          "value": 19,
+          "normalized": 20.0
+        },
+        {
+          "text": "can",
+          "value": 18,
+          "normalized": 18.9
+        },
+        {
+          "text": "12",
+          "value": 18,
+          "normalized": 18.9
+        },
+        {
+          "text": "doing",
+          "value": 17,
+          "normalized": 17.9
+        },
+        {
+          "text": "will",
+          "value": 16,
+          "normalized": 16.8
+        },
+        {
+          "text": "such",
+          "value": 16,
+          "normalized": 16.8
+        },
+        {
+          "text": "episode",
+          "value": 16,
+          "normalized": 16.8
+        },
+        {
+          "text": "cute",
+          "value": 16,
+          "normalized": 16.8
+        }
+      ]
+    },
+    {
+      "video_id": "jz7yp8zL7ok",
+      "video_title": "[GOING SEVENTEEN] COMEBACK SPECIAL : 최승철, 부승관의 기분 좋은 아침 #2 (CHOI & BOO's Very Good Morning #2)",
+      "published_date": "2024-10-16",
+      "words": [
+        {
+          "text": "dk",
+          "value": 62,
+          "normalized": 100.0
+        },
+        {
+          "text": "love",
+          "value": 37,
+          "normalized": 59.7
+        },
+        {
+          "text": "poong",
+          "value": 34,
+          "normalized": 54.8
+        },
+        {
+          "text": "would",
+          "value": 33,
+          "normalized": 53.2
+        },
+        {
+          "text": "28",
+          "value": 28,
+          "normalized": 45.2
+        },
+        {
+          "text": "really",
+          "value": 23,
+          "normalized": 37.1
+        },
+        {
+          "text": "something",
+          "value": 23,
+          "normalized": 37.1
+        },
+        {
+          "text": "woozi",
+          "value": 22,
+          "normalized": 35.5
+        },
+        {
+          "text": "진짜",
+          "value": 21,
+          "normalized": 33.9
+        },
+        {
+          "text": "his",
+          "value": 20,
+          "normalized": 32.3
+        },
+        {
+          "text": "drink",
+          "value": 20,
+          "normalized": 32.3
+        },
+        {
+          "text": "vernon",
+          "value": 19,
+          "normalized": 30.6
+        },
+        {
+          "text": "wonwoo",
+          "value": 19,
+          "normalized": 30.6
+        },
+        {
+          "text": "him",
+          "value": 18,
+          "normalized": 29.0
+        },
+        {
+          "text": "them",
+          "value": 18,
+          "normalized": 29.0
+        },
+        {
+          "text": "mingyu",
+          "value": 18,
+          "normalized": 29.0
+        },
+        {
+          "text": "proud",
+          "value": 18,
+          "normalized": 29.0
+        },
+        {
+          "text": "skit",
+          "value": 17,
+          "normalized": 27.4
+        },
+        {
+          "text": "all",
+          "value": 17,
+          "normalized": 27.4
+        },
+        {
+          "text": "day",
+          "value": 16,
+          "normalized": 25.8
+        },
+        {
+          "text": "show",
+          "value": 16,
+          "normalized": 25.8
+        },
+        {
+          "text": "much",
+          "value": 15,
+          "normalized": 24.2
+        },
+        {
+          "text": "nice",
+          "value": 15,
+          "normalized": 24.2
+        },
+        {
+          "text": "dino",
+          "value": 15,
+          "normalized": 24.2
+        },
+        {
+          "text": "can",
+          "value": 15,
+          "normalized": 24.2
+        },
+        {
+          "text": "way",
+          "value": 14,
+          "normalized": 22.6
+        },
+        {
+          "text": "poongpoong",
+          "value": 14,
+          "normalized": 22.6
+        },
+        {
+          "text": "minghao",
+          "value": 14,
+          "normalized": 22.6
+        },
+        {
+          "text": "너무",
+          "value": 14,
+          "normalized": 22.6
+        },
+        {
+          "text": "being",
+          "value": 13,
+          "normalized": 21.0
+        }
+      ]
+    },
+    {
+      "video_id": "jBqd-awcBtc",
+      "video_title": "[GOING SEVENTEEN] COMEBACK SPECIAL : 최승철, 부승관의 기분 좋은 아침 #1 (CHOI & BOO's Very Good Morning #1)",
+      "published_date": "2024-10-09",
+      "words": [
+        {
+          "text": "his",
+          "value": 38,
+          "normalized": 100.0
+        },
+        {
+          "text": "vernon",
+          "value": 35,
+          "normalized": 92.1
+        },
+        {
+          "text": "dk",
+          "value": 35,
+          "normalized": 92.1
+        },
+        {
+          "text": "dino",
+          "value": 30,
+          "normalized": 78.9
+        },
+        {
+          "text": "진짜",
+          "value": 27,
+          "normalized": 71.1
+        },
+        {
+          "text": "wonwoo",
+          "value": 26,
+          "normalized": 68.4
+        },
+        {
+          "text": "너무",
+          "value": 23,
+          "normalized": 60.5
+        },
+        {
+          "text": "funny",
+          "value": 22,
+          "normalized": 57.9
+        },
+        {
+          "text": "mingyu",
+          "value": 21,
+          "normalized": 55.3
+        },
+        {
+          "text": "really",
+          "value": 19,
+          "normalized": 50.0
+        },
+        {
+          "text": "love",
+          "value": 19,
+          "normalized": 50.0
+        },
+        {
+          "text": "laugh",
+          "value": 18,
+          "normalized": 47.4
+        },
+        {
+          "text": "always",
+          "value": 17,
+          "normalized": 44.7
+        },
+        {
+          "text": "27",
+          "value": 17,
+          "normalized": 44.7
+        },
+        {
+          "text": "can",
+          "value": 15,
+          "normalized": 39.5
+        },
+        {
+          "text": "him",
+          "value": 15,
+          "normalized": 39.5
+        },
+        {
+          "text": "seungkwan",
+          "value": 15,
+          "normalized": 39.5
+        },
+        {
+          "text": "hilarious",
+          "value": 14,
+          "normalized": 36.8
+        },
+        {
+          "text": "character",
+          "value": 14,
+          "normalized": 36.8
+        },
+        {
+          "text": "hoshi",
+          "value": 14,
+          "normalized": 36.8
+        },
+        {
+          "text": "started",
+          "value": 13,
+          "normalized": 34.2
+        },
+        {
+          "text": "38",
+          "value": 13,
+          "normalized": 34.2
+        },
+        {
+          "text": "35",
+          "value": 13,
+          "normalized": 34.2
+        },
+        {
+          "text": "audience",
+          "value": 12,
+          "normalized": 31.6
+        },
+        {
+          "text": "much",
+          "value": 12,
+          "normalized": 31.6
+        },
+        {
+          "text": "wait",
+          "value": 12,
+          "normalized": 31.6
+        },
+        {
+          "text": "all",
+          "value": 12,
+          "normalized": 31.6
+        },
+        {
+          "text": "way",
+          "value": 11,
+          "normalized": 28.9
+        },
+        {
+          "text": "minute",
+          "value": 11,
+          "normalized": 28.9
+        },
+        {
+          "text": "them",
+          "value": 10,
+          "normalized": 26.3
+        }
+      ]
+    },
+    {
+      "video_id": "kUYv0OR4NVo",
+      "video_title": "[GOING SEVENTEEN] COMEBACK SPECIAL '최승철, 부승관의 기분 좋은 아침' TEASER",
+      "published_date": "2024-10-02",
+      "words": [
+        {
+          "text": "seungseung",
+          "value": 59,
+          "normalized": 100.0
+        },
+        {
+          "text": "seung",
+          "value": 20,
+          "normalized": 33.9
+        },
+        {
+          "text": "comeback",
+          "value": 19,
+          "normalized": 32.2
+        },
+        {
+          "text": "너무",
+          "value": 16,
+          "normalized": 27.1
+        },
+        {
+          "text": "excited",
+          "value": 15,
+          "normalized": 25.4
+        },
+        {
+          "text": "승승",
+          "value": 15,
+          "normalized": 25.4
+        },
+        {
+          "text": "can",
+          "value": 13,
+          "normalized": 22.0
+        },
+        {
+          "text": "이게",
+          "value": 12,
+          "normalized": 20.3
+        },
+        {
+          "text": "duo",
+          "value": 12,
+          "normalized": 20.3
+        },
+        {
+          "text": "gose",
+          "value": 10,
+          "normalized": 16.9
+        },
+        {
+          "text": "love",
+          "value": 10,
+          "normalized": 16.9
+        },
+        {
+          "text": "진짜",
+          "value": 10,
+          "normalized": 16.9
+        },
+        {
+          "text": "couple",
+          "value": 10,
+          "normalized": 16.9
+        },
+        {
+          "text": "뭐야",
+          "value": 9,
+          "normalized": 15.3
+        },
+        {
+          "text": "back",
+          "value": 9,
+          "normalized": 15.3
+        },
+        {
+          "text": "wonwoo",
+          "value": 8,
+          "normalized": 13.6
+        },
+        {
+          "text": "morning",
+          "value": 8,
+          "normalized": 13.6
+        },
+        {
+          "text": "wait",
+          "value": 8,
+          "normalized": 13.6
+        },
+        {
+          "text": "diary",
+          "value": 7,
+          "normalized": 11.9
+        },
+        {
+          "text": "seungkwan",
+          "value": 7,
+          "normalized": 11.9
+        },
+        {
+          "text": "귀여워",
+          "value": 7,
+          "normalized": 11.9
+        },
+        {
+          "text": "good",
+          "value": 6,
+          "normalized": 10.2
+        },
+        {
+          "text": "getting",
+          "value": 6,
+          "normalized": 10.2
+        },
+        {
+          "text": "아침마당",
+          "value": 6,
+          "normalized": 10.2
+        },
+        {
+          "text": "ㅋㅋㅋㅋㅋ",
+          "value": 6,
+          "normalized": 10.2
+        },
+        {
+          "text": "our",
+          "value": 6,
+          "normalized": 10.2
+        },
+        {
+          "text": "omg",
+          "value": 6,
+          "normalized": 10.2
+        },
+        {
+          "text": "승승조합",
+          "value": 5,
+          "normalized": 8.5
+        },
+        {
+          "text": "special",
+          "value": 5,
+          "normalized": 8.5
+        },
+        {
+          "text": "most",
+          "value": 5,
+          "normalized": 8.5
+        }
+      ]
+    },
+    {
+      "video_id": "ADs-cRoL9JU",
+      "video_title": "[GOING SEVENTEEN] EP.115 BOSS #2",
+      "published_date": "2024-09-25",
+      "words": [
+        {
+          "text": "jeonghan",
+          "value": 169,
+          "normalized": 100.0
+        },
+        {
+          "text": "his",
+          "value": 142,
+          "normalized": 84.0
+        },
+        {
+          "text": "win",
+          "value": 70,
+          "normalized": 41.4
+        },
+        {
+          "text": "hoshi",
+          "value": 64,
+          "normalized": 37.9
+        },
+        {
+          "text": "really",
+          "value": 58,
+          "normalized": 34.3
+        },
+        {
+          "text": "game",
+          "value": 55,
+          "normalized": 32.5
+        },
+        {
+          "text": "jun",
+          "value": 53,
+          "normalized": 31.4
+        },
+        {
+          "text": "him",
+          "value": 52,
+          "normalized": 30.8
+        },
+        {
+          "text": "can",
+          "value": 44,
+          "normalized": 26.0
+        },
+        {
+          "text": "even",
+          "value": 42,
+          "normalized": 24.9
+        },
+        {
+          "text": "money",
+          "value": 42,
+          "normalized": 24.9
+        },
+        {
+          "text": "scoups",
+          "value": 42,
+          "normalized": 24.9
+        },
+        {
+          "text": "episode",
+          "value": 37,
+          "normalized": 21.9
+        },
+        {
+          "text": "the8",
+          "value": 35,
+          "normalized": 20.7
+        },
+        {
+          "text": "all",
+          "value": 35,
+          "normalized": 20.7
+        },
+        {
+          "text": "love",
+          "value": 32,
+          "normalized": 18.9
+        },
+        {
+          "text": "cards",
+          "value": 31,
+          "normalized": 18.3
+        },
+        {
+          "text": "them",
+          "value": 31,
+          "normalized": 18.3
+        },
+        {
+          "text": "always",
+          "value": 30,
+          "normalized": 17.8
+        },
+        {
+          "text": "dk",
+          "value": 30,
+          "normalized": 17.8
+        },
+        {
+          "text": "minghao",
+          "value": 29,
+          "normalized": 17.2
+        },
+        {
+          "text": "without",
+          "value": 29,
+          "normalized": 17.2
+        },
+        {
+          "text": "being",
+          "value": 28,
+          "normalized": 16.6
+        },
+        {
+          "text": "way",
+          "value": 28,
+          "normalized": 16.6
+        },
+        {
+          "text": "gose",
+          "value": 28,
+          "normalized": 16.6
+        },
+        {
+          "text": "won",
+          "value": 27,
+          "normalized": 16.0
+        },
+        {
+          "text": "진짜",
+          "value": 27,
+          "normalized": 16.0
+        },
+        {
+          "text": "man",
+          "value": 26,
+          "normalized": 15.4
+        },
+        {
+          "text": "winning",
+          "value": 25,
+          "normalized": 14.8
+        },
+        {
+          "text": "card",
+          "value": 24,
+          "normalized": 14.2
+        }
+      ]
+    },
+    {
+      "video_id": "uc16R4cze5U",
+      "video_title": "[GOING SEVENTEEN] EP.114 BOSS #1",
+      "published_date": "2024-09-18",
+      "words": [
+        {
+          "text": "hoshi",
+          "value": 72,
+          "normalized": 100.0
+        },
+        {
+          "text": "jeonghan",
+          "value": 71,
+          "normalized": 98.6
+        },
+        {
+          "text": "his",
+          "value": 67,
+          "normalized": 93.1
+        },
+        {
+          "text": "vernon",
+          "value": 52,
+          "normalized": 72.2
+        },
+        {
+          "text": "scoups",
+          "value": 47,
+          "normalized": 65.3
+        },
+        {
+          "text": "him",
+          "value": 43,
+          "normalized": 59.7
+        },
+        {
+          "text": "mingyu",
+          "value": 41,
+          "normalized": 56.9
+        },
+        {
+          "text": "dino",
+          "value": 41,
+          "normalized": 56.9
+        },
+        {
+          "text": "being",
+          "value": 36,
+          "normalized": 50.0
+        },
+        {
+          "text": "can",
+          "value": 35,
+          "normalized": 48.6
+        },
+        {
+          "text": "wonwoo",
+          "value": 34,
+          "normalized": 47.2
+        },
+        {
+          "text": "love",
+          "value": 34,
+          "normalized": 47.2
+        },
+        {
+          "text": "all",
+          "value": 33,
+          "normalized": 45.8
+        },
+        {
+          "text": "card",
+          "value": 32,
+          "normalized": 44.4
+        },
+        {
+          "text": "really",
+          "value": 31,
+          "normalized": 43.1
+        },
+        {
+          "text": "game",
+          "value": 30,
+          "normalized": 41.7
+        },
+        {
+          "text": "episode",
+          "value": 29,
+          "normalized": 40.3
+        },
+        {
+          "text": "boss",
+          "value": 29,
+          "normalized": 40.3
+        },
+        {
+          "text": "jun",
+          "value": 28,
+          "normalized": 38.9
+        },
+        {
+          "text": "joshua",
+          "value": 26,
+          "normalized": 36.1
+        },
+        {
+          "text": "seungkwan",
+          "value": 25,
+          "normalized": 34.7
+        },
+        {
+          "text": "dk",
+          "value": 23,
+          "normalized": 31.9
+        },
+        {
+          "text": "cards",
+          "value": 22,
+          "normalized": 30.6
+        },
+        {
+          "text": "good",
+          "value": 22,
+          "normalized": 30.6
+        },
+        {
+          "text": "always",
+          "value": 22,
+          "normalized": 30.6
+        },
+        {
+          "text": "understand",
+          "value": 18,
+          "normalized": 25.0
+        },
+        {
+          "text": "team",
+          "value": 18,
+          "normalized": 25.0
+        },
+        {
+          "text": "games",
+          "value": 17,
+          "normalized": 23.6
+        },
+        {
+          "text": "them",
+          "value": 17,
+          "normalized": 23.6
+        },
+        {
+          "text": "time",
+          "value": 17,
+          "normalized": 23.6
+        }
+      ]
+    },
+    {
+      "video_id": "K6PUQtpgCcY",
+      "video_title": "[GOING SEVENTEEN] EP.113 함정 #2 (TRAP #2)",
+      "published_date": "2024-09-11",
+      "words": [
+        {
+          "text": "mingyu",
+          "value": 89,
+          "normalized": 100.0
+        },
+        {
+          "text": "wonwoo",
+          "value": 70,
+          "normalized": 78.7
+        },
+        {
+          "text": "his",
+          "value": 60,
+          "normalized": 67.4
+        },
+        {
+          "text": "woozi",
+          "value": 56,
+          "normalized": 62.9
+        },
+        {
+          "text": "members",
+          "value": 50,
+          "normalized": 56.2
+        },
+        {
+          "text": "zombies",
+          "value": 49,
+          "normalized": 55.1
+        },
+        {
+          "text": "dk",
+          "value": 48,
+          "normalized": 53.9
+        },
+        {
+          "text": "one",
+          "value": 48,
+          "normalized": 53.9
+        },
+        {
+          "text": "zombie",
+          "value": 43,
+          "normalized": 48.3
+        },
+        {
+          "text": "진짜",
+          "value": 42,
+          "normalized": 47.2
+        },
+        {
+          "text": "episode",
+          "value": 41,
+          "normalized": 46.1
+        },
+        {
+          "text": "really",
+          "value": 41,
+          "normalized": 46.1
+        },
+        {
+          "text": "hoshi",
+          "value": 39,
+          "normalized": 43.8
+        },
+        {
+          "text": "him",
+          "value": 37,
+          "normalized": 41.6
+        },
+        {
+          "text": "out",
+          "value": 37,
+          "normalized": 41.6
+        },
+        {
+          "text": "being",
+          "value": 36,
+          "normalized": 40.4
+        },
+        {
+          "text": "them",
+          "value": 35,
+          "normalized": 39.3
+        },
+        {
+          "text": "all",
+          "value": 33,
+          "normalized": 37.1
+        },
+        {
+          "text": "were",
+          "value": 28,
+          "normalized": 31.5
+        },
+        {
+          "text": "way",
+          "value": 27,
+          "normalized": 30.3
+        },
+        {
+          "text": "vernon",
+          "value": 27,
+          "normalized": 30.3
+        },
+        {
+          "text": "scared",
+          "value": 27,
+          "normalized": 30.3
+        },
+        {
+          "text": "first",
+          "value": 26,
+          "normalized": 29.2
+        },
+        {
+          "text": "leading",
+          "value": 26,
+          "normalized": 29.2
+        },
+        {
+          "text": "even",
+          "value": 25,
+          "normalized": 28.1
+        },
+        {
+          "text": "end",
+          "value": 23,
+          "normalized": 25.8
+        },
+        {
+          "text": "got",
+          "value": 23,
+          "normalized": 25.8
+        },
+        {
+          "text": "back",
+          "value": 23,
+          "normalized": 25.8
+        },
+        {
+          "text": "team",
+          "value": 23,
+          "normalized": 25.8
+        },
+        {
+          "text": "while",
+          "value": 21,
+          "normalized": 23.6
+        }
+      ]
+    },
+    {
+      "video_id": "OqOuV3QE87c",
+      "video_title": "[GOING SEVENTEEN] EP.112 함정 #1 (TRAP #1)",
+      "published_date": "2024-09-04",
+      "words": [
+        {
+          "text": "zombie",
+          "value": 118,
+          "normalized": 100.0
+        },
+        {
+          "text": "dk",
+          "value": 97,
+          "normalized": 82.2
+        },
+        {
+          "text": "his",
+          "value": 49,
+          "normalized": 41.5
+        },
+        {
+          "text": "jun",
+          "value": 46,
+          "normalized": 39.0
+        },
+        {
+          "text": "jeonghan",
+          "value": 36,
+          "normalized": 30.5
+        },
+        {
+          "text": "him",
+          "value": 35,
+          "normalized": 29.7
+        },
+        {
+          "text": "zombies",
+          "value": 32,
+          "normalized": 27.1
+        },
+        {
+          "text": "hoshi",
+          "value": 30,
+          "normalized": 25.4
+        },
+        {
+          "text": "way",
+          "value": 28,
+          "normalized": 23.7
+        },
+        {
+          "text": "being",
+          "value": 28,
+          "normalized": 23.7
+        },
+        {
+          "text": "dino",
+          "value": 27,
+          "normalized": 22.9
+        },
+        {
+          "text": "can",
+          "value": 25,
+          "normalized": 21.2
+        },
+        {
+          "text": "funny",
+          "value": 24,
+          "normalized": 20.3
+        },
+        {
+          "text": "acting",
+          "value": 24,
+          "normalized": 20.3
+        },
+        {
+          "text": "too",
+          "value": 22,
+          "normalized": 18.6
+        },
+        {
+          "text": "vernon",
+          "value": 22,
+          "normalized": 18.6
+        },
+        {
+          "text": "them",
+          "value": 22,
+          "normalized": 18.6
+        },
+        {
+          "text": "episode",
+          "value": 21,
+          "normalized": 17.8
+        },
+        {
+          "text": "really",
+          "value": 20,
+          "normalized": 16.9
+        },
+        {
+          "text": "love",
+          "value": 20,
+          "normalized": 16.9
+        },
+        {
+          "text": "seungkwan",
+          "value": 20,
+          "normalized": 16.9
+        },
+        {
+          "text": "first",
+          "value": 20,
+          "normalized": 16.9
+        },
+        {
+          "text": "out",
+          "value": 19,
+          "normalized": 16.1
+        },
+        {
+          "text": "even",
+          "value": 18,
+          "normalized": 15.3
+        },
+        {
+          "text": "always",
+          "value": 17,
+          "normalized": 14.4
+        },
+        {
+          "text": "scared",
+          "value": 17,
+          "normalized": 14.4
+        },
+        {
+          "text": "up",
+          "value": 17,
+          "normalized": 14.4
+        },
+        {
+          "text": "back",
+          "value": 16,
+          "normalized": 13.6
+        },
+        {
+          "text": "members",
+          "value": 16,
+          "normalized": 13.6
+        },
+        {
+          "text": "scary",
+          "value": 16,
+          "normalized": 13.6
+        }
+      ]
+    },
+    {
+      "video_id": "BZwBKHCCvB4",
+      "video_title": "[GOING SEVENTEEN] HORROR SPECIAL PREVIEW",
+      "published_date": "2024-08-28",
+      "words": [
+        {
+          "text": "horror",
+          "value": 52,
+          "normalized": 100.0
+        },
+        {
+          "text": "gose",
+          "value": 29,
+          "normalized": 55.8
+        },
+        {
+          "text": "content",
+          "value": 21,
+          "normalized": 40.4
+        },
+        {
+          "text": "holding",
+          "value": 21,
+          "normalized": 40.4
+        },
+        {
+          "text": "hands",
+          "value": 20,
+          "normalized": 38.5
+        },
+        {
+          "text": "너무",
+          "value": 20,
+          "normalized": 38.5
+        },
+        {
+          "text": "mingyu",
+          "value": 19,
+          "normalized": 36.5
+        },
+        {
+          "text": "can",
+          "value": 19,
+          "normalized": 36.5
+        },
+        {
+          "text": "진짜",
+          "value": 19,
+          "normalized": 36.5
+        },
+        {
+          "text": "love",
+          "value": 17,
+          "normalized": 32.7
+        },
+        {
+          "text": "dk",
+          "value": 17,
+          "normalized": 32.7
+        },
+        {
+          "text": "back",
+          "value": 17,
+          "normalized": 32.7
+        },
+        {
+          "text": "special",
+          "value": 15,
+          "normalized": 28.8
+        },
+        {
+          "text": "excited",
+          "value": 14,
+          "normalized": 26.9
+        },
+        {
+          "text": "much",
+          "value": 13,
+          "normalized": 25.0
+        },
+        {
+          "text": "them",
+          "value": 13,
+          "normalized": 25.0
+        },
+        {
+          "text": "episode",
+          "value": 12,
+          "normalized": 23.1
+        },
+        {
+          "text": "will",
+          "value": 12,
+          "normalized": 23.1
+        },
+        {
+          "text": "always",
+          "value": 11,
+          "normalized": 21.2
+        },
+        {
+          "text": "another",
+          "value": 11,
+          "normalized": 21.2
+        },
+        {
+          "text": "wait",
+          "value": 11,
+          "normalized": 21.2
+        },
+        {
+          "text": "cute",
+          "value": 9,
+          "normalized": 17.3
+        },
+        {
+          "text": "공포",
+          "value": 9,
+          "normalized": 17.3
+        },
+        {
+          "text": "omg",
+          "value": 9,
+          "normalized": 17.3
+        },
+        {
+          "text": "공포특집",
+          "value": 9,
+          "normalized": 17.3
+        },
+        {
+          "text": "really",
+          "value": 8,
+          "normalized": 15.4
+        },
+        {
+          "text": "see",
+          "value": 8,
+          "normalized": 15.4
+        },
+        {
+          "text": "finally",
+          "value": 8,
+          "normalized": 15.4
+        },
+        {
+          "text": "most",
+          "value": 7,
+          "normalized": 13.5
+        },
+        {
+          "text": "together",
+          "value": 7,
+          "normalized": 13.5
+        }
+      ]
+    },
+    {
+      "video_id": "B9l2TyhFKIY",
+      "video_title": "[GOING SEVENTEEN] EP.111 그르륵 칵칵 TTT #3 (Grrreuk kak kak TTT #3)",
+      "published_date": "2024-08-07",
+      "words": [
+        {
+          "text": "dk",
+          "value": 81,
+          "normalized": 100.0
+        },
+        {
+          "text": "up",
+          "value": 44,
+          "normalized": 54.3
+        },
+        {
+          "text": "mingyu",
+          "value": 41,
+          "normalized": 50.6
+        },
+        {
+          "text": "his",
+          "value": 38,
+          "normalized": 46.9
+        },
+        {
+          "text": "seungkwan",
+          "value": 30,
+          "normalized": 37.0
+        },
+        {
+          "text": "ttt",
+          "value": 25,
+          "normalized": 30.9
+        },
+        {
+          "text": "after",
+          "value": 24,
+          "normalized": 29.6
+        },
+        {
+          "text": "dino",
+          "value": 23,
+          "normalized": 28.4
+        },
+        {
+          "text": "vernon",
+          "value": 22,
+          "normalized": 27.2
+        },
+        {
+          "text": "11",
+          "value": 22,
+          "normalized": 27.2
+        },
+        {
+          "text": "can",
+          "value": 21,
+          "normalized": 25.9
+        },
+        {
+          "text": "him",
+          "value": 19,
+          "normalized": 23.5
+        },
+        {
+          "text": "hoshi",
+          "value": 18,
+          "normalized": 22.2
+        },
+        {
+          "text": "why",
+          "value": 18,
+          "normalized": 22.2
+        },
+        {
+          "text": "really",
+          "value": 18,
+          "normalized": 22.2
+        },
+        {
+          "text": "all",
+          "value": 17,
+          "normalized": 21.0
+        },
+        {
+          "text": "morning",
+          "value": 16,
+          "normalized": 19.8
+        },
+        {
+          "text": "way",
+          "value": 16,
+          "normalized": 19.8
+        },
+        {
+          "text": "episode",
+          "value": 16,
+          "normalized": 19.8
+        },
+        {
+          "text": "about",
+          "value": 15,
+          "normalized": 18.5
+        },
+        {
+          "text": "had",
+          "value": 15,
+          "normalized": 18.5
+        },
+        {
+          "text": "one",
+          "value": 15,
+          "normalized": 18.5
+        },
+        {
+          "text": "time",
+          "value": 15,
+          "normalized": 18.5
+        },
+        {
+          "text": "energy",
+          "value": 15,
+          "normalized": 18.5
+        },
+        {
+          "text": "them",
+          "value": 15,
+          "normalized": 18.5
+        },
+        {
+          "text": "because",
+          "value": 14,
+          "normalized": 17.3
+        },
+        {
+          "text": "love",
+          "value": 14,
+          "normalized": 17.3
+        },
+        {
+          "text": "15",
+          "value": 14,
+          "normalized": 17.3
+        },
+        {
+          "text": "14",
+          "value": 14,
+          "normalized": 17.3
+        },
+        {
+          "text": "waking",
+          "value": 13,
+          "normalized": 16.0
+        }
+      ]
+    },
+    {
+      "video_id": "VHepAfBAHBA",
+      "video_title": "[GOING SEVENTEEN] EP.110 그르륵 칵칵 TTT #2 (Grrreuk kak kak TTT #2)",
+      "published_date": "2024-07-31",
+      "words": [
+        {
+          "text": "hoshi",
+          "value": 74,
+          "normalized": 100.0
+        },
+        {
+          "text": "dk",
+          "value": 68,
+          "normalized": 91.9
+        },
+        {
+          "text": "love",
+          "value": 60,
+          "normalized": 81.1
+        },
+        {
+          "text": "jun",
+          "value": 53,
+          "normalized": 71.6
+        },
+        {
+          "text": "him",
+          "value": 43,
+          "normalized": 58.1
+        },
+        {
+          "text": "his",
+          "value": 41,
+          "normalized": 55.4
+        },
+        {
+          "text": "them",
+          "value": 40,
+          "normalized": 54.1
+        },
+        {
+          "text": "really",
+          "value": 38,
+          "normalized": 51.4
+        },
+        {
+          "text": "members",
+          "value": 38,
+          "normalized": 51.4
+        },
+        {
+          "text": "dino",
+          "value": 37,
+          "normalized": 50.0
+        },
+        {
+          "text": "game",
+          "value": 36,
+          "normalized": 48.6
+        },
+        {
+          "text": "all",
+          "value": 36,
+          "normalized": 48.6
+        },
+        {
+          "text": "joshua",
+          "value": 34,
+          "normalized": 45.9
+        },
+        {
+          "text": "jeonghan",
+          "value": 33,
+          "normalized": 44.6
+        },
+        {
+          "text": "can",
+          "value": 30,
+          "normalized": 40.5
+        },
+        {
+          "text": "mingyu",
+          "value": 28,
+          "normalized": 37.8
+        },
+        {
+          "text": "being",
+          "value": 28,
+          "normalized": 37.8
+        },
+        {
+          "text": "one",
+          "value": 26,
+          "normalized": 35.1
+        },
+        {
+          "text": "seungkwan",
+          "value": 26,
+          "normalized": 35.1
+        },
+        {
+          "text": "way",
+          "value": 25,
+          "normalized": 33.8
+        },
+        {
+          "text": "funny",
+          "value": 25,
+          "normalized": 33.8
+        },
+        {
+          "text": "너무",
+          "value": 25,
+          "normalized": 33.8
+        },
+        {
+          "text": "vernon",
+          "value": 23,
+          "normalized": 31.1
+        },
+        {
+          "text": "about",
+          "value": 22,
+          "normalized": 29.7
+        },
+        {
+          "text": "time",
+          "value": 22,
+          "normalized": 29.7
+        },
+        {
+          "text": "no",
+          "value": 21,
+          "normalized": 28.4
+        },
+        {
+          "text": "ttt",
+          "value": 21,
+          "normalized": 28.4
+        },
+        {
+          "text": "singing",
+          "value": 21,
+          "normalized": 28.4
+        },
+        {
+          "text": "episode",
+          "value": 21,
+          "normalized": 28.4
+        },
+        {
+          "text": "tired",
+          "value": 20,
+          "normalized": 27.0
+        }
+      ]
+    }
+  ]
+}
